@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 19 14:20:30 2020
+# Process ID: 2836
+# Current directory: E:/25_ov7725_hdmi_sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6512 E:\25_ov7725_hdmi_sobel\ov7725_hdmi_sobel.xpr
+# Log file: E:/25_ov7725_hdmi_sobel/vivado.log
+# Journal file: E:/25_ov7725_hdmi_sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.xpr
+open_bd_design {E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+generate_target all [get_files  E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files/sim_scripts -ip_user_files_dir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files -ipstatic_source_dir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/modelsim} {questa=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/questa} {riviera=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/riviera} {activehdl=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk
+file copy -force E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/impl_1/design_1_wrapper.sysdef E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk -hwspec E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+file mkdir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk
+file copy -force E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/impl_1/design_1_wrapper.sysdef E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk -hwspec E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf

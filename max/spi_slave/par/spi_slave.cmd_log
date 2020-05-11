@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/rtl/spi_slave.v -lang verilog -prj SPI -o spi_slave.spl -module spi_slave -template C:/ISE14.7/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a spi_slave.spl C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_slave.sym 
+xst -intstyle ise -ifn "C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_slave.xst" -ofn "C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_slave.syr" 

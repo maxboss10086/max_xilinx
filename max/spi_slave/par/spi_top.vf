@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : spi_top.vf
+// /___/   /\     Timestamp : 04/12/2020 14:37:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3a -verilog C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_top.vf -w C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_top.sch
+//Design Name: spi_top
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module spi_top(cs_n, 
+               scl, 
+               si, 
+               sys_clk, 
+               XLXN_6, 
+               XLXN_7, 
+               XLXN_8, 
+               XLXN_9, 
+               XLXN_10, 
+               XLXN_11, 
+               XLXN_12, 
+               XLXN_13, 
+               so);
+
+    input cs_n;
+    input scl;
+    input si;
+    input sys_clk;
+    input XLXN_6;
+    input XLXN_7;
+    input XLXN_8;
+    input [7:0] XLXN_9;
+    input [7:0] XLXN_10;
+    input [1:0] XLXN_11;
+    input [24:0] XLXN_12;
+    input [4:0] XLXN_13;
+   output so;
+   
+   wire sys_rst_n;
+   
+   spi_slave  XLXI_1 (.cs_n(cs_n), 
+                     .endat_versions(XLXN_10[7:0]), 
+                     .error_data(XLXN_11[1:0]), 
+                     .init_clock_pulses_flag(XLXN_6), 
+                     .init_endat_versions_flag(XLXN_7), 
+                     .MRS_para_clock_pulses(XLXN_9[7:0]), 
+                     .position_compen(XLXN_12[24:0]), 
+                     .position_compen_flag(XLXN_8), 
+                     .position_value_crc(XLXN_13[4:0]), 
+                     .scl(scl), 
+                     .si(si), 
+                     .sys_clk(sys_clk), 
+                     .sys_rst_n(sys_rst_n), 
+                     .so(so));
+   VCC  XLXI_2 (.P(sys_rst_n));
+endmodule

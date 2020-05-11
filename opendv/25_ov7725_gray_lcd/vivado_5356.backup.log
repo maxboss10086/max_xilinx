@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jan 16 20:02:46 2020
+# Process ID: 5356
+# Current directory: F:/lfas/finish/PS/ov5640_gray_lcd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7508 F:\lfas\finish\PS\ov5640_gray_lcd\ov5640_gray_lcd.xpr
+# Log file: F:/lfas/finish/PS/ov5640_gray_lcd/vivado.log
+# Journal file: F:/lfas/finish/PS/ov5640_gray_lcd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/lfas/edge/23_ov5640_lcd/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/lfas/edge/ip_repo/rgb2ycbcr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 774.262 ; gain = 173.633
+update_compile_order -fileset sources_1
+open_bd_design {F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- alientek.com:user:rgb2lcd:1.4 - rgb2lcd_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- opnendv.com:user:rgb2ycbcr:1.0 - rgb2ycbcr_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /ov5640_capture_data_0/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /rgb2lcd_0/vid_rst(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /rgb2ycbcr_0/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rgb2ycbcr_0/ycbcbr_clken(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+Successfully read diagram <design_1> from BD file <F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd>
+set_property  ip_repo_paths  f:/lfas/edge/23_ov5640_lcd/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/lfas/edge/23_ov5640_lcd/ip_repo'.
+set_property  ip_repo_paths  {f:/lfas/edge/23_ov5640_lcd/ip_repo F:/lfas/finish/PS/ov5640_gray_lcd/ip_repo/rgb2ycbcr} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/lfas/edge/23_ov5640_lcd/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/lfas/finish/PS/ov5640_gray_lcd/ip_repo/rgb2ycbcr'.
+startgroup
+create_bd_cell -type ip -vlnv opnendv.com:user:rgb2ycbcr:1.0 rgb2ycbcr_1
+endgroup
+delete_bd_objs [get_bd_nets ov5640_capture_data_0_cmos_frame_ce] [get_bd_nets rgb2ycbcr_0_ycbcbr_clken] [get_bd_intf_nets ov5640_capture_data_0_cmos_rgb] [get_bd_intf_nets rgb2ycbcr_0_pos_image] [get_bd_cells rgb2ycbcr_0]
+set_property location {2.5 747 803} [get_bd_cells rgb2ycbcr_1]
+set_property location {2 728 716} [get_bd_cells rgb2ycbcr_1]
+connect_bd_intf_net [get_bd_intf_pins ov5640_capture_data_0/cmos_rgb] [get_bd_intf_pins rgb2ycbcr_1/pre_image]
+connect_bd_net [get_bd_pins ov5640_capture_data_0/cmos_frame_ce] [get_bd_pins rgb2ycbcr_1/rgb_clken]
+connect_bd_net [get_bd_pins rgb2ycbcr_1/clk] [get_bd_pins ov5640_capture_data_0/cmos_frame_clk]
+connect_bd_net [get_bd_pins rgb2ycbcr_1/rst_n] [get_bd_pins axi_dynclk_0/LOCKED_O]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /rgb2ycbcr_1/rst_n(rst)
+connect_bd_intf_net [get_bd_intf_pins rgb2ycbcr_1/pos_image] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in]
+connect_bd_net [get_bd_pins rgb2ycbcr_1/ycbcbr_clken] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rgb2ycbcr_1/ycbcbr_clken(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov5640_capture_data_0/cmos_frame_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov5640_capture_data_0_1_cmos_frame_clk 
+WARNING: [BD 41-927] Following properties on pin /rgb2lcd_0/pixel_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /rgb2ycbcr_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov5640_capture_data_0_1_cmos_frame_clk 
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2608.570 ; gain = 0.000
+generate_target all [get_files  F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <F:\lfas\finish\PS\ov5640_gray_lcd\ov5640_gray_lcd.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2lcd_0 .
+Exporting to file f:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov5640_capture_data_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2ycbcr_1 .
+Exporting to file F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2608.570 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = aa7367fc6e3ee86d; cache size = 1.416 MB.
+catch { config_ip_cache -export [get_ips -all design_1_rgb2ycbcr_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rgb2ycbcr_1_0, cache-ID = cd1e1c174a546d54; cache size = 1.416 MB.
+export_ip_user_files -of_objects [get_files F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.ip_user_files/sim_scripts -ip_user_files_dir F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.ip_user_files -ipstatic_source_dir F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.cache/compile_simlib/modelsim} {questa=F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.cache/compile_simlib/questa} {riviera=F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.cache/compile_simlib/riviera} {activehdl=F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan 16 20:06:35 2020] Launched synth_1...
+Run output will be captured here: F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.runs/synth_1/runme.log
+[Thu Jan 16 20:06:35 2020] Launched impl_1...
+Run output will be captured here: F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.runs/impl_1/runme.log
+file copy -force F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.runs/impl_1/design_1_wrapper.sysdef F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.runs/impl_1/design_1_wrapper.sysdef F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.runs/impl_1/design_1_wrapper.sysdef F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk
+file copy -force F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.runs/impl_1/design_1_wrapper.sysdef F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk -hwspec F:/lfas/finish/PS/ov5640_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 16 20:23:18 2020...

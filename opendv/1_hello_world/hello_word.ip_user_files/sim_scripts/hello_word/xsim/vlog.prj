@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../../hello_word.srcs/sources_1/bd/hello_word/ipshared/ec67/hdl" --include "../../../../hello_word.srcs/sources_1/bd/hello_word/ipshared/70cf/hdl" --include "../../../../hello_word.srcs/sources_1/bd/hello_word/ip/hello_word_processing_system7_0_0" \
+"../../../bd/hello_word/ip/hello_word_processing_system7_0_0/sim/hello_word_processing_system7_0_0.v" \
+"../../../bd/hello_word/sim/hello_word.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

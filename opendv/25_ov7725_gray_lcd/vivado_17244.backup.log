@@ -1,0 +1,791 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 23 15:57:52 2020
+# Process ID: 17244
+# Current directory: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17020 C:\a_max\max\xlinx\opendv\25_ov7725_gray_lcd\ov5640_gray_lcd.xpr
+# Log file: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/vivado.log
+# Journal file: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.xpr
+INFO: [Project 1-313] Project file moved from 'E:/PS/ov5640_gray_lcd' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/lfas/edge/23_ov5640_lcd/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/lfas/edge/23_ov5640_lcd/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ip_repo/rgb2ycbcr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vivado/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_dynclk_0_0
+design_1_rgb2lcd_0_0
+design_1_ov5640_capture_data_0_1
+
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 908.109 ; gain = 283.000
+update_compile_order -fileset sources_1
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1921.133 ; gain = 5.270
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1921.133 ; gain = 5.270
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1921.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 134 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 26 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 107 instances
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:49 ; elapsed = 00:00:34 . Memory (MB): peak = 2057.449 ; gain = 705.207
+open_report: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2106.680 ; gain = 49.230
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_dynclk_0_0/design_1_axi_dynclk_0_0.dcp' for cell 'design_1_i/axi_dynclk_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.dcp' for cell 'design_1_i/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_ov5640_capture_data_0_1/design_1_ov5640_capture_data_0_1.dcp' for cell 'design_1_i/ov5640_capture_data_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rgb2lcd_0_0/design_1_rgb2lcd_0_0.dcp' for cell 'design_1_i/rgb2lcd_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rgb2ycbcr_1_0/design_1_rgb2ycbcr_1_0.dcp' for cell 'design_1_i/rgb2ycbcr_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.dcp' for cell 'design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.dcp' for cell 'design_1_i/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.dcp' for cell 'design_1_i/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0.dcp' for cell 'design_1_i/v_vid_in_axi4s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 728 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_i/axi_vdma_0/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_i/axi_vdma_0/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'design_1_i/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'design_1_i/v_vid_in_axi4s_0/inst'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/v_tc_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/v_tc_0/U0'
+Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/v_axi4s_vid_out_0/inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_REMAP_OVERFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_REMAP_OVERFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_RESET_PULSE_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_RESET_PULSE_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/vivado/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2523.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 219 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 26 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 186 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 2524.965 ; gain = 284.590
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2528.285 ; gain = 0.000
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "DONT_CARE" } ]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "DONT_CARE" }'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "DONT_CARE" } ]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "DONT_CARE" }'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: xilinx.com:user:lcd_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'xilinx.com:user:lcd_rtl:1.0', cannot be found. Interface port: 'lcd' cannot be created
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- alientek.com:user:rgb2lcd:1.4 - rgb2lcd_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: lcd 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: lcd 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: lcd 
+Adding cell -- opnendv.com:user:rgb2ycbcr:1.0 - rgb2ycbcr_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+CRITICAL WARNING: [BD 41-2161] Unable to find interface <lcd> in cell <> while setting up interface connections during loading of BD file.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /ov5640_capture_data_0/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /rgb2lcd_0/vid_rst(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /rgb2ycbcr_1/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rgb2ycbcr_1/ycbcbr_clken(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+Successfully read diagram <design_1> from BD file <C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2843.605 ; gain = 15.402
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Apr 23 17:09:48 2020
+| Host         : DESKTOP-VCDROVB running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 40 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                    | Status                  | Recommendation               | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                  |                         |                              | Log       |                    | Version |               | License    |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_dynclk_0_0          | IP definition not found | Add IP definition to catalog | Change    | axi_dynclk         | 1.0     | N/A           | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 4)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_gpio_0_0            | Up-to-date              | No changes required          |  *(1)     | AXI GPIO           | 2.0     | 2.0 (Rev. 20) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 20)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_smc_0               | Up-to-date              | No changes required          |  *(2)     | AXI SmartConnect   | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_vdma_0_0            | Up-to-date              | No changes required          |  *(3)     | AXI Video Direct   | 6.3     | 6.3 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Memory Access      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_ov5640_capture_data_0_1 | IP definition not found | Add IP definition to catalog | Change    | ov5640_capture_dat | 1.0     | N/A           | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 3)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_processing_system7_0_0  | Up-to-date              | No changes required          |  *(4)     | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | System             | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_ps7_0_axi_periph_0      | Up-to-date              | No changes required          |  *(5)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 19) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 19)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rgb2lcd_0_0             | IP definition not found | Add IP definition to catalog | Change    | rgb2lcd            | 1.4     | N/A           | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rgb2ycbcr_1_0           | Up-to-date              | No changes required          | Change    | rgb2ycbcr_v1_0     | 1.0     | 1.0 (Rev. 1)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 1)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rst_ps7_0_50M_0         | Up-to-date              | No changes required          |  *(6)     | Processor System   | 5.0     | 5.0 (Rev. 13) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Reset              | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 13)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_v_axi4s_vid_out_0_0     | Up-to-date              | No changes required          |  *(7)     | AXI4-Stream to     | 4.0     | 4.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Video Out          | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_v_tc_0_0                | Up-to-date              | No changes required          |  *(8)     | Video Timing       | 6.1     | 6.1 (Rev. 13) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Controller         | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 13)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_v_vid_in_axi4s_0_0      | Up-to-date              | No changes required          |  *(9)     | Video In to        | 4.0     | 4.0 (Rev. 9)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | AXI4-Stream        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 9)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_arsw_0                   | Up-to-date              | No changes required          |  *(10)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_awsw_0                   | Up-to-date              | No changes required          |  *(11)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_bsw_0                    | Up-to-date              | No changes required          |  *(12)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00arn_0                 | Up-to-date              | No changes required          |  *(13)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00awn_0                 | Up-to-date              | No changes required          |  *(14)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00bn_0                  | Up-to-date              | No changes required          |  *(15)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00e_0                   | Up-to-date              | No changes required          |  *(16)    | SC EXIT            | 1.0     | 1.0 (Rev. 8)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 8)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00rn_0                  | Up-to-date              | No changes required          |  *(17)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00s2a_0                 | Up-to-date              | No changes required          |  *(18)    | SmartConnect       | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | SC2AXI Bridge      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00wn_0                  | Up-to-date              | No changes required          |  *(19)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_one_0                    | Up-to-date              | No changes required          |  *(20)    | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 5)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_psr_aclk_0               | Up-to-date              | No changes required          |  *(21)    | Processor System   | 5.0     | 5.0 (Rev. 13) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Reset              | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 13)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_rsw_0                    | Up-to-date              | No changes required          |  *(22)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00a2s_0                 | Up-to-date              | No changes required          |  *(23)    | SmartConnect       | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | AXI2SC Bridge      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00mmu_0                 | Up-to-date              | No changes required          |  *(24)    | SC MMU             | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00sic_0                 | Up-to-date              | No changes required          |  *(25)    | SC SI_CONVERTER    | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00tr_0                  | Up-to-date              | No changes required          |  *(26)    | SC                 | 1.0     | 1.0 (Rev. 8)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | TRANSACTION_REGULA | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 8)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01a2s_0                 | Up-to-date              | No changes required          |  *(27)    | SmartConnect       | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | AXI2SC Bridge      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01mmu_0                 | Up-to-date              | No changes required          |  *(28)    | SC MMU             | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01sic_0                 | Up-to-date              | No changes required          |  *(29)    | SC SI_CONVERTER    | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01tr_0                  | Up-to-date              | No changes required          |  *(30)    | SC                 | 1.0     | 1.0 (Rev. 8)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | TRANSACTION_REGULA | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 8)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_sarn_0                   | Up-to-date              | No changes required          |  *(31)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_sawn_0                   | Up-to-date              | No changes required          |  *(32)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_sbn_0                    | Up-to-date              | No changes required          |  *(33)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_srn_0                    | Up-to-date              | No changes required          |  *(34)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_swn_0                    | Up-to-date              | No changes required          |  *(35)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_wsw_0                    | Up-to-date              | No changes required          |  *(36)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) c:/vivado/Vivado/2018.3/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(2) c:/vivado/Vivado/2018.3/data/ip/xilinx/smartconnect_v1_0/doc/smartconnect_v1_0_changelog.txt
+*(3) c:/vivado/Vivado/2018.3/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(4) c:/vivado/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(5) c:/vivado/Vivado/2018.3/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(6) c:/vivado/Vivado/2018.3/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(7) c:/vivado/Vivado/2018.3/data/ip/xilinx/v_axi4s_vid_out_v4_0/doc/v_axi4s_vid_out_v4_0_changelog.txt
+*(8) c:/vivado/Vivado/2018.3/data/ip/xilinx/v_tc_v6_1/doc/v_tc_v6_1_changelog.txt
+*(9) c:/vivado/Vivado/2018.3/data/ip/xilinx/v_vid_in_axi4s_v4_0/doc/v_vid_in_axi4s_v4_0_changelog.txt
+*(10) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(11) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(12) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(13) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(14) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(15) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(16) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_exit_v1_0/doc/sc_exit_v1_0_changelog.txt
+*(17) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(18) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_sc2axi_v1_0/doc/sc_sc2axi_v1_0_changelog.txt
+*(19) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(20) c:/vivado/Vivado/2018.3/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(21) c:/vivado/Vivado/2018.3/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(22) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(23) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_axi2sc_v1_0/doc/sc_axi2sc_v1_0_changelog.txt
+*(24) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_mmu_v1_0/doc/sc_mmu_v1_0_changelog.txt
+*(25) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_si_converter_v1_0/doc/sc_si_converter_v1_0_changelog.txt
+*(26) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_transaction_regulator_v1_0/doc/sc_transaction_regulator_v1_0_changelog.txt
+*(27) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_axi2sc_v1_0/doc/sc_axi2sc_v1_0_changelog.txt
+*(28) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_mmu_v1_0/doc/sc_mmu_v1_0_changelog.txt
+*(29) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_si_converter_v1_0/doc/sc_si_converter_v1_0_changelog.txt
+*(30) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_transaction_regulator_v1_0/doc/sc_transaction_regulator_v1_0_changelog.txt
+*(31) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(32) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(33) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(34) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(35) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(36) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+
+
+report_ip_status
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Apr 23 17:10:15 2020
+| Host         : DESKTOP-VCDROVB running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 40 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                    | Status                  | Recommendation               | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                  |                         |                              | Log       |                    | Version |               | License    |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_dynclk_0_0          | IP definition not found | Add IP definition to catalog | Change    | axi_dynclk         | 1.0     | N/A           | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 4)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_gpio_0_0            | Up-to-date              | No changes required          |  *(1)     | AXI GPIO           | 2.0     | 2.0 (Rev. 20) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 20)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_smc_0               | Up-to-date              | No changes required          |  *(2)     | AXI SmartConnect   | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_vdma_0_0            | Up-to-date              | No changes required          |  *(3)     | AXI Video Direct   | 6.3     | 6.3 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Memory Access      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_ov5640_capture_data_0_1 | IP definition not found | Add IP definition to catalog | Change    | ov5640_capture_dat | 1.0     | N/A           | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 3)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_processing_system7_0_0  | Up-to-date              | No changes required          |  *(4)     | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | System             | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_ps7_0_axi_periph_0      | Up-to-date              | No changes required          |  *(5)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 19) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 19)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rgb2lcd_0_0             | IP definition not found | Add IP definition to catalog | Change    | rgb2lcd            | 1.4     | N/A           | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rgb2ycbcr_1_0           | Up-to-date              | No changes required          | Change    | rgb2ycbcr_v1_0     | 1.0     | 1.0 (Rev. 1)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              | available |                    | 1)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rst_ps7_0_50M_0         | Up-to-date              | No changes required          |  *(6)     | Processor System   | 5.0     | 5.0 (Rev. 13) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Reset              | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 13)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_v_axi4s_vid_out_0_0     | Up-to-date              | No changes required          |  *(7)     | AXI4-Stream to     | 4.0     | 4.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Video Out          | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_v_tc_0_0                | Up-to-date              | No changes required          |  *(8)     | Video Timing       | 6.1     | 6.1 (Rev. 13) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Controller         | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 13)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_v_vid_in_axi4s_0_0      | Up-to-date              | No changes required          |  *(9)     | Video In to        | 4.0     | 4.0 (Rev. 9)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | AXI4-Stream        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 9)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_arsw_0                   | Up-to-date              | No changes required          |  *(10)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_awsw_0                   | Up-to-date              | No changes required          |  *(11)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_bsw_0                    | Up-to-date              | No changes required          |  *(12)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00arn_0                 | Up-to-date              | No changes required          |  *(13)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00awn_0                 | Up-to-date              | No changes required          |  *(14)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00bn_0                  | Up-to-date              | No changes required          |  *(15)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00e_0                   | Up-to-date              | No changes required          |  *(16)    | SC EXIT            | 1.0     | 1.0 (Rev. 8)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 8)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00rn_0                  | Up-to-date              | No changes required          |  *(17)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00s2a_0                 | Up-to-date              | No changes required          |  *(18)    | SmartConnect       | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | SC2AXI Bridge      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_m00wn_0                  | Up-to-date              | No changes required          |  *(19)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_one_0                    | Up-to-date              | No changes required          |  *(20)    | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 5)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_psr_aclk_0               | Up-to-date              | No changes required          |  *(21)    | Processor System   | 5.0     | 5.0 (Rev. 13) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Reset              | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 13)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_rsw_0                    | Up-to-date              | No changes required          |  *(22)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00a2s_0                 | Up-to-date              | No changes required          |  *(23)    | SmartConnect       | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | AXI2SC Bridge      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00mmu_0                 | Up-to-date              | No changes required          |  *(24)    | SC MMU             | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00sic_0                 | Up-to-date              | No changes required          |  *(25)    | SC SI_CONVERTER    | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s00tr_0                  | Up-to-date              | No changes required          |  *(26)    | SC                 | 1.0     | 1.0 (Rev. 8)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | TRANSACTION_REGULA | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 8)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01a2s_0                 | Up-to-date              | No changes required          |  *(27)    | SmartConnect       | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | AXI2SC Bridge      | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01mmu_0                 | Up-to-date              | No changes required          |  *(28)    | SC MMU             | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01sic_0                 | Up-to-date              | No changes required          |  *(29)    | SC SI_CONVERTER    | 1.0     | 1.0 (Rev. 7)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 7)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_s01tr_0                  | Up-to-date              | No changes required          |  *(30)    | SC                 | 1.0     | 1.0 (Rev. 8)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | TRANSACTION_REGULA | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 8)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_sarn_0                   | Up-to-date              | No changes required          |  *(31)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_sawn_0                   | Up-to-date              | No changes required          |  *(32)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_sbn_0                    | Up-to-date              | No changes required          |  *(33)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_srn_0                    | Up-to-date              | No changes required          |  *(34)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_swn_0                    | Up-to-date              | No changes required          |  *(35)    | SmartConnect Node  | 1.0     | 1.0 (Rev. 10) | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           |                    | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 10)     |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_afc3_wsw_0                    | Up-to-date              | No changes required          |  *(36)    | SmartConnect       | 1.0     | 1.0 (Rev. 6)  | Included   | xc7z010clg400-1      |
+|                                  |                         |                              |           | Switchboard        | (Rev.   |               |            |                      |
+|                                  |                         |                              |           |                    | 6)      |               |            |                      |
++----------------------------------+-------------------------+------------------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) c:/vivado/Vivado/2018.3/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(2) c:/vivado/Vivado/2018.3/data/ip/xilinx/smartconnect_v1_0/doc/smartconnect_v1_0_changelog.txt
+*(3) c:/vivado/Vivado/2018.3/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(4) c:/vivado/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(5) c:/vivado/Vivado/2018.3/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(6) c:/vivado/Vivado/2018.3/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(7) c:/vivado/Vivado/2018.3/data/ip/xilinx/v_axi4s_vid_out_v4_0/doc/v_axi4s_vid_out_v4_0_changelog.txt
+*(8) c:/vivado/Vivado/2018.3/data/ip/xilinx/v_tc_v6_1/doc/v_tc_v6_1_changelog.txt
+*(9) c:/vivado/Vivado/2018.3/data/ip/xilinx/v_vid_in_axi4s_v4_0/doc/v_vid_in_axi4s_v4_0_changelog.txt
+*(10) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(11) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(12) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(13) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(14) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(15) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(16) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_exit_v1_0/doc/sc_exit_v1_0_changelog.txt
+*(17) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(18) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_sc2axi_v1_0/doc/sc_sc2axi_v1_0_changelog.txt
+*(19) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(20) c:/vivado/Vivado/2018.3/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(21) c:/vivado/Vivado/2018.3/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(22) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+*(23) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_axi2sc_v1_0/doc/sc_axi2sc_v1_0_changelog.txt
+*(24) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_mmu_v1_0/doc/sc_mmu_v1_0_changelog.txt
+*(25) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_si_converter_v1_0/doc/sc_si_converter_v1_0_changelog.txt
+*(26) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_transaction_regulator_v1_0/doc/sc_transaction_regulator_v1_0_changelog.txt
+*(27) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_axi2sc_v1_0/doc/sc_axi2sc_v1_0_changelog.txt
+*(28) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_mmu_v1_0/doc/sc_mmu_v1_0_changelog.txt
+*(29) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_si_converter_v1_0/doc/sc_si_converter_v1_0_changelog.txt
+*(30) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_transaction_regulator_v1_0/doc/sc_transaction_regulator_v1_0_changelog.txt
+*(31) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(32) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(33) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(34) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(35) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_node_v1_0/doc/sc_node_v1_0_changelog.txt
+*(36) c:/vivado/Vivado/2018.3/data/ip/xilinx/sc_switchboard_v1_0/doc/sc_switchboard_v1_0_changelog.txt
+
+
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 18:46:10 2020...

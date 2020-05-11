@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Apr 12 14:33:12 2020
+# Process ID: 13764
+# Log file: C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/planAhead_run_1/planAhead.log
+# Journal file: C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P59 [get_ports scl]
+endgroup
+startgroup
+set_property package_pin P83 [get_ports cs_n]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports so]
+endgroup
+save_constraints

@@ -1,0 +1,20 @@
+[Inputs]
+sys_clk
+sys_rst_n
+cs_n
+scl
+si
+init_clock_pulses_flag
+init_endat_versions_flag
+position_compen_flag
+=MRS_para_clock_pulses[7:0]=
+=endat_versions[7:0]=
+=error_data[1:0]=
+=position_compen[24:0]=
+=position_value_crc[4:0]=
+[Outputs]
+so
+[BiDir]
+[ATTRIBUTES]
+VeriModel spi_slave
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Navigator/Nav_code_7010__PS/ov7725_hdmi_sobel/ov7725_hdmi_sobel.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="144417fs"></ZoomStartTime>
+      <ZoomEndTime time="686418fs"></ZoomEndTime>
+      <Cursor1Time time="262000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="226"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/clken" type="logic">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/clken</obj_property>
+      <obj_property name="ObjectShortName">clken</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/per_frame_href" type="logic">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/per_frame_href</obj_property>
+      <obj_property name="ObjectShortName">per_frame_href</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftin" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftin[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider18">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFFFFF</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/clken_d" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/clken_d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clken_d[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">clk_en_d[3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_raddr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d1" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_raddr_d1[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d0" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_raddr_d0[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider20">
+      <obj_property name="label">New Divider 2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFFFFF</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/clken_d[2]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+      <obj_property name="label">clk_en_d[2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d2" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_raddr_d2[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftin_d0" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftin_d0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftin_d0[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftin_d1" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftin_d1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftin_d1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">taps0x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider19">
+      <obj_property name="label">New Divider 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFFFFF</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x_d0" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x_d0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">taps0x_d0[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x_d1" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x_d1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">taps0x_d1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x_d2" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps0x_d2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">taps0x_d2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/clken_d[3]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">[3]</obj_property>
+      <obj_property name="label">clk_en_d[3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d3" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/ram_raddr_d3[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_raddr_d3[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps1x" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/taps1x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">taps1x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider27">
+      <obj_property name="label">New Divider 3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFFFFF</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftout" type="array">
+      <obj_property name="ElementShortName">design_1_i/VIP_Sobel_Edge_Detec_0/inst/u_VIP_Matrix_Generate_3X3_8Bit/u_Line_Shift_RAM_8Bit/shiftout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

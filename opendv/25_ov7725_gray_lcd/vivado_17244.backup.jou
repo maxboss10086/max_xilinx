@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 23 15:57:52 2020
+# Process ID: 17244
+# Current directory: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17020 C:\a_max\max\xlinx\opendv\25_ov7725_gray_lcd\ov5640_gray_lcd.xpr
+# Log file: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/vivado.log
+# Journal file: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.xpr
+update_compile_order -fileset sources_1
+open_run impl_2
+open_run synth_2 -name synth_2
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "DONT_CARE" } ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "DONT_CARE" } ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status
+report_ip_status
+report_ip_status -name ip_status 

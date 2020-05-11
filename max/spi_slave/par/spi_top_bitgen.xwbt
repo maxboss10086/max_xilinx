@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\a_max\davy_DSP_FPGA\FPGA_endat\spi_slave\par\spi_top.ncd
+OUTFILE=C:\a_max\davy_DSP_FPGA\FPGA_endat\spi_slave\par\spi_top.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4vq100
+WORKINGDIR=C:\a_max\davy_DSP_FPGA\FPGA_endat\spi_slave\par
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

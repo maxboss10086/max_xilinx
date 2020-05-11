@@ -1,0 +1,31 @@
+Release 14.7 ngcbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild.exe -dd
+C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/_ngo -p xc3s50a-vq100-4 -i
+C:\a_max\davy_DSP_FPGA\FPGA_endat\spi_slave\par\spi_top.ngc
+C:\a_max\davy_DSP_FPGA\FPGA_endat\spi_slave\par\spi_top_cs.ngc
+
+Reading NGO file "C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_top.ngc"
+...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 144512 kilobytes
+
+Writing NGC file
+"C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_top_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file
+"C:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/par/spi_top_cs.blc"...

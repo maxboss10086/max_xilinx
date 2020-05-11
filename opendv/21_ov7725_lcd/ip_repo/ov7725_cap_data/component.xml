@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>alientek.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>ov7725_capture_data</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>cam_rst_n</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>cam_rst_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CAM_RST_N.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>rst_n</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST_N.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>cmos_frame_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>cmos_frame_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>cmos_rgb</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="vid_io_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>cmos_data</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ACTIVE_VIDEO</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>cmos_active_video</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>VSYNC</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>cmos_vsync</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>ov7725_capture_data</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ed7c95d7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>ov7725_capture_data</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ed7c95d7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>rst_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cam_pclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cam_vsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cam_href</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cam_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cam_rst_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cam_sgm_ctrl</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_frame_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_frame_ce</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_vsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_active_video</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">23</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/ov7725_capture_data.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_ed7c95d7</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/ov7725_capture_data.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/ov7725_capture_data_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>ov7725_capture_data_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">ov7725_capture_data_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>ov7725_capture_data_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:ov7725_capture_data:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2019-10-15T09:05:30Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0cc07c_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ed02bec_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a91b7aa_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd3219a_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c114c7_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@429834dc_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c7f1b2b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1606457b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@611cf6eb_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23f27214_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a1da2c7_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@480e2498_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1002292_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@293b30cc_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69fc0a18_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f651d69_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40763526_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c786ac1_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f260cba_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a997dd9_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c2bf2eb_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71be8a7d_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a69e0c3_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b0b535_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160389c8_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2013bc6e_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57da97e7_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cff716_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3858ecd1_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ec3779_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c25f91b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa60c84_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@542350b3_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24d3c9f9_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f8ef7b7_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7383849a_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9b795d6_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_hdmi/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@476b98fb_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10850e57_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c458ff8_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@be1588c_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6917baa_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bf0f80d_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cce9d67_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b91a991_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bf6aa32_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4324825b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13b7765b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6463930b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a04acba_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370b9d33_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e95efc4_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cf88436_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32e8d439_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438807bd_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@435836d4_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51efacf1_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7462dad0_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67f9089b_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30586354_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2607f91a_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@679ef797_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ac1274c_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fdbb37_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cf5bda6_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ed8ab5_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1adde875_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3012c9a8_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73a7adc4_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@529593c9_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@255c8dee_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd_07081417/ip_repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e3043c6_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e04163_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d246dce_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b17fe8_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29f1001e_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c754294_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@252de2f1_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d9a352d_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9249bde_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f87a75_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46c8ed17_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b40db53_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21810cb9_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26e03571_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3401511f_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dfbed57_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@509f6eb6_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@121098b5_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e4d1ee7_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f7ea274_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f8baa38_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41f0d2a1_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41bc207a_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76eba201_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@249ceb9d_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5025d0c0_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fc1c25a_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@471fd356_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5341f2b3_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@474510a_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78729982_ARCHIVE_LOCATION">e:/Navigator/Nav_code_7010__PS/ov7725_rgb565_lcd__07100957/repo/ip/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@171e69b_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e7767c6_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d02d774_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d211456_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3193e5ff_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d56d547_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40243023_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@357561dd_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41370b5_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f756af5_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44a6e2cc_ARCHIVE_LOCATION">f:/ZYNQ/Embedded_System/ov7725_lcd/ip_repo/ov7725_cap_data</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="98964a41"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b67dfe70"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0279e452"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8b111fe4"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,3 @@
+MODULE divi_top
+	SUBMODULE divi
+		INSTANCE XLXI_1

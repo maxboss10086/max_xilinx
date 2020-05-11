@@ -1,0 +1,12 @@
+/*
+ * main.c
+ *
+ *  Created on: 2020Äê4ÔÂ23ÈÕ
+ *      Author: 57315
+ */
+int main(){
+	printf("Hello,word/n");
+	return 0;
+
+}
+

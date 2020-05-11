@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\a_max\max\xlinx\max\PWM\par//PWM -x xcf32p -ver 0 C:/a_max/max/xlinx/max/PWM/par/pwm_led_top.bit 
+
+PROM C:\a_max\max\xlinx\max\PWM\par\PWM.prm map: Mon Apr 20 10:38:43 2020
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 20169dc4
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    001f:cb9b     Apr 20 10:29:32 2020 C:/a_max/max/xlinx/max/PWM/par/pwm_led_top.bit

@@ -1,0 +1,2 @@
+verilog work "../rtl/pwm_led.v"
+verilog work "../rtl/pwm_led_top.v"

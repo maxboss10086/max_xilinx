@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\a_max\max\xlinx\max\PWM\par\pwm_led_top.ncd
+OUTFILE=C:\a_max\max\xlinx\max\PWM\par\pwm_led_top.bit
+FAMILY=Zynq
+PART=xc7z010-1clg400
+WORKINGDIR=C:\a_max\max\xlinx\max\PWM\par
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

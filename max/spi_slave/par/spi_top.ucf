@@ -1,0 +1,10 @@
+
+
+NET "scl" LOC = P59;
+NET "cs_n" LOC = P83;
+NET "so" LOC = P48;
+
+# PlanAhead Generated physical constraints 
+
+NET "si" LOC = P56;
+NET "sys_clk" LOC = P43;

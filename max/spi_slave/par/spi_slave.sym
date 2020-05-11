@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="spi_slave">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-4-12T6:24:6</timestamp>
+    <attr value="spi_slave" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-800" name="sys_clk" />
+    <pin polarity="Input" x="0" y="-736" name="sys_rst_n" />
+    <pin polarity="Input" x="0" y="-672" name="cs_n" />
+    <pin polarity="Input" x="0" y="-608" name="scl" />
+    <pin polarity="Input" x="0" y="-544" name="si" />
+    <pin polarity="Input" x="0" y="-480" name="init_clock_pulses_flag" />
+    <pin polarity="Input" x="0" y="-416" name="init_endat_versions_flag" />
+    <pin polarity="Input" x="0" y="-352" name="position_compen_flag" />
+    <pin polarity="Input" x="0" y="-288" name="MRS_para_clock_pulses(7:0)" />
+    <pin polarity="Input" x="0" y="-224" name="endat_versions(7:0)" />
+    <pin polarity="Input" x="0" y="-160" name="error_data(1:0)" />
+    <pin polarity="Input" x="0" y="-96" name="position_compen(24:0)" />
+    <pin polarity="Input" x="0" y="-32" name="position_value_crc(4:0)" />
+    <pin polarity="Output" x="480" y="-800" name="so" />
+    <graph>
+        <rect width="352" x="64" y="-832" height="832" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="240" y="-840" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-800" type="pin sys_clk" />
+        <line x2="0" y1="-800" y2="-800" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-736" type="pin sys_rst_n" />
+        <line x2="0" y1="-736" y2="-736" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-672" type="pin cs_n" />
+        <line x2="0" y1="-672" y2="-672" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin scl" />
+        <line x2="0" y1="-608" y2="-608" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin si" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin init_clock_pulses_flag" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin init_endat_versions_flag" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin position_compen_flag" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin MRS_para_clock_pulses(7:0)" />
+        <rect width="64" x="0" y="-300" height="24" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin endat_versions(7:0)" />
+        <rect width="64" x="0" y="-236" height="24" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin error_data(1:0)" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin position_compen(24:0)" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin position_value_crc(4:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-800" type="pin so" />
+        <line x2="480" y1="-800" y2="-800" x1="416" />
+    </graph>
+</symbol>

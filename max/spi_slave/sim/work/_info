@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/a_max/davy_DSP_FPGA/FPGA_endat/endat_master/sim
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+vspi_slave
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+IEe>Z_XK@2R_ASHzgnka>L3
+Z1 dC:/a_max/davy_DSP_FPGA/FPGA_endat/spi_slave/sim
+w1588819620
+8./../rtl/spi_slave.v
+F./../rtl/spi_slave.v
+L0 16
+Z2 OL;L;10.2c;57
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s90 -reportprogress|300|./../rtl/spi_slave.v|
+!i10b 1
+!s100 jeAi^@NUXZeGEgCZID?hG1
+!s108 1588819632.812000
+!s107 ./../rtl/spi_slave.v|
+!i111 0
+vtb_spi_slave
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+31
+I]HhaEDZan=KYEhC9b:BPO2
+R1
+w1588814864
+8./tb_spi_slave.v
+F./tb_spi_slave.v
+L0 30
+R2
+R3
+!s85 0
+!s100 NI3>T8PO@eZ70gffUB9QT2
+!s90 -reportprogress|300|./tb_spi_slave.v|
+!s108 1588819632.727000
+!s107 ./tb_spi_slave.v|
+!i10b 1
+!i111 0

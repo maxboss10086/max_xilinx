@@ -1,0 +1,2 @@
+verilog work "../rtl/spi_slave.v"
+verilog work "spi_top.vf"

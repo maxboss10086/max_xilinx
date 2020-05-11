@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 19 14:03:02 2020
+# Process ID: 3688
+# Current directory: E:/25_ov7725_hdmi_sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7804 E:\25_ov7725_hdmi_sobel\ov7725_hdmi_sobel.xpr
+# Log file: E:/25_ov7725_hdmi_sobel/vivado.log
+# Journal file: E:/25_ov7725_hdmi_sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Navigator/Nav_code_7020__PS/1013/ov7725_hdmi_sobel_1013' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/25_ov7725_hdmi_sobel/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 825.066 ; gain = 230.277
+update_compile_order -fileset sources_1
+open_bd_design {E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- openedv.com:user:DVI_Transmitter:1.0 - DVI_Transmitter_0
+Adding cell -- alientek.com:user:VIP_sobel_edge_detector:1.0 - VIP_sobel_edge_detec_0
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding cell -- alientek.com:user:ov7725_capture_data:1.0 - ov7725_capture_data_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /DVI_Transmitter_0/reset_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /VIP_sobel_edge_detec_0/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /ov7725_capture_data_1/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /VIP_sobel_edge_detec_0/post_frame_clken(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+Successfully read diagram <design_1> from BD file <E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: e:/25_ov7725_hdmi_sobel/ip_repo/VIP_sobel_edge_detector/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/25_ov7725_hdmi_sobel/ip_repo'.
+report_ip_status -name ip_status
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  E:/25_ov7725_hdmi_sobel/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/25_ov7725_hdmi_sobel/ip_repo'.
+validate_bd_design -force
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+design_1_VIP_sobel_edge_detec_0_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets ov7725_capture_data_1_cmos_frame_ce] [get_bd_nets VIP_sobel_edge_detec_0_post_frame_clken] [get_bd_intf_nets ov7725_capture_data_1_cmos_rgb] [get_bd_intf_nets VIP_sobel_edge_detec_0_video_post_frame] [get_bd_cells VIP_sobel_edge_detec_0]
+startgroup
+create_bd_cell -type ip -vlnv opnendv.com:user:obel_edge_detector:1.0 obel_edge_detector_0
+endgroup
+set_property location {3 744 893} [get_bd_cells obel_edge_detector_0]
+connect_bd_net [get_bd_pins obel_edge_detector_0/per_frame_clken] [get_bd_pins ov7725_capture_data_1/cmos_frame_ce]
+connect_bd_net [get_bd_pins obel_edge_detector_0/clk] [get_bd_pins ov7725_capture_data_1/cam_sgm_ctrl]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ov7725_capture_data_1/cam_sgm_ctrl(undef) and /obel_edge_detector_0/clk(clk)
+connect_bd_intf_net [get_bd_intf_pins obel_edge_detector_0/pre_image] [get_bd_intf_pins ov7725_capture_data_1/cmos_rgb]
+set_property location {2 711 900} [get_bd_cells obel_edge_detector_0]
+set_property location {2 712 885} [get_bd_cells obel_edge_detector_0]
+connect_bd_intf_net [get_bd_intf_pins obel_edge_detector_0/pos_image] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in]
+connect_bd_net [get_bd_pins obel_edge_detector_0/post_frame_clken] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /obel_edge_detector_0/post_frame_clken(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+connect_bd_net [get_bd_pins obel_edge_detector_0/rst_n] [get_bd_pins axi_dynclk_0/LOCKED_O]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /obel_edge_detector_0/rst_n(rst)
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk_x5 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov7725_capture_data_1/cmos_frame_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov7725_capture_data_1_0_cmos_frame_clk 
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2167.988 ; gain = 0.000
+report_ip_status -name ip_status 
+validate_bd_design -force
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk_x5 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov7725_capture_data_1/cmos_frame_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov7725_capture_data_1_0_cmos_frame_clk 
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2167.988 ; gain = 0.000
+report_ip_status -name ip_status 
+generate_target all [get_files  E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\25_ov7725_hdmi_sobel\ov7725_hdmi_sobel.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+Exporting to file e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DVI_Transmitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7725_capture_data_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [BD 41-1029] Generation completed for the IP Integrator block obel_edge_detector_0 .
+Exporting to file E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2167.988 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_obel_edge_detector_0_0] }
+export_ip_user_files -of_objects [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_auto_pc_0_synth_1 design_1_obel_edge_detector_0_0_synth_1}
+[Sun Jan 19 14:08:22 2020] Launched design_1_auto_pc_0_synth_1, design_1_obel_edge_detector_0_0_synth_1...
+Run output will be captured here:
+design_1_auto_pc_0_synth_1: E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_obel_edge_detector_0_0_synth_1: E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/design_1_obel_edge_detector_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files/sim_scripts -ip_user_files_dir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files -ipstatic_source_dir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/modelsim} {questa=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/questa} {riviera=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/riviera} {activehdl=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jan 19 14:09:43 2020] Launched design_1_obel_edge_detector_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_obel_edge_detector_0_0_synth_1: E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/design_1_obel_edge_detector_0_0_synth_1/runme.log
+synth_1: E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/synth_1/runme.log
+[Sun Jan 19 14:09:43 2020] Launched impl_1...
+Run output will be captured here: E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/impl_1/runme.log
+file mkdir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk
+file copy -force E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/impl_1/design_1_wrapper.sysdef E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+
+ipx::edit_ip_in_project -upgrade true -name obel_edge_detector_v1_0_project -directory E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.tmp/obel_edge_detector_v1_0_project e:/25_ov7725_hdmi_sobel/ip_repo/VIP_sobel_edge_detector/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/25_ov7725_hdmi_sobel/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/25_ov7725_hdmi_sobel/ip_repo/VIP_sobel_edge_detector/src/VIP_matrix_generate_3x3_8bit.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/25_ov7725_hdmi_sobel/ip_repo/VIP_sobel_edge_detector/src/line_shift_RAM_8bit.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/25_ov7725_hdmi_sobel/ip_repo/VIP_sobel_edge_detector/src/VIP_sobel_edge_detector.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2312.254 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path e:/25_ov7725_hdmi_sobel/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/25_ov7725_hdmi_sobel/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv opnendv.com:user:obel_edge_detector:1.0 [get_ips  design_1_obel_edge_detector_0_0] -log ip_upgrade.log
+Upgrading 'E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_obel_edge_detector_0_0 (sobel_edge_detector_v1_0 1.0) from revision 1 to revision 2
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ov7725_capture_data_1/cam_sgm_ctrl(undef) and /obel_edge_detector_0_upgraded_ipi/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /obel_edge_detector_0_upgraded_ipi/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /v_vid_in_axi4s_0/vid_io_in_ce(ce) and /obel_edge_detector_0_upgraded_ipi/post_frame_clken(undef)
+Wrote  : <E:\25_ov7725_hdmi_sobel\ov7725_hdmi_sobel.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/25_ov7725_hdmi_sobel/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_obel_edge_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk_x5 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov7725_capture_data_1/cmos_frame_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov7725_capture_data_1_0_cmos_frame_clk 
+Wrote  : <E:\25_ov7725_hdmi_sobel\ov7725_hdmi_sobel.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+Exporting to file e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DVI_Transmitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7725_capture_data_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block obel_edge_detector_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2551.152 ; gain = 55.320
+catch { config_ip_cache -export [get_ips -all design_1_obel_edge_detector_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = aa7367fc6e3ee86d; cache size = 2.556 MB.
+export_ip_user_files -of_objects [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_obel_edge_detector_0_0_synth_1
+[Sun Jan 19 14:18:29 2020] Launched design_1_obel_edge_detector_0_0_synth_1...
+Run output will be captured here: E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/design_1_obel_edge_detector_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files/sim_scripts -ip_user_files_dir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files -ipstatic_source_dir E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/modelsim} {questa=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/questa} {riviera=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/riviera} {activehdl=E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+validate_bd_design -force
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk_x5 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov7725_capture_data_1/cmos_frame_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov7725_capture_data_1_0_cmos_frame_clk 
+validate_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2551.152 ; gain = 0.000
+generate_target all [get_files  E:/25_ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\25_ov7725_hdmi_sobel\ov7725_hdmi_sobel.srcs\sources_1\bd\design_1\design_1.bd> 

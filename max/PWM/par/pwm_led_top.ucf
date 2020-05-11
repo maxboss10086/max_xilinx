@@ -1,0 +1,11 @@
+
+
+NET "led" LOC = J18;
+NET "sys_clk" LOC = U18;
+NET "sys_rst_n" LOC = J15;
+
+# PlanAhead Generated IO constraints 
+
+NET "led" IOSTANDARD = LVCMOS33;
+NET "sys_clk" IOSTANDARD = LVCMOS33;
+NET "sys_rst_n" IOSTANDARD = LVCMOS33;

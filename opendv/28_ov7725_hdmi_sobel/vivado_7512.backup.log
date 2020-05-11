@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 23 10:08:05 2019
+# Process ID: 7512
+# Current directory: F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8132 F:\ZYNQ\Embedded_System\ov7725_hdmi_sobel\ov7725_hdmi_sobel.xpr
+# Log file: F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/vivado.log
+# Journal file: F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Navigator/Nav_code_7020__PS/1013/ov7725_hdmi_sobel_1013' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 841.273 ; gain = 218.160
+update_compile_order -fileset sources_1
+open_bd_design {F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- openedv.com:user:DVI_Transmitter:1.0 - DVI_Transmitter_0
+Adding cell -- alientek.com:user:VIP_sobel_edge_detector:1.0 - VIP_sobel_edge_detec_0
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding cell -- alientek.com:user:ov7725_capture_data:1.0 - ov7725_capture_data_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /DVI_Transmitter_0/reset_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /VIP_sobel_edge_detec_0/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /ov7725_capture_data_1/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /VIP_sobel_edge_detec_0/post_frame_clken(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+Successfully read diagram <design_1> from BD file <F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.srcs/sources_1/bd/design_1/design_1.bd>
+file mkdir F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk
+file copy -force F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.runs/impl_1/design_1_wrapper.sysdef F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk -hwspec F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk -hwspec F:/ZYNQ/Embedded_System/ov7725_hdmi_sobel/ov7725_hdmi_sobel.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 10:13:22 2019...

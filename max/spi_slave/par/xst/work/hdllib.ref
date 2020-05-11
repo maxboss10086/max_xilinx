@@ -1,0 +1,2 @@
+MO spi_top NULL spi_top.vf vlg66/spi__top.bin 1586673426
+MO spi_slave NULL ../rtl/spi_slave.v vlg4A/spi__slave.bin 1586673426

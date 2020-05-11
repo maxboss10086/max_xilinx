@@ -1,0 +1,3 @@
+MODULE spi_top
+	SUBMODULE spi_slave
+		INSTANCE XLXI_1

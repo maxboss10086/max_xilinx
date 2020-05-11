@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 24 09:55:00 2020
+# Process ID: 12904
+# Current directory: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21360 C:\a_max\max\xlinx\opendv\25_ov7725_gray_lcd\ov5640_gray_lcd.xpr
+# Log file: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/vivado.log
+# Journal file: C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd}
+add_files -norecurse C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov7725_capture_data.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference ov7725_capture_data ov7725_capture_data_0
+set_property location {0.5 -43 426} [get_bd_cells ov7725_capture_data_0]
+set_property location {2 379 953} [get_bd_cells ov7725_capture_data_0]
+delete_bd_objs [get_bd_nets cam_pclk_1] [get_bd_nets cam_data_1] [get_bd_nets ov5640_capture_data_0_cmos_frame_ce] [get_bd_intf_nets ov5640_capture_data_0_cmos_rgb] [get_bd_nets cam_vsync_1] [get_bd_nets cam_href_1] [get_bd_nets ov5640_capture_data_0_cam_rst_n] [get_bd_nets ov5640_capture_data_0_cam_pwdn] [get_bd_cells ov5640_capture_data_0]
+set_property location {1 310 723} [get_bd_cells ov7725_capture_data_0]
+set_property location {1 401 671} [get_bd_cells ov7725_capture_data_0]
+undo
+undo
+undo
+undo
+undo
+undo
+set_property location {1 516 712} [get_bd_cells ov5640_capture_data_0]
+delete_bd_objs [get_bd_nets cam_pclk_1] [get_bd_nets cam_data_1] [get_bd_nets ov5640_capture_data_0_cmos_frame_ce] [get_bd_intf_nets ov5640_capture_data_0_cmos_rgb] [get_bd_nets cam_vsync_1] [get_bd_nets cam_href_1] [get_bd_nets ov5640_capture_data_0_cam_rst_n] [get_bd_nets ov5640_capture_data_0_cam_pwdn] [get_bd_cells ov5640_capture_data_0]
+create_bd_cell -type module -reference ov7725_capture_data ov7725_capture_data_0
+set_property location {0.5 181 695} [get_bd_cells ov7725_capture_data_0]
+set_property location {2 391 737} [get_bd_cells ov7725_capture_data_0]
+set_property location {0.5 552 775} [get_bd_cells ov7725_capture_data_0]
+connect_bd_net [get_bd_pins ov7725_capture_data_0/rst_n] [get_bd_pins axi_dynclk_0/LOCKED_O]
+set_property location {1 618 705} [get_bd_cells ov7725_capture_data_0]
+set_property location {1 581 692} [get_bd_cells ov7725_capture_data_0]
+connect_bd_net [get_bd_ports cam_pclk] [get_bd_pins ov7725_capture_data_0/cam_pclk]
+connect_bd_net [get_bd_ports cam_vsync] [get_bd_pins ov7725_capture_data_0/cam_vsync]
+connect_bd_net [get_bd_ports cam_href] [get_bd_pins ov7725_capture_data_0/cam_href]
+connect_bd_net [get_bd_ports cam_data] [get_bd_pins ov7725_capture_data_0/cam_data]
+set_property location {1 544 666} [get_bd_cells ov7725_capture_data_0]
+set_property location {1 569 668} [get_bd_cells ov7725_capture_data_0]
+set_property location {1 557 688} [get_bd_cells ov7725_capture_data_0]
+set_property location {1 572 679} [get_bd_cells ov7725_capture_data_0]
+connect_bd_net [get_bd_pins rgb2ycbcr_1/rgb_clken] [get_bd_pins ov7725_capture_data_0/cmos_frame_ce]
+connect_bd_net [get_bd_pins rgb2ycbcr_1/rgb_data] [get_bd_pins ov7725_capture_data_0/cmos_data]
+startgroup
+connect_bd_net [get_bd_ports cam_rst_n] [get_bd_pins ov7725_capture_data_0/cam_rst_n]
+endgroup
+delete_bd_objs [get_bd_ports cam_pwdn]
+create_bd_port -dir O cam_sgm_ctrl
+connect_bd_net [get_bd_ports cam_sgm_ctrl] [get_bd_pins ov7725_capture_data_0/cam_sgm_ctrl]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.srcs/sources_1/bd/design_1/design_1.bd]
+save_bd_design
+file copy -force C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.runs/impl_2/design_1_wrapper.sysdef C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.sdk -hwspec C:/a_max/max/xlinx/opendv/25_ov7725_gray_lcd/ov5640_gray_lcd.sdk/design_1_wrapper.hdf
+update_compile_order -fileset sources_1

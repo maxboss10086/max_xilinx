@@ -1,0 +1,106 @@
+//****************************************Copyright (c)***********************************//
+// 网站博客:NC 
+// 版权所有，盗版必究 
+// Copyright (c) 2020
+// ALL right reserved
+//----------------------------------------------------------------------------------------//
+// File name: 		xxx.v
+// Descriptions: 	
+// Author: 		Max
+// Creation Date: 	today
+//Fri Jan 03 2020 14:49:58 GMT+0800
+//----------------------------------------------------------------------------------------//
+// Note:PWM:改变占空比
+//      输出的LED灯从占空比100%一个点一个点下降，一直降到0%
+//----------------------------------------------------------------------------------------//
+//****************************************************************************************//
+
+
+module    pwm_led(
+          input                              sys_clk        ,
+          input                              sys_rst_n      ,
+          
+    		output						led
+
+
+
+);
+//设置呼吸灯从亮到暗时间为1s
+//cnt1*cnt2==1s,1s/20ns=50_000_000
+//cnt*cnt2==50_000_000
+//cnt1==cnt2==50_000_000^0.5==7071
+
+
+localparam	T = 28'd7071;
+//localparam	T = 28'd70;//仿真用。仿真时间是2ms
+//cnt1以时钟计数，周期为T
+reg       [27:0]	cnt1;
+reg		[28:0]	cnt2;
+always    @(posedge sys_clk or negedge sys_rst_n)begin
+          if(!sys_rst_n)begin
+                    cnt1<='d0;
+          end
+		else if(cnt1<T-1'b1)begin
+				cnt1<=cnt1+1'b1;
+		end
+		else begin
+		     	cnt1<='d0;
+		end
+
+
+end
+//计数到末尾时，生成一个高电平，表示cnt1一次循环完成
+wire		cnt1_T;
+assign	cnt1_T = (cnt1==T-1'b1) ? 1'b1:1'b0;
+
+
+//生成cnt2_cmd信号,cmd高电平cnt2_cmd递增，否则递减
+reg		cnt2_cmd;
+//起步的时候递增，计数到T-1的时候递减
+always    @(posedge sys_clk or negedge sys_rst_n)begin
+          if(!sys_rst_n)begin
+                    cnt2_cmd<='d0;
+          end
+          else if(cnt2=='d0)begin
+          		cnt2_cmd<=1'b1;          
+          end
+          else if(cnt2==T-1'b1)begin
+          		cnt2_cmd<=1'b0;
+          end
+		else begin
+		     	cnt2_cmd<=cnt2_cmd;
+		end
+end
+
+
+//cnt2以cnt1的周期计数，周期是2s，且cmd高电平cnt2递增，cmd低电平cnt2递减
+
+always    @(posedge sys_clk or negedge sys_rst_n)begin
+          if(!sys_rst_n)begin
+                    cnt2<='d0;
+          end
+		else if(cnt1_T)begin
+				if(cnt2_cmd)					
+					cnt2<=cnt2+1'b1;
+				if(!cnt2_cmd)
+					cnt2<=cnt2-1'b1;
+		end
+		else
+			cnt2<=cnt2;
+end
+
+
+//led输出
+assign	led = (cnt1>cnt2) ? 1'b1:1'b0;
+
+//在仿真中直观看清楚比例
+wire		[10:0] PWM;
+assign    PWM = cnt2*100/T;
+
+
+endmodule
+
+
+
+
+    

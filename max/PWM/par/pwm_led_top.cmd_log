@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/a_max/max/xlinx/max/PWM/par/pwm_led_top.xst" -ofn "C:/a_max/max/xlinx/max/PWM/par/pwm_led_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pwm_led_top.ucf -p xc7z010-clg400-1 pwm_led_top.ngc pwm_led_top.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pwm_led_top_map.ncd pwm_led_top.ngd pwm_led_top.pcf 
+par -w -intstyle ise -ol high -mt off pwm_led_top_map.ncd pwm_led_top.ncd pwm_led_top.pcf 
+bitgen -intstyle ise -f pwm_led_top.ut pwm_led_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pwm_led_top.ucf -p xc7z010-clg400-1 pwm_led_top.ngc pwm_led_top.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pwm_led_top_map.ncd pwm_led_top.ngd pwm_led_top.pcf 
+par -w -intstyle ise -ol high -mt off pwm_led_top_map.ncd pwm_led_top.ncd pwm_led_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml pwm_led_top.twx pwm_led_top.ncd -o pwm_led_top.twr pwm_led_top.pcf -ucf pwm_led_top.ucf 
+bitgen -intstyle ise -f pwm_led_top.ut pwm_led_top.ncd 
