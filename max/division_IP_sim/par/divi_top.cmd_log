@@ -1,1 +1,2 @@
 sch2hdl -sympath C:/a_max/max/max/max_xlinx/division/par/ipcore_dir -intstyle ise -family spartan3a -verilog divi_top.vf -w C:/a_max/max/max/max_xlinx/division/rtl/divi_top.sch 
+sch2hdl -sympath F:/a_Max/max_xilinx/max/division_IP_sim/par/ipcore_dir -intstyle ise -family spartan3a -verilog divi_top.vf -w F:/a_Max/max_xilinx/max/division_IP_sim/rtl/divi_top.sch 

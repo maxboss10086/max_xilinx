@@ -21,7 +21,10 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="division.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/divi_readme.txt"/>
+  </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">

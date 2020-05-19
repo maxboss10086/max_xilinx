@@ -1,5 +1,5 @@
 The following files were generated for 'divi' in directory
-C:\a_max\max\max\max_xlinx\division\par\ipcore_dir\
+F:\a_Max\max_xilinx\max\division_IP_sim\par\ipcore_dir\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -36,6 +36,7 @@ Generate ISE metadata:
 Generate ISE subproject:
    Create an ISE subproject for use when including this core in ISE designs
 
+   * _xmsgs/pn_parser.xmsgs
    * divi.gise
    * divi.xise
 

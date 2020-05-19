@@ -32,7 +32,7 @@ add wave tb_divi_top/divi_top_inst/*
 
 
 
-run 1us
+run 10us
 
 
 

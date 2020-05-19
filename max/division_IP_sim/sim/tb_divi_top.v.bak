@@ -21,17 +21,21 @@ reg			sys_clk;
 wire			rfd;
 wire	[15:0]	fractional;
 wire	[24:0]	quotient;
+reg			ce;
 divi_top	divi_top_inst(           
 .dividend		(25'd120),  
 .divisor		(16'd10),   
-.sys_clk		(sys_clk),   
+.sys_clk		(sys_clk),
+.ce			(ce),   
 .fractional	(fractional),
 .quotient		(quotient),  
 .rfd           (rfd)
 
 );
 initial begin
-         clk = 0; 
+	sys_clk = 0; 
+#100
+	ce=1;         
 $display("Running testbench"); 
 end
 //for(i=0;i<=32;i=i+1)begin

@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Apr 09 06:06:28 2020
+# Date: Tue May 19 13:00:40 2020
 #
 ##############################################################
 #
@@ -40,16 +40,16 @@ SELECT Divider_Generator family Xilinx,_Inc. 3.0
 # END Select
 # BEGIN Parameters
 CSET algorithm_type=Radix2
-CSET ce=false
+CSET ce=true
 CSET clocks_per_division=1
 CSET component_name=divi
 CSET divide_by_zero_detect=false
 CSET dividend_and_quotient_width=25
 CSET divisor_width=16
 CSET fractional_width=16
-CSET latency=29
+CSET latency=27
 CSET latency_configuration=Automatic
-CSET operand_sign=Signed
+CSET operand_sign=Unsigned
 CSET remainder_type=Remainder
 CSET sclr=false
 CSET sclr_ce_priority=SCLR_overrides_CE
@@ -58,4 +58,4 @@ CSET sclr_ce_priority=SCLR_overrides_CE
 MISC pkg_timestamp=2013-10-13T18:46:09Z
 # END Extra information
 GENERATE
-# CRC: 7de3b0c5
+# CRC:  4e20ea9

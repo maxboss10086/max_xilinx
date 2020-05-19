@@ -56,6 +56,7 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 divi YourInstanceName (
 	.clk(clk), // input clk
+	.ce(ce), // input ce
 	.rfd(rfd), // output rfd
 	.dividend(dividend), // input [24 : 0] dividend
 	.divisor(divisor), // input [15 : 0] divisor

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-22T14:50:23</DateModified>
+  <DateModified>2020-05-19T20:54:54</DateModified>
   <ModuleName>divi_top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/a_max/max/xlinx/max/division_IP_sim/par/iseconfig/divi_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/a_max/max/xlinx/max/division_IP_sim/par\</ImplementationReportsDirectory>
+  <SavedFilePath>F:/a_Max/max_xilinx/max/division_IP_sim/par/iseconfig/divi_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/a_Max/max_xilinx/max/division_IP_sim/par\</ImplementationReportsDirectory>
   <DateInitialized>2020-04-09T14:12:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

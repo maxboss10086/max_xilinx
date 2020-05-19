@@ -1,4 +1,5 @@
 # Output products list for <divi>
+_xmsgs\pn_parser.xmsgs
 divi.asy
 divi.gise
 divi.ngc
