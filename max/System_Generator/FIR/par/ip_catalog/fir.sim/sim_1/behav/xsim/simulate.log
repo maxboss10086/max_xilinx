@@ -1,0 +1,10 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+  
+Beginning comparisons for instance fir_gateway_out.dat
+  
+** Simulation summary for instance fir_gateway_out.dat
+   Samples Processed:       10001
+             Checked:       10001
+             Ignored:           0
+  Test completed with no errors.

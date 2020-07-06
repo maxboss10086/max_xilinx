@@ -1,0 +1,104 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/synth_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srlc33e
+INFO: [VRFC 10-311] analyzing module synth_reg
+INFO: [VRFC 10-311] analyzing module synth_reg_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/synth_reg_w_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synth_reg_w_init
+INFO: [VRFC 10-311] analyzing module single_reg_w_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/convert_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cast
+INFO: [VRFC 10-311] analyzing module shift_division_result
+INFO: [VRFC 10-311] analyzing module shift_op
+INFO: [VRFC 10-311] analyzing module pad_lsb
+INFO: [VRFC 10-311] analyzing module zero_ext
+INFO: [VRFC 10-311] analyzing module sign_ext
+INFO: [VRFC 10-311] analyzing module extend_msb
+INFO: [VRFC 10-311] analyzing module align_input
+INFO: [VRFC 10-311] analyzing module round_towards_inf
+INFO: [VRFC 10-311] analyzing module round_towards_even
+INFO: [VRFC 10-311] analyzing module trunc
+INFO: [VRFC 10-311] analyzing module saturation_arith
+INFO: [VRFC 10-311] analyzing module wrap_arith
+INFO: [VRFC 10-311] analyzing module convert_type
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/xlclockdriver_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclockdriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/fir_entity_declarations.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlfir_fir_compiler_v7_2_i0_6dfd1ea1163cbe6424968f1cfaf4339f
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_struct
+INFO: [VRFC 10-311] analyzing module fir_default_clock_driver
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.ip_user_files/bd/fir_bd/ip/fir_bd_fir_1_0/sim/fir_bd_fir_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_bd_fir_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_0_fir
+INFO: [VRFC 10-311] analyzing module fir_0
+INFO: [VRFC 10-311] analyzing module fir_0_fir_fir_compiler_v7_2_i0
+INFO: [VRFC 10-311] analyzing module fir_0_fir_struct
+INFO: [VRFC 10-311] analyzing module fir_0_xlfir_fir_compiler_v7_2_i0_6dfd1ea1163cbe6424968f1cfaf4339f
+INFO: [VRFC 10-311] analyzing module fir_0_fir_compiler_v7_2_11
+INFO: [VRFC 10-311] analyzing module fir_0_add_sub
+INFO: [VRFC 10-311] analyzing module fir_0_add_sub_14
+INFO: [VRFC 10-311] analyzing module fir_0_add_sub_16
+INFO: [VRFC 10-311] analyzing module fir_0_add_sub_18
+INFO: [VRFC 10-311] analyzing module fir_0_add_sub_20
+INFO: [VRFC 10-311] analyzing module fir_0_add_sub_22
+INFO: [VRFC 10-311] analyzing module fir_0_addsub_mult_add
+INFO: [VRFC 10-311] analyzing module fir_0_addsub_mult_add_10
+INFO: [VRFC 10-311] analyzing module fir_0_addsub_mult_add_11
+INFO: [VRFC 10-311] analyzing module fir_0_addsub_mult_add_8
+INFO: [VRFC 10-311] analyzing module fir_0_addsub_mult_add_9
+INFO: [VRFC 10-311] analyzing module fir_0_addsub_mult_add__parameterized0
+INFO: [VRFC 10-311] analyzing module fir_0_buff
+INFO: [VRFC 10-311] analyzing module fir_0_buff_0
+INFO: [VRFC 10-311] analyzing module fir_0_buff_1
+INFO: [VRFC 10-311] analyzing module fir_0_buff_2
+INFO: [VRFC 10-311] analyzing module fir_0_buff_3
+INFO: [VRFC 10-311] analyzing module fir_0_buff__parameterized0
+INFO: [VRFC 10-311] analyzing module fir_0_buff__parameterized0_4
+INFO: [VRFC 10-311] analyzing module fir_0_buff__parameterized0_5
+INFO: [VRFC 10-311] analyzing module fir_0_buff__parameterized0_6
+INFO: [VRFC 10-311] analyzing module fir_0_buff__parameterized0_7
+INFO: [VRFC 10-311] analyzing module fir_0_calc
+INFO: [VRFC 10-311] analyzing module fir_0_calc_13
+INFO: [VRFC 10-311] analyzing module fir_0_calc_15
+INFO: [VRFC 10-311] analyzing module fir_0_calc_17
+INFO: [VRFC 10-311] analyzing module fir_0_calc_19
+INFO: [VRFC 10-311] analyzing module fir_0_calc_21
+INFO: [VRFC 10-311] analyzing module fir_0_delay
+INFO: [VRFC 10-311] analyzing module fir_0_delay_12
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized0
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized16
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized2
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized2_27
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized2_28
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized2_29
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized2_30
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized3
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized4
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized5
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized6
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized9
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized9_23
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized9_24
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized9_25
+INFO: [VRFC 10-311] analyzing module fir_0_delay__parameterized9_26
+INFO: [VRFC 10-311] analyzing module fir_0_fir_compiler_v7_2_11_viv
+INFO: [VRFC 10-311] analyzing module fir_0_single_rate
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.ip_user_files/bd/fir_bd/sim/fir_bd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_bd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/imports/hdl/fir_bd_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_bd_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/imports/sysgen/fir_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_stub
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sim_1/imports/sysgen/fir_tb_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlclk
+INFO: [VRFC 10-311] analyzing module xltbsource
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sim_1/imports/sysgen/fir_tb_mod.v:128]
+INFO: [VRFC 10-311] analyzing module xltbsink
+INFO: [VRFC 10-2458] undeclared symbol sys_clk, assumed default net type wire [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sim_1/imports/sysgen/fir_tb_mod.v:207]
+INFO: [VRFC 10-311] analyzing module fir_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.sim/sim_1/behav/xsim/glbl.v:6]

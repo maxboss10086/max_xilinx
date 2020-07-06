@@ -1,0 +1,348 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul  6 12:46:20 2020
+# Process ID: 112032
+# Current directory: C:/a_max/max_xilinx/max/System_Generator/FIR/par
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/a_max/max_xilinx/max/System_Generator/FIR/par/vivado.log
+# Journal file: C:/a_max/max_xilinx/max/System_Generator/FIR/par\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vivado/Vivado/2018.3/data/ip'.
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 376.156 ; gain = 53.555
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fir_fir_compiler_v7_2_i0' to 'fir_fir_compiler_v7_2_i0' is not allowed and is ignored.
+IP Repository Located at : C:/vivado/Vivado/2018.3/data/ip
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 386.238 ; gain = 0.000
+Adding File c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/ip/fir_fir_compiler_v7_2_i0/fir_fir_compiler_v7_2_i0.xci
+Adding File C:/a_max/max_xilinx/max/System_Generator/FIR/par/sysgen/fir.xdc
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog'.)
+0
+Wrote  : <C:\a_max\max_xilinx\max\System_Generator\FIR\par\ip_catalog\fir.srcs\sources_1\bd\fir_bd\fir_bd.bd> 
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /fir_1/*'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /fir_1/*'
+WARNING: [BD 41-927] Following properties on pin /fir_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=fir_bd_clk 
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /fir_1/*'
+Wrote  : <C:\a_max\max_xilinx\max\System_Generator\FIR\par\ip_catalog\fir.srcs\sources_1\bd\fir_bd\fir_bd.bd> 
+INFO: Setting More Options property of synthesis to -mode out_of_context.
+INFO: To enable analysis of IP Catalog flow results the top module is set to fir_stub.
+INFO: SG_Analyzer -- Running synth_1 ...
+INFO: [BD 41-1662] The design 'fir_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/synth/fir_bd.v
+VHDL Output written to : C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/sim/fir_bd.v
+VHDL Output written to : C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/hdl/fir_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_1 .
+Exporting to file C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/hw_handoff/fir_bd.hwh
+Generated Block Design Tcl file C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/hw_handoff/fir_bd_bd.tcl
+Generated Hardware Definition File C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/synth/fir_bd.hwdef
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_0'...
+[Mon Jul  6 12:47:11 2020] Launched fir_bd_fir_1_0_synth_1, fir_0_synth_1...
+Run output will be captured here:
+fir_bd_fir_1_0_synth_1: C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/fir_bd_fir_1_0_synth_1/runme.log
+fir_0_synth_1: C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/fir_0_synth_1/runme.log
+[Mon Jul  6 12:47:11 2020] Launched synth_1...
+Run output will be captured here: C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 546.250 ; gain = 72.344
+[Mon Jul  6 12:47:11 2020] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log fir_bd_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_bd_wrapper.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fir_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vivado/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 349.840 ; gain = 30.656
+Command: synth_design -top fir_bd_wrapper -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 466.652 ; gain = 94.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir_bd_wrapper' [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/imports/hdl/fir_bd_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'fir_bd' [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/synth/fir_bd.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fir_bd_fir_1_0' [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1/.Xil/Vivado-118744-DESKTOP-VCDROVB/realtime/fir_bd_fir_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_bd_fir_1_0' (1#1) [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1/.Xil/Vivado-118744-DESKTOP-VCDROVB/realtime/fir_bd_fir_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_bd' (2#1) [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/synth/fir_bd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fir_bd_wrapper' (3#1) [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/imports/hdl/fir_bd_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 521.844 ; gain = 150.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 521.844 ; gain = 150.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 521.844 ; gain = 150.066
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ip/fir_bd_fir_1_0/fir_bd_fir_1_0/fir_bd_fir_1_0_in_context.xdc] for cell 'fir_bd_i/fir_1'
+Finished Parsing XDC File [c:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/sources_1/bd/fir_bd/ip/fir_bd_fir_1_0/fir_bd_fir_1_0/fir_bd_fir_1_0_in_context.xdc] for cell 'fir_bd_i/fir_1'
+Parsing XDC File [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/constrs_1/imports/sysgen/fir_clock.xdc]
+Finished Parsing XDC File [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/constrs_1/imports/sysgen/fir_clock.xdc]
+Parsing XDC File [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/constrs_1/imports/sysgen/fir.xdc]
+Finished Parsing XDC File [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.srcs/constrs_1/imports/sysgen/fir.xdc]
+Parsing XDC File [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 771.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 771.195 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 772.324 ; gain = 1.129
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 772.324 ; gain = 400.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 772.324 ; gain = 400.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for fir_bd_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for fir_bd_i/fir_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 772.324 ; gain = 400.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 772.324 ; gain = 400.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 772.324 ; gain = 400.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 839.891 ; gain = 468.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 839.965 ; gain = 468.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |fir_bd_fir_1_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |fir_bd_fir_1_0 |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------+-------+------+
+|      |Instance   |Module |Cells |
++------+-----------+-------+------+
+|1     |top        |       |    36|
+|2     |  fir_bd_i |fir_bd |    36|
++------+-----------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 849.496 ; gain = 227.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 849.496 ; gain = 477.719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 864.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 864.352 ; gain = 504.043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 864.352 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.runs/synth_1/fir_bd_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_bd_wrapper_utilization_synth.rpt -pb fir_bd_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 12:50:38 2020...
+[Mon Jul  6 12:50:42 2020] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:03:31 . Memory (MB): peak = 546.250 ; gain = 0.000
+INFO: SG_Analyzer -- Timing paths data will be collected from the post-synthesis design ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+get_timing_paths: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1329.961 ; gain = 511.816
+WARNING: [Common 17-673] Cannot get value of property 'ULTRA_RAMS' because this property is not valid in conjunction with other property setting on this object.
+INFO: Setting More Options property of synthesis to empty string.
+INFO: For IP Catalog flow the top module is reverted back to fir_bd_wrapper after collecting results for analysis.
+INFO: SG_Analyzer -- Collected Vivado timing paths and resource utilization information ...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 12:51:28 2020...

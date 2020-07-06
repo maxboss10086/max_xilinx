@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/a_max/max_xilinx/max/System_Generator/FIR/par/ip_catalog/fir.ip_user_files/bd/fir_bd/ip/fir_bd_fir_1_0/fir_fir_compiler_v7_2_i0/sim/fir_fir_compiler_v7_2_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_fir_compiler_v7_2_i0'

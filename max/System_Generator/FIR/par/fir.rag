@@ -1,0 +1,36 @@
+{
+  'total' => {
+    'BRAMs' => '60',
+    'DSPs' => '80',
+    'LUTs' => '17600',
+    'Registers' => '35200'
+  },
+  'utilization' => [
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 28.00036621094,
+      'Hier_Name' => 'fir/Digital FIR Filter',
+      'Name' => 'Digital FIR Filter',
+      'Parent_Handle' => 2.00024414063,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 6,
+        'LUTs' => 288,
+        'Registers' => 403
+      }
+    },
+    {
+      'Block_Type' => 3.00000000000,
+      'Handle' => 2.00024414063,
+      'Hier_Name' => 'fir',
+      'Name' => 'fir',
+      'Parent_Handle' => 0.00000000000,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 6,
+        'LUTs' => 288,
+        'Registers' => 403
+      }
+    }
+  ]
+}

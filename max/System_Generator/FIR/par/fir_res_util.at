@@ -1,0 +1,68 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7z010clg400-1',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'fir',
+        'HDL_Language' => 'verilog',
+        'Netlist_Crossprobe_File' => 'fir.v.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '60',
+        'DSPs' => '80',
+        'Registers' => '35200',
+        'LUTs' => '17600',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_21',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.digital_fir_filter',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/digital_fir_filter',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 402,
+                    'SRL16E' => 161,
+                    'LUT2' => 13,
+                    'DSP48E1' => 6,
+                    'LUT4' => 85,
+                    'LUT1' => 12,
+                    'CARRY4' => 30,
+                    'LUT3' => 17,
+                    'FDSE' => 1,
+                    'Total_Registers' => 403,
+                    'Total_LUTs' => 288,
+                    'Total_DSPs' => 6,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'fir',
+          'Cell_Name' => 'fir',
+          'Primitives' => [ 
+               { 
+                    'FDRE' => 402,
+                    'SRL16E' => 161,
+                    'LUT2' => 13,
+                    'DSP48E1' => 6,
+                    'LUT4' => 85,
+                    'LUT1' => 12,
+                    'CARRY4' => 30,
+                    'LUT3' => 17,
+                    'FDSE' => 1,
+                    'Total_Registers' => 403,
+                    'Total_LUTs' => 288,
+                    'Total_DSPs' => 6,
+               },
+          ],
+     },
+   ],
+} 

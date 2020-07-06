@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl" --include "../../../../fir.srcs/sim_1/imports/sysgen" --include "../../../../fir.srcs/sources_1/ip/fir_0/work/hdl" \
+"../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/synth_reg.v" \
+"../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/synth_reg_w_init.v" \
+"../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/convert_type.v" \
+"../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/xlclockdriver_rd.v" \
+"../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/fir_entity_declarations.v" \
+"../../../../fir.srcs/sources_1/bd/fir_bd/ipshared/83a6/hdl/fir.v" \
+"../../../../fir.ip_user_files/bd/fir_bd/ip/fir_bd_fir_1_0/sim/fir_bd_fir_1_0.v" \
+"../../../../fir.srcs/sources_1/ip/fir_0/fir_0_sim_netlist.v" \
+"../../../../fir.ip_user_files/bd/fir_bd/sim/fir_bd.v" \
+"../../../../fir.srcs/sources_1/imports/hdl/fir_bd_wrapper.v" \
+"../../../../fir.srcs/sources_1/imports/sysgen/fir_mod.v" \
+"../../../../fir.srcs/sim_1/imports/sysgen/fir_tb_mod.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
