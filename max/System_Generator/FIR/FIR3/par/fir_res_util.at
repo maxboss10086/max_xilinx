@@ -1,0 +1,569 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7k325tfbg676-3',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'fir',
+        'HDL_Language' => 'verilog',
+        'Netlist_Crossprobe_File' => 'fir.v.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '445',
+        'DSPs' => '840',
+        'Registers' => '407600',
+        'LUTs' => '203800',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_89',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 9,
+                    'LUT2' => 33,
+                    'Total_LUTs' => 33,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_119',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub1',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 34,
+                    'CARRY4' => 9,
+                    'LUT2' => 34,
+                    'Total_Registers' => 34,
+                    'Total_LUTs' => 34,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_149',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub10',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub10',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 43,
+                    'CARRY4' => 11,
+                    'LUT2' => 43,
+                    'Total_Registers' => 43,
+                    'Total_LUTs' => 43,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_179',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub2',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 35,
+                    'CARRY4' => 9,
+                    'LUT2' => 35,
+                    'Total_Registers' => 35,
+                    'Total_LUTs' => 35,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_209',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub3',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub3',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 36,
+                    'CARRY4' => 9,
+                    'LUT2' => 36,
+                    'Total_Registers' => 36,
+                    'Total_LUTs' => 36,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_239',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub4',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub4',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 37,
+                    'CARRY4' => 10,
+                    'LUT2' => 37,
+                    'Total_Registers' => 37,
+                    'Total_LUTs' => 37,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_269',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub5',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub5',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 38,
+                    'CARRY4' => 10,
+                    'LUT2' => 38,
+                    'Total_Registers' => 38,
+                    'Total_LUTs' => 38,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_299',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub6',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub6',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 39,
+                    'CARRY4' => 10,
+                    'LUT2' => 39,
+                    'Total_Registers' => 39,
+                    'Total_LUTs' => 39,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_329',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub7',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub7',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 40,
+                    'CARRY4' => 10,
+                    'LUT2' => 40,
+                    'Total_Registers' => 40,
+                    'Total_LUTs' => 40,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_359',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub8',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub8',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 41,
+                    'CARRY4' => 11,
+                    'LUT2' => 41,
+                    'Total_Registers' => 41,
+                    'Total_LUTs' => 41,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_389',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.addsub9',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/addsub9',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 42,
+                    'CARRY4' => 11,
+                    'LUT2' => 42,
+                    'Total_Registers' => 42,
+                    'Total_LUTs' => 42,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_404',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay1',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 43,
+                    'Total_Registers' => 43,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_418',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay10',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay10',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_432',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay11',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay11',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_446',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay12',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay12',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_460',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay13',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay13',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_474',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay2',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay2',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_488',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay3',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay3',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_502',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay4',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay4',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_516',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay5',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay5',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_530',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay6',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay6',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_544',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay7',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay7',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_558',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay8',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay8',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_572',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.delay9',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/delay9',
+          'Primitives' => [ 
+               {
+                    'SRLC32E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_603',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_639',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult1',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult1',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_675',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult10',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult10',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_711',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult11',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult11',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_747',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult2',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult2',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_783',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult3',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult3',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_819',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult4',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult4',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_855',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult5',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult5',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_891',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult6',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult6',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_927',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult7',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult7',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_963',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult8',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult8',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_999',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0.mult9',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0/mult9',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 1,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_1101',
+          'Hier_Name' => 'fir_bd_wrapper.fir_bd_i.fir_1.inst.fir_struct.fir_x0',
+          'Cell_Name' => 'fir_bd_i/fir_1/inst/fir_struct/fir_x0',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 109,
+                    'LUT2' => 430,
+                    'FDRE' => 620,
+                    'SRLC32E' => 176,
+                    'DSP48E1' => 12,
+                    'Total_LUTs' => 606,
+                    'Total_Registers' => 620,
+                    'Total_DSPs' => 12,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'fir.v',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'fir',
+          'Cell_Name' => 'fir',
+          'Primitives' => [ 
+               { 
+                    'CARRY4' => 109,
+                    'LUT2' => 430,
+                    'FDRE' => 620,
+                    'SRLC32E' => 176,
+                    'DSP48E1' => 12,
+                    'Total_LUTs' => 606,
+                    'Total_Registers' => 620,
+                    'Total_DSPs' => 12,
+               },
+          ],
+     },
+   ],
+} 

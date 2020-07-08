@@ -1,0 +1,2313 @@
+
+*** Running vivado
+    with args -log fir_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fir_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 325.414 ; gain = 69.863
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.runs/fir_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 357.043 ; gain = 31.629
+Command: synth_design -top fir_0 -part xc7k325tfbg676-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13944 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 475.566 ; gain = 98.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir_0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/synth/fir_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fir' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:1132]
+INFO: [Synth 8-6157] synthesizing module 'fir_default_clock_driver' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:1110]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
+	Parameter period bound to: 32'sb00000000000000000000000000000001 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000101 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 1'b1 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000010 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter clk_for_ce_pulse_minus1 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus2 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (2#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (3#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg_w_init.v:3]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/xlclockdriver_rd.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (4#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:1121]
+INFO: [Synth 8-6155] done synthesizing module 'fir_default_clock_driver' (5#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:1110]
+INFO: [Synth 8-6157] synthesizing module 'fir_struct' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:1087]
+INFO: [Synth 8-6157] synthesizing module 'fir_fir' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i0 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 32 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 33 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 33 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 0 - type: integer 
+	Parameter c_output_width bound to: 33 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 33 - type: integer 
+	Parameter full_b_width bound to: 33 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/synth/fir_c_addsub_v12_0_i0.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 33 - type: integer 
+	Parameter C_B_WIDTH bound to: 33 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 33 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/synth/fir_c_addsub_v12_0_i0.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i0' (11#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/synth/fir_c_addsub_v12_0_i0.vhd:67]
+INFO: [Synth 8-6157] synthesizing module 'align_input' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 33 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 33 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext' (12#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb' (13#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input' (14#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 33 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 33 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100011 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized0' (14#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized0' (14#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc' (15#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 33 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 33 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast' (16#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith' (17#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 33 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100011 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized0' (17#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type' (18#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub' (19#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+WARNING: [Synth 8-350] instance 'addsub' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:89]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i1 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 33 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 34 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 34 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 34 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 34 - type: integer 
+	Parameter full_b_width bound to: 34 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i1/synth/fir_c_addsub_v12_0_i1.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 34 - type: integer 
+	Parameter C_B_WIDTH bound to: 34 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 34 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i1/synth/fir_c_addsub_v12_0_i1.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i1' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i1/synth/fir_c_addsub_v12_0_i1.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized1' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized1' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized0' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 33 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 33 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 33 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized2' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized2' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized1' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 34 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100100 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized3' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized3' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized0' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 34 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized1' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized0' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 34 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100100 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized2' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized0' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub__parameterized0' (21#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+WARNING: [Synth 8-350] instance 'addsub1' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:119]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i2 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 42 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 43 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 43 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 43 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 43 - type: integer 
+	Parameter full_b_width bound to: 43 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i2/synth/fir_c_addsub_v12_0_i2.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 43 - type: integer 
+	Parameter C_B_WIDTH bound to: 43 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 43 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i2/synth/fir_c_addsub_v12_0_i2.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i2' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i2/synth/fir_c_addsub_v12_0_i2.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized4' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized4' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized2' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 42 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 42 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 42 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized5' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized5' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized3' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 43 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized6' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized6' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101101 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized6' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized6' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized1' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized1' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 43 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized3' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized1' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 43 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101101 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized4' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized1' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub__parameterized1' (22#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+WARNING: [Synth 8-350] instance 'addsub10' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:149]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i3 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 34 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 35 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 35 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 35 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 35 - type: integer 
+	Parameter full_b_width bound to: 35 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i3/synth/fir_c_addsub_v12_0_i3.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 35 - type: integer 
+	Parameter C_B_WIDTH bound to: 35 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 35 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i3/synth/fir_c_addsub_v12_0_i3.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i3' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i3/synth/fir_c_addsub_v12_0_i3.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized7' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized7' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized7' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized7' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized4' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 34 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized8' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 34 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized8' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 34 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized8' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized8' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized5' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 35 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized9' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized9' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100101 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized9' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized9' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized2' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized2' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 35 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized5' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized2' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized6' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 35 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized6' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized2' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub__parameterized2' (23#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+WARNING: [Synth 8-350] instance 'addsub2' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:179]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i4 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 35 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 36 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 36 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 36 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 36 - type: integer 
+	Parameter full_b_width bound to: 36 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i4/synth/fir_c_addsub_v12_0_i4.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 36 - type: integer 
+	Parameter C_B_WIDTH bound to: 36 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 36 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i4/synth/fir_c_addsub_v12_0_i4.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i4' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i4/synth/fir_c_addsub_v12_0_i4.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized6' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized10' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized10' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized10' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized10' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized6' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized7' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 35 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized11' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 35 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized11' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 35 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized11' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized11' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized7' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 36 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100110 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized12' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized12' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized3' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized3' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized7' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 36 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized7' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized3' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized8' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 36 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100110 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized8' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized3' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub__parameterized3' (24#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+WARNING: [Synth 8-350] instance 'addsub3' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:209]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i5 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 36 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 37 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 37 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 37 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 37 - type: integer 
+	Parameter full_b_width bound to: 37 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i5/synth/fir_c_addsub_v12_0_i5.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 37 - type: integer 
+	Parameter C_B_WIDTH bound to: 37 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 37 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i5/synth/fir_c_addsub_v12_0_i5.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i5' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i5/synth/fir_c_addsub_v12_0_i5.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized8' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized13' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized13' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized13' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized13' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized8' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized9' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 36 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized14' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 36 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized14' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 36 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized14' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized14' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized9' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 37 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized15' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized15' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100111 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized15' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized15' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized4' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized4' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized9' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 37 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized9' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized4' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized10' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+	Parameter old_width bound to: 37 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100111 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized10' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized4' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub__parameterized4' (25#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+WARNING: [Synth 8-350] instance 'addsub4' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:239]
+INFO: [Synth 8-6157] synthesizing module 'fir_xladdsub__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i6 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 37 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 38 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 38 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 38 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 38 - type: integer 
+	Parameter full_b_width bound to: 38 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i6' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i6/synth/fir_c_addsub_v12_0_i6.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 38 - type: integer 
+	Parameter C_B_WIDTH bound to: 38 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 38 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i6/synth/fir_c_addsub_v12_0_i6.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i6' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i6/synth/fir_c_addsub_v12_0_i6.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized10' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized16' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized16' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized16' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized16' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized10' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'align_input__parameterized11' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+	Parameter old_width bound to: 37 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized17' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+	Parameter old_width bound to: 37 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized17' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+	Parameter old_width bound to: 37 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized17' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized17' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'align_input__parameterized11' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:260]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+	Parameter old_width bound to: 38 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized5' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized18' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter old_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101000 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized18' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized18' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized5' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 38 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized11' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized5' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:754]
+	Parameter old_width bound to: 38 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101000 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized12' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized5' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'fir_xladdsub__parameterized5' (26#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir_entity_declarations.v:124]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-350] instance 'addsub5' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:269]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i7 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 38 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 39 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 39 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 39 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 39 - type: integer 
+	Parameter full_b_width bound to: 39 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i7' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i7/synth/fir_c_addsub_v12_0_i7.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 39 - type: integer 
+	Parameter C_B_WIDTH bound to: 39 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 39 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i7/synth/fir_c_addsub_v12_0_i7.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i7' (27#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i7/synth/fir_c_addsub_v12_0_i7.vhd:69]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter old_width bound to: 38 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 38 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 38 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter old_width bound to: 39 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 39 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 39 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101001 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+WARNING: [Synth 8-350] instance 'addsub6' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:299]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i8 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 39 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 40 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 40 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 40 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 40 - type: integer 
+	Parameter full_b_width bound to: 40 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i8' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i8/synth/fir_c_addsub_v12_0_i8.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 40 - type: integer 
+	Parameter C_B_WIDTH bound to: 40 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 40 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i8/synth/fir_c_addsub_v12_0_i8.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i8' (28#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i8/synth/fir_c_addsub_v12_0_i8.vhd:69]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter old_width bound to: 39 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 39 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 39 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter old_width bound to: 40 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 40 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 40 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101010 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+WARNING: [Synth 8-350] instance 'addsub7' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:329]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i9 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 40 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 41 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 41 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 41 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 41 - type: integer 
+	Parameter full_b_width bound to: 41 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i9' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i9/synth/fir_c_addsub_v12_0_i9.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 41 - type: integer 
+	Parameter C_B_WIDTH bound to: 41 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 41 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i9/synth/fir_c_addsub_v12_0_i9.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i9' (29#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i9/synth/fir_c_addsub_v12_0_i9.vhd:69]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter old_width bound to: 40 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 40 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 40 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter old_width bound to: 41 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 41 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 41 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101011 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+WARNING: [Synth 8-350] instance 'addsub8' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:359]
+	Parameter core_name0 bound to: fir_c_addsub_v12_0_i10 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 41 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 42 - type: integer 
+	Parameter s_bin_pt bound to: 28 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 42 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 42 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 42 - type: integer 
+	Parameter full_b_width bound to: 42 - type: integer 
+	Parameter full_s_bin_pt bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_c_addsub_v12_0_i10' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i10/synth/fir_c_addsub_v12_0_i10.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 42 - type: integer 
+	Parameter C_B_WIDTH bound to: 42 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 42 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i10/synth/fir_c_addsub_v12_0_i10.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fir_c_addsub_v12_0_i10' (30#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_c_addsub_v12_0_i10/synth/fir_c_addsub_v12_0_i10.vhd:69]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter old_width bound to: 41 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 41 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 41 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter old_width bound to: 42 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter fp_bin_pt bound to: 28 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 42 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 42 - type: integer 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000101100 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+WARNING: [Synth 8-350] instance 'addsub9' of module 'fir_xladdsub' requires 10 connections, but only 7 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/fir.v:389]
+	Parameter width bound to: 43 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 43 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 43 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+	Parameter INIT bound to: 1'b0 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 2 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter a bound to: 6'sb000000 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/work/hdl/synth_reg.v:76]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+	Parameter core_name0 bound to: fir_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 16 - type: integer 
+	Parameter a_bin_pt bound to: 14 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 16 - type: integer 
+	Parameter b_bin_pt bound to: 14 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 32 - type: integer 
+	Parameter p_bin_pt bound to: 28 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 16 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_baat bound to: 16 - type: integer 
+	Parameter oversample bound to: 1 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fir_mult_gen_v12_0_i0' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_mult_gen_v12_0_i0/synth/fir_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_mult_gen_v12_0_i0/synth/fir_mult_gen_v12_0_i0.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_mult_gen_v12_0_i0/synth/fir_mult_gen_v12_0_i0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 31 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_mult_gen_v12_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_mult_gen_v12_0_i0/synth/fir_mult_gen_v12_0_i0.vhd:126]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'fir_mult_gen_v12_0_i0' (41#1) [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/fir_mult_gen_v12_0_i0/synth/fir_mult_gen_v12_0_i0.vhd:70]
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter new_width bound to: 16 - type: integer 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter fp_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter q_bin_pt bound to: 28 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter old_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter old_bin_pt bound to: 28 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 28 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100010 
+	Parameter new_bin_pt bound to: 32'sb00000000000000000000000000011100 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+WARNING: [Synth 8-3331] design sysgen_constant_6ba6280cb7 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_6ba6280cb7 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_6ba6280cb7 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_929f6abb9c has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_929f6abb9c has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_929f6abb9c has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_5976f29108 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_5976f29108 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_5976f29108 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_23f796b59a has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_23f796b59a has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_23f796b59a has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_3093588e1d has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_3093588e1d has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_3093588e1d has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_047e838351 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_047e838351 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_047e838351 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_constant_f1e53d55a1 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_constant_f1e53d55a1 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_constant_f1e53d55a1 has unconnected port clr
+WARNING: [Synth 8-3331] design cast__parameterized21 has unconnected port inp[33]
+WARNING: [Synth 8-3331] design cast__parameterized21 has unconnected port inp[32]
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[47]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[46]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[45]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[44]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[43]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[42]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[41]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[40]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[39]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[38]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[37]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[36]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[35]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[34]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[33]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[32]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[31]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[30]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[29]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[28]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[27]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[26]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[25]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port SUBTRACT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:56 . Memory (MB): peak = 648.992 ; gain = 272.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 648.992 ; gain = 272.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 648.992 ; gain = 272.203
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1060 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tfbg676-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/constrs/fir.xdc] for cell 'inst'
+Finished Parsing XDC File [g:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.srcs/sources_1/ip/fir_0/constrs/fir.xdc] for cell 'inst'
+Parsing XDC File [G:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.runs/fir_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.runs/fir_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 951.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 235 instances were transformed.
+  FDE => FDRE: 235 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 951.824 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.408 . Memory (MB): peak = 952.578 ; gain = 0.754
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:01:31 . Memory (MB): peak = 952.578 ; gain = 575.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tfbg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:01:32 . Memory (MB): peak = 952.578 ; gain = 575.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  G:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.runs/fir_0_synth_1/dont_touch.xdc, line 45).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub1/\comp1.core_instance1 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub9/\comp10.core_instance10 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub10/\comp2.core_instance2 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub2/\comp3.core_instance3 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub3/\comp4.core_instance4 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub4/\comp5.core_instance5 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub5/\comp6.core_instance6 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub6/\comp7.core_instance7 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub7/\comp8.core_instance8 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/addsub8/\comp9.core_instance9 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult10/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult11/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult3/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult4/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult5/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult6/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult7/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult8/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fir_struct/fir_x0/mult9/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:32 . Memory (MB): peak = 952.578 ; gain = 575.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:39 . Memory (MB): peak = 952.578 ; gain = 575.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/fir_struct/fir_x0/constant0' (sysgen_constant_047e838351) to 'inst/fir_struct/fir_x0/constant11'
+INFO: [Synth 8-223] decloning instance 'inst/fir_struct/fir_x0/constant1' (sysgen_constant_f1e53d55a1) to 'inst/fir_struct/fir_x0/constant10'
+INFO: [Synth 8-223] decloning instance 'inst/fir_struct/fir_x0/constant2' (sysgen_constant_6ba6280cb7) to 'inst/fir_struct/fir_x0/constant9'
+INFO: [Synth 8-223] decloning instance 'inst/fir_struct/fir_x0/constant3' (sysgen_constant_929f6abb9c) to 'inst/fir_struct/fir_x0/constant8'
+INFO: [Synth 8-223] decloning instance 'inst/fir_struct/fir_x0/constant4' (sysgen_constant_5976f29108) to 'inst/fir_struct/fir_x0/constant7'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (fir_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module fir.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:43 . Memory (MB): peak = 952.578 ; gain = 575.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:02:15 . Memory (MB): peak = 965.066 ; gain = 588.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:02:15 . Memory (MB): peak = 965.438 ; gain = 588.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:02:17 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:02:21 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:02:21 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:02:21 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:02:21 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:02:22 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:02:22 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |    12|
+|2     |LUT2    |   430|
+|3     |MUXCY   |   407|
+|4     |SRLC32E |   176|
+|5     |XORCY   |   418|
+|6     |FDE     |   235|
+|7     |FDRE    |   385|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:02:22 . Memory (MB): peak = 976.145 ; gain = 599.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:54 . Memory (MB): peak = 976.145 ; gain = 295.770
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:02:22 . Memory (MB): peak = 976.145 ; gain = 599.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1072 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 976.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 344 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 109 instances
+  FDE => FDRE: 235 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+260 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:02:36 . Memory (MB): peak = 976.145 ; gain = 610.824
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 976.145 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.runs/fir_0_synth_1/fir_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fir_0, cache-ID = b7cb195474b88f74
+INFO: [Coretcl 2-1174] Renamed 189 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 976.145 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/a_max/max_xilinx/max/System_Generator/FIR/FIR3/par/ip_catalog/fir.runs/fir_0_synth_1/fir_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_0_utilization_synth.rpt -pb fir_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  8 22:22:06 2020...
