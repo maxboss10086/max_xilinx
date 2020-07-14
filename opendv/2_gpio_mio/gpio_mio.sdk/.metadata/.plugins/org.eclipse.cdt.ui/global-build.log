@@ -1,5 +1,427 @@
-18:29:35 **** Incremental Build of configuration Debug for project gpio_mio ****
+20:28:41 **** Incremental Build of configuration Debug for project gpio_mio ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
+ 
 make: Nothing to be done for 'main-build'.
+20:28:47 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:30:46 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27056	   1152	  22616	  50824	   c688	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:30:51 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:31:40 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+../src/led/user_led.c: In function 'led_init':
+../src/led/user_led.c:19:1: error: number of arguments doesn't match prototype
+ void led_init(){
+ ^~~~
+In file included from ../src/led/user_led.c:15:0:
+../src/led/user_led.h:18:13: error: prototype declaration
+ extern void led_init(u32 pin);
+             ^~~~~~~~
+../src/led/user_led.c: In function 'led_twinkle':
+../src/led/user_led.c:24:1: error: number of arguments doesn't match prototype
+ void led_twinkle(){
+ ^~~~
+In file included from ../src/led/user_led.c:15:0:
+../src/led/user_led.h:19:13: error: prototype declaration
+ extern void led_twinkle(u32 pin);
+             ^~~~~~~~~~~
+make: *** [src/led/subdir.mk:20: src/led/user_led.o] Error 1
+20:31:48 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27032	   1152	  22616	  50800	   c670	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:32:01 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27024	   1152	  22616	  50792	   c668	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:32:08 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:37:01 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/GPIO/user_gpio.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/GPIO/user_gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/GPIO/user_gpio.d" -MT"src/GPIO/user_gpio.o" -o "src/GPIO/user_gpio.o" "../src/GPIO/user_gpio.c"
+Finished building: ../src/GPIO/user_gpio.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27024	   1152	  22616	  50792	   c668	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:37:12 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:39:16 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/GPIO/user_gpio.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/GPIO/user_gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/GPIO/user_gpio.d" -MT"src/GPIO/user_gpio.o" -o "src/GPIO/user_gpio.o" "../src/GPIO/user_gpio.c"
+Finished building: ../src/GPIO/user_gpio.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27024	   1152	  22616	  50792	   c668	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:39:45 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27048	   1152	  22616	  50816	   c680	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:40:17 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:82:2: warning: implicit declaration of function 'gpio_init' [-Wimplicit-function-declaration]
+  gpio_init();
+  ^~~~~~~~~
+../src/main.c:84:2: warning: implicit declaration of function 'GPIO_model_IN'; did you mean 'GPIO_DEVICE_ID'? [-Wimplicit-function-declaration]
+  GPIO_model_IN(MIOLED0);
+  ^~~~~~~~~~~~~
+  GPIO_DEVICE_ID
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27204	   1152	  22616	  50972	   c71c	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:40:30 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27204	   1152	  22616	  50972	   c71c	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:40:37 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:41:03 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27204	   1152	  22616	  50972	   c71c	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:41:18 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27124	   1152	  22616	  50892	   c6cc	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:41:25 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:41:56 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27112	   1152	  22616	  50880	   c6c0	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:42:02 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:42:47 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27104	   1152	  22616	  50872	   c6b8	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:42:52 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:43:30 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27112	   1152	  22616	  50880	   c6c0	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:43:43 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27064	   1152	  22616	  50832	   c690	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:43:49 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27064	   1152	  22616	  50832	   c690	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:44:00 **** Incremental Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:45:46 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27064	   1152	  22616	  50832	   c690	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 
+20:45:57 **** Auto Build of configuration Debug for project gpio_mio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../gpio_mio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\led" -I"G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: gpio_mio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_mio_bsp/ps7_cortexa9_0/lib -o "gpio_mio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_mio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size gpio_mio.elf  |tee "gpio_mio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27064	   1152	  22616	  50832	   c690	gpio_mio.elf
+Finished building: gpio_mio.elf.size
+ 

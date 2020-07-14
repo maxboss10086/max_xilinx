@@ -17,7 +17,7 @@ src/led/user_led.o src/led/user_led.o: ../src/led/user_led.c \
  ../../gpio_mio_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
  ../../gpio_mio_bsp/ps7_cortexa9_0/include/xplatform_info.h \
  ../../gpio_mio_bsp/ps7_cortexa9_0/include/sleep.h ../src/led/user_led.h \
- F:\a_Max\max_xilinx\opendv\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO/user_gpio.h
+ G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO/user_gpio.h
 
 ../../gpio_mio_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -57,4 +57,4 @@ src/led/user_led.o src/led/user_led.o: ../src/led/user_led.c \
 
 ../src/led/user_led.h:
 
-F:\a_Max\max_xilinx\opendv\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO/user_gpio.h:
+G:\a_max\max_xilinx\max\2_gpio_mio\gpio_mio.sdk\gpio_mio\src\GPIO/user_gpio.h:

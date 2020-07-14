@@ -15,6 +15,6 @@
 #define MIOLED2    0     //Á¬½Óµ½MIO0
 
 //function
+extern void led_init();
 extern void led_twinkle();
-
 #endif /* SRC_LED_USER_LED_H_ */

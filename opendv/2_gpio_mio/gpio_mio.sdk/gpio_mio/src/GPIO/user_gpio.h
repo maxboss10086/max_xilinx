@@ -19,5 +19,5 @@ extern void GPIO_H(u32 Pin);
 extern void GPIO_L(u32 Pin);
 extern void GPIO_model_IN(u32 Pin);
 extern void GPIO_model_OUT(u32 Pin);
-
+extern void GPIO_EN(u32 Pin);
 #endif /* SRC_GPIO_USER_GPIO_H_ */

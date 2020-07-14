@@ -21,19 +21,23 @@ void gpio_init(){
 	XGpioPs_CfgInitialize(&Gpio, ConfigPtr,ConfigPtr->BaseAddr);
 }
 
-void GPIO_H(u32 Pin){
-	XGpioPs_WritePin(&Gpio, Pin, 0x1); //向指定引脚写入数据：0或1
+void GPIO_H(u32 pin){
+	XGpioPs_WritePin(&Gpio, pin, 0x1); //向指定引脚写入数据：0或1
 }
-void GPIO_L(u32 Pin){
-	XGpioPs_WritePin(&Gpio, Pin, 0x0); //向指定引脚写入数据：0或1
-}
-
-//设置指定引脚的方向：0输入，1输出
-void GPIO_model_IN(u32 Pin){
-	XGpioPs_SetDirectionPin(&Gpio, Pin, 0);
+void GPIO_L(u32 pin){
+	XGpioPs_WritePin(&Gpio, pin, 0x0); //向指定引脚写入数据：0或1
 }
 
 //设置指定引脚的方向：0输入，1输出
-void GPIO_model_OUT(u32 Pin){
-	XGpioPs_SetDirectionPin(&Gpio, Pin, 1);
+void GPIO_model_IN(u32 pin){
+	XGpioPs_SetDirectionPin(&Gpio, pin, 0);
+}
+
+//设置指定引脚的方向：0输入，1输出
+void GPIO_model_OUT(u32 pin){
+	XGpioPs_SetDirectionPin(&Gpio, pin, 1);
+}
+
+void GPIO_EN(u32 pin){
+	XGpioPs_SetOutputEnablePin(&Gpio, pin, 1);
 }

@@ -18,21 +18,50 @@
 //
 //----------------------------------------------------------------------------------------
 //****************************************************************************************//
-
+//sys_include
 #include "xparameters.h" //器件参数信息
 #include "xstatus.h"     //包含XST_FAILURE和XST_SUCCESS的宏定义
 #include "xil_printf.h"  //包含print()函数
 #include "xgpiops.h"     //包含PS GPIO的函数
 #include "sleep.h"       //包含sleep()函数
+//user_include
+#include "user_led.h"
+#include "user_gpio.h"
 
 
-
+XGpioPs Gpio;            // GPIO设备的驱动程序实例
 
 int main(){
+//*********************************************sys_init***********************
+	gpio_init();
 
+
+
+//********************************************peripheral_init*****************
+	led_init(MIOLED0);
+
+
+
+
+//****************************************************************************
     while (1) {
-    	led_twinkle();
+    	led_twinkle(MIOLED0);
     }
-    return XST_SUCCESS;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

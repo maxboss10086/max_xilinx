@@ -16,9 +16,14 @@
 #include "user_gpio.h"
 
 
+void led_init(u32 pin){
+	GPIO_model_OUT(pin);
+	GPIO_EN(pin);
+}
 
-
-void led_twinkle(){
-	GPIO_model_OUT(MIOLED0);
-	GPIO_H(MIOLED0);
+void led_twinkle(u32 pin){
+	GPIO_H(pin);
+	sleep(1);
+	GPIO_L(pin);
+	sleep(1);
 }
