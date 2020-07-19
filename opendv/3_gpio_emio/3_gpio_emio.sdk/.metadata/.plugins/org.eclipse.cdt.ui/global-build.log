@@ -1,0 +1,291 @@
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27280	   1152	  22616	  51048	   c768	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
+18:51:33 **** Incremental Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:51:43 **** Incremental Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:53:35 **** Auto Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3_gpio_emio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3_gpio_emio_bsp/ps7_cortexa9_0/lib -o "3_gpio_emio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27280	   1152	  22616	  51048	   c768	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
+18:53:39 **** Incremental Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:54:14 **** Auto Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building target: 3_gpio_emio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3_gpio_emio_bsp/ps7_cortexa9_0/lib -o "3_gpio_emio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27292	   1152	  22616	  51060	   c774	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
+18:54:22 **** Incremental Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:55:17 **** Auto Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3_gpio_emio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3_gpio_emio_bsp/ps7_cortexa9_0/lib -o "3_gpio_emio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27292	   1152	  22616	  51060	   c774	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
+19:49:23 **** Clean-only build of project 3_gpio_emio_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+19:49:29 **** Clean-only build of configuration Debug for project 3_gpio_emio ****
+make clean 
+rm -rf  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o  ./src/led/user_led.d  ./src/GPIO/user_gpio.d  ./src/main.d  3_gpio_emio.elf.size  3_gpio_emio.elf
+ 
+19:49:31 **** Build of project 3_gpio_emio_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+In file included from usleep.c:56:0:
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+19:50:58 **** Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building file: ../src/GPIO/user_gpio.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/GPIO/user_gpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/GPIO/user_gpio.d" -MT"src/GPIO/user_gpio.o" -o "src/GPIO/user_gpio.o" "../src/GPIO/user_gpio.c"
+Finished building: ../src/GPIO/user_gpio.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3_gpio_emio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3_gpio_emio_bsp/ps7_cortexa9_0/lib -o "3_gpio_emio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27292	   1152	  22616	  51060	   c774	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
+19:56:29 **** Auto Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:42:11: error: 'key0_EMIO12' undeclared (first use in this function); did you mean 'key0_EMIO54'?
+  key_init(key0_EMIO12);
+           ^~~~~~~~~~~
+           key0_EMIO54
+../src/main.c:42:11: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+19:56:40 **** Auto Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3_gpio_emio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3_gpio_emio_bsp/ps7_cortexa9_0/lib -o "3_gpio_emio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27292	   1152	  22616	  51060	   c774	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
+19:57:28 **** Incremental Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:00:28 **** Incremental Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:01:39 **** Auto Build of configuration Debug for project 3_gpio_emio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/led/user_led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/led/user_led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/led/user_led.d" -MT"src/led/user_led.o" -o "src/led/user_led.o" "../src/led/user_led.c"
+Finished building: ../src/led/user_led.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../3_gpio_emio_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\GPIO" -I"G:\a_max\max_xilinx\opendv\3_gpio_emio\3_gpio_emio.sdk\3_gpio_emio\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3_gpio_emio.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../3_gpio_emio_bsp/ps7_cortexa9_0/lib -o "3_gpio_emio.elf"  ./src/led/user_led.o  ./src/GPIO/user_gpio.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 3_gpio_emio.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 3_gpio_emio.elf  |tee "3_gpio_emio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27292	   1152	  22616	  51060	   c774	3_gpio_emio.elf
+Finished building: 3_gpio_emio.elf.size
+ 
