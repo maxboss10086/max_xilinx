@@ -14,40 +14,40 @@
 //user_include
 #include "user_gpio.h"
 
-XGpioPs Gpio;
+XGpioPs gpio;
 
 void gpio_init(){
     XGpioPs_Config *ConfigPtr;
 	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
-	XGpioPs_CfgInitialize(&Gpio, ConfigPtr,ConfigPtr->BaseAddr);
+	XGpioPs_CfgInitialize(&gpio, ConfigPtr,ConfigPtr->BaseAddr);
 }
 
 void GPIO_H(u32 pin){
-	XGpioPs_WritePin(&Gpio, pin, 0x1); //向指定引脚写入数据：0或1
+	XGpioPs_WritePin(&gpio, pin, 0x1); //向指定引脚写入数据：0或1
 }
 void GPIO_L(u32 pin){
-	XGpioPs_WritePin(&Gpio, pin, 0x0); //向指定引脚写入数据：0或1
+	XGpioPs_WritePin(&gpio, pin, 0x0); //向指定引脚写入数据：0或1
 }
 
 //设置指定引脚的方向：0输入，1输出
 void GPIO_model_IN(u32 pin){
-	XGpioPs_SetDirectionPin(&Gpio, pin, 0);
+	XGpioPs_SetDirectionPin(&gpio, pin, 0);
 }
 
 //设置指定引脚的方向：0输入，1输出
 void GPIO_model_OUT(u32 pin){
-	XGpioPs_SetDirectionPin(&Gpio, pin, 1);
+	XGpioPs_SetDirectionPin(&gpio, pin, 1);
 }
 
 void GPIO_EN(u32 pin){
-	XGpioPs_SetOutputEnablePin(&Gpio, pin, 1);
+	XGpioPs_SetOutputEnablePin(&gpio, pin, 1);
 }
 u32 GPIO_read (u32 Pin){
 	u32 reslut;
-	reslut = XGpioPs_ReadPin(&Gpio,Pin);
+	reslut = XGpioPs_ReadPin(&gpio,Pin);
 	return reslut;
 }
 
 void GPIO_write(u32 pin ,u32 data ){
-	XGpioPs_WritePin(&Gpio, pin, data); //向指定引脚写入数据：0或1
+	XGpioPs_WritePin(&gpio, pin, data); //向指定引脚写入数据：0或1
 }

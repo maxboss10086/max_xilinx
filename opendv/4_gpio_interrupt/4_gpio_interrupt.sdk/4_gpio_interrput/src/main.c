@@ -25,6 +25,7 @@
 #include "xgpiops.h"     //包含PS GPIO的函数
 #include "sleep.h"       //包含sleep()函数
 #include "xscugic.h"
+#include "interrput.h"
 //user_include
 #include "user_led.h"
 #include "user_gpio.h"
@@ -35,7 +36,7 @@ XGpioPs Gpio;            // GPIO设备的驱动程序实例
 int main(){
 //*********************************************sys_init***********************
 	gpio_init();
-
+	interrupt_init();
 
 
 //********************************************peripheral_init*****************
@@ -46,7 +47,16 @@ int main(){
 
 //****************************************************************************
     while (1) {
-    	key_led(key0_EMIO54,MIOLED0);
+        if (key.press_flag) {
+            usleep(20000);
+            if (XGpioPs_ReadPin(&gpio, KEY) == 0) {
+                key.val = ~key.val;
+                XGpioPs_WritePin(&gpio, MIOLED0, key.val);
+            }
+            key.press_flag = FALSE;
+            XGpioPs_IntrClearPin(&gpio, KEY);      //清除按键KEY中断
+            XGpioPs_IntrEnablePin(&gpio, KEY);     //使能按键KEY中断
+        }
     }
 
 

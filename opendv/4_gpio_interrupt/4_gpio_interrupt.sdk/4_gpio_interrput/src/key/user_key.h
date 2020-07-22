@@ -13,8 +13,13 @@
 #define key0_MIO12     	12     //连接到MIO0
 #define key0_EMIO54    	54     //连接到MIO0
 
-extern void key_init(u32 key);
+typedef struct {
+	u32 press_flag;
+	u32 val;
+} key_data;
+extern key_data key;
 
+extern void key_init(u32 key);
 
 
 #endif /* SRC_KEY_USER_KEY_H_ */

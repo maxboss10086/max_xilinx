@@ -12,7 +12,7 @@
 //∫Í∂®“ÂGPIO_DEVICE_ID
 #define GPIO_DEVICE_ID      XPAR_XGPIOPS_0_DEVICE_ID
 #define GPIO_INTERRUPT_ID   XPAR_XGPIOPS_0_INTR           //PS∂ÀGPIO÷–∂œID
-
+extern XGpioPs gpio;
 //function
 extern void gpio_init();
 extern void GPIO_H(u32 Pin);

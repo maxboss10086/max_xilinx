@@ -12,7 +12,7 @@
 
 
 extern void key_interrupt(void *callback_ref);
-
+extern int interrupt_init();
 
 
 

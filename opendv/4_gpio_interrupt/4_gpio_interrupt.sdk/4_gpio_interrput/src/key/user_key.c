@@ -22,22 +22,23 @@
 
 
 
+XScuGic gic_ins_ptr;
+key_data key;
+
+void key_interrupt_en(){
+
+	 //使能来自于Gpio器件的中断
+	    XScuGic_Enable(&gic_ins_ptr, GPIO_INTERRUPT_ID);
+	 //设置KEY按键的中断类型为下降沿中断
+	    XGpioPs_SetIntrTypePin(&gpio, KEY, XGPIOPS_IRQ_TYPE_EDGE_FALLING);
+	 //使能按键KEY中断
+	    XGpioPs_IntrEnablePin(&gpio, KEY);
+	 //为中断设置中断处理函数
+	    XScuGic_Connect(&gic_ins_ptr, GPIO_INTERRUPT_ID,(Xil_ExceptionHandler) key_interrupt, (void *) &gpio);
+}
+
 void key_init(u32 key){
+	key_interrupt_en();
 	GPIO_model_IN(key);
 	GPIO_EN(key);
 }
-
-void key_interrupt_init(){
-		XGpioPs *gpio;
-		XScuGic *gic_ins_ptr;
-	 //使能来自于Gpio器件的中断
-	    XScuGic_Enable(gic_ins_ptr, GPIO_INTERRUPT_ID);
-	 //设置KEY按键的中断类型为下降沿中断
-	    XGpioPs_SetIntrTypePin(gpio, KEY, XGPIOPS_IRQ_TYPE_EDGE_FALLING);
-	 //使能按键KEY中断
-	    XGpioPs_IntrEnablePin(gpio, KEY);
-	 //为中断设置中断处理函数
-	    XScuGic_Connect(gic_ins_ptr, GPIO_INTERRUPT_ID,(Xil_ExceptionHandler) key_interrupt, (void *) gpio);
-}
-
-
