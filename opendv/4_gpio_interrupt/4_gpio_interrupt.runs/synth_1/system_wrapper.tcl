@@ -17,22 +17,25 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/57315/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13624-DESKTOP-3D03KII/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.cache/wt [current_project]
-set_property parent.project_path F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.xpr [current_project]
+set_property webtalk.parent_dir G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.cache/wt [current_project]
+set_property parent.project_path G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.cache/ip [current_project]
+set_property ip_output_repo g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/hdl/system_wrapper.v
-add_files F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/system_ooc.xdc]
+read_verilog -library xil_defaultlib G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/hdl/system_wrapper.v
+add_files G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/system_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -42,8 +45,8 @@ set_property used_in_implementation false [get_files -all F:/a_Max/max_xilinx/op
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/constrs_1/new/max.xdc
-set_property used_in_implementation false [get_files F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/constrs_1/new/max.xdc]
+read_xdc G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/constrs_1/new/max.xdc
+set_property used_in_implementation false [get_files G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/constrs_1/new/max.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

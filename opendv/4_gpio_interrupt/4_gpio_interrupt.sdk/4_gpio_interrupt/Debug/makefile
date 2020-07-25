@@ -30,7 +30,6 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 ELFSIZE += \
 4_gpio_interrupt.elf.size \
-4_gpio_interrupt.elf.size \
 
 
 # All Target

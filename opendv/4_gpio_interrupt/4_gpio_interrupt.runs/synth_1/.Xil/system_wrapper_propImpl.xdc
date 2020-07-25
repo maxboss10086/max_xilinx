@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc rfile:../../../4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:system_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/constrs_1/new/max.xdc rfile:../../../4_gpio_interrupt.srcs/constrs_1/new/max.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc rfile:../../../3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:system_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/constrs_1/new/max.xdc rfile:../../../3_gpio_emio.srcs/constrs_1/new/max.xdc id:2} [current_design]
 current_instance system_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "C11" [get_ports "MIO[53]"]

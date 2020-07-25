@@ -11,7 +11,6 @@
 #include "xil_printf.h"  //包含print()函数
 #include "xgpiops.h"     //包含PS GPIO的函数
 #include "sleep.h"       //包含sleep()函数
-#include "xscugic.h"
 //user_include
 #include "user_led.h"
 #include "user_gpio.h"
@@ -21,6 +20,7 @@ void led_init(u32 pin){
 	GPIO_model_OUT(pin);
 	GPIO_EN(pin);
 }
+
 
 
 void led_twinkle(u32 pin){
@@ -36,5 +36,3 @@ void key_led(u32 key,u32 pin){
 	result = ~result;
 	GPIO_write(pin,result);
 }
-
-

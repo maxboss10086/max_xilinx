@@ -9,9 +9,9 @@
 #define SRC_KEY_USER_KEY_H_
 
 
-#define KEY  			11         //KEY 连接到 MIO11
-#define key0_MIO12     	12     //连接到MIO0
-#define key0_EMIO54    	54     //连接到MIO0
+#define PS_key0  		11     //KEY 连接到 MIO11
+#define PL_key0    		54     //连接到MIO0
+#define PL_key1     	12     //连接到MIO0
 
 typedef struct {
 	u32 press_flag;

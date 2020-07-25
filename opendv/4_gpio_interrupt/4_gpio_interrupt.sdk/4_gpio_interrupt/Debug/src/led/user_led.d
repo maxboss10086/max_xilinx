@@ -17,11 +17,8 @@ src/led/user_led.o src/led/user_led.o: ../src/led/user_led.c \
  ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
  ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xplatform_info.h \
  ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/sleep.h \
- ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xscugic.h \
- ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xscugic_hw.h \
- ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xil_exception.h \
  ../src/led/user_led.h \
- F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO/user_gpio.h
+ G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO/user_gpio.h
 
 ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -59,12 +56,6 @@ src/led/user_led.o src/led/user_led.o: ../src/led/user_led.c \
 
 ../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/sleep.h:
 
-../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xscugic.h:
-
-../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xscugic_hw.h:
-
-../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xil_exception.h:
-
 ../src/led/user_led.h:
 
-F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO/user_gpio.h:
+G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO/user_gpio.h:

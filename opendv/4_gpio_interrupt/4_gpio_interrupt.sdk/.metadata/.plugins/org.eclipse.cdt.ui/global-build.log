@@ -1,139 +1,119 @@
-19:38:58 **** Incremental Build of configuration Debug for project 4_gpio_interrupt ****
+Finished building: ../src/main.c
+ 
+Building target: 4_gpio_interrupt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/user_interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 4_gpio_interrupt.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30760	   1928	  22648	  55336	   d828	4_gpio_interrupt.elf
+Finished building: 4_gpio_interrupt.elf.size
+ 
+00:14:30 **** Incremental Build of configuration Debug for project 4_gpio_interrupt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
+ 
 make: Nothing to be done for 'main-build'.
-19:39:21 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
+00:14:38 **** Incremental Build of configuration Debug for project 4_gpio_interrupt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: 4_gpio_interrupt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: 4_gpio_interrupt.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31076	   1928	  22600	  55604	   d934	4_gpio_interrupt.elf
-'Finished building: 4_gpio_interrupt.elf.size'
-' '
-19:42:37 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
+ 
+make: Nothing to be done for 'main-build'.
+00:15:19 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: 4_gpio_interrupt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: 4_gpio_interrupt.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31076	   1928	  22600	  55604	   d934	4_gpio_interrupt.elf
-'Finished building: 4_gpio_interrupt.elf.size'
-' '
-19:44:28 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: 4_gpio_interrupt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: 4_gpio_interrupt.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31076	   1928	  22600	  55604	   d934	4_gpio_interrupt.elf
-'Finished building: 4_gpio_interrupt.elf.size'
-' '
-19:45:01 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: 4_gpio_interrupt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: 4_gpio_interrupt.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31076	   1928	  22600	  55604	   d934	4_gpio_interrupt.elf
-'Finished building: 4_gpio_interrupt.elf.size'
-' '
-19:48:24 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/interrput/interrput.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -c -fmessage-length=0 -MT"src/interrput/interrput.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/interrput/interrput.d" -MT"src/interrput/interrput.o" -o "src/interrput/interrput.o" "../src/interrput/interrput.c"
-../src/interrput/interrput.c: In function 'interrupt_init':
-../src/interrput/interrput.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 
+Building file: ../src/interrput/user_interrput.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -c -fmessage-length=0 -MT"src/interrput/user_interrput.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/interrput/user_interrput.d" -MT"src/interrput/user_interrput.o" -o "src/interrput/user_interrput.o" "../src/interrput/user_interrput.c"
+../src/interrput/user_interrput.c: In function 'interrupt_init':
+../src/interrput/user_interrput.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-'Finished building: ../src/interrput/interrput.c'
-' '
-'Building target: 4_gpio_interrupt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: 4_gpio_interrupt.elf'
-' '
-'Invoking: ARM v7 Print Size'
+Finished building: ../src/interrput/user_interrput.c
+ 
+Building target: 4_gpio_interrupt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/user_interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 4_gpio_interrupt.elf
+ 
+Invoking: ARM v7 Print Size
 arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  31076	   1928	  22600	  55604	   d934	4_gpio_interrupt.elf
-'Finished building: 4_gpio_interrupt.elf.size'
-' '
-19:49:21 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
+  30760	   1928	  22648	  55336	   d828	4_gpio_interrupt.elf
+Finished building: 4_gpio_interrupt.elf.size
+ 
+00:17:07 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"F:\a_Max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: 4_gpio_interrupt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: 4_gpio_interrupt.elf'
-' '
-'Invoking: ARM v7 Print Size'
+ 
+Building file: ../src/interrput/user_interrput.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -c -fmessage-length=0 -MT"src/interrput/user_interrput.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/interrput/user_interrput.d" -MT"src/interrput/user_interrput.o" -o "src/interrput/user_interrput.o" "../src/interrput/user_interrput.c"
+../src/interrput/user_interrput.c: In function 'key_interrupt':
+../src/interrput/user_interrput.c:56:41: error: 'KEY' undeclared (first use in this function)
+     if (XGpioPs_IntrGetStatusPin(&gpio, KEY)){
+                                         ^~~
+../src/interrput/user_interrput.c:56:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/interrput/user_interrput.c:56:34: warning: passing argument 1 of 'XGpioPs_IntrGetStatusPin' from incompatible pointer type [-Wincompatible-pointer-types]
+     if (XGpioPs_IntrGetStatusPin(&gpio, KEY)){
+                                  ^
+In file included from ../src/interrput/user_interrput.c:12:0:
+../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xgpiops.h:263:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ u32 XGpioPs_IntrGetStatusPin(XGpioPs *InstancePtr, u32 Pin);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/interrput/user_interrput.c:61:28: warning: passing argument 1 of 'XGpioPs_IntrDisablePin' from incompatible pointer type [-Wincompatible-pointer-types]
+     XGpioPs_IntrDisablePin(&gpio, KEY);
+                            ^
+In file included from ../src/interrput/user_interrput.c:12:0:
+../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include/xgpiops.h:261:6: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ void XGpioPs_IntrDisablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../src/interrput/user_interrput.c: In function 'interrupt_init':
+../src/interrput/user_interrput.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/interrput/subdir.mk:20: src/interrput/user_interrput.o] Error 1
+00:17:32 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/interrput/user_interrput.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -c -fmessage-length=0 -MT"src/interrput/user_interrput.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/interrput/user_interrput.d" -MT"src/interrput/user_interrput.o" -o "src/interrput/user_interrput.o" "../src/interrput/user_interrput.c"
+../src/interrput/user_interrput.c: In function 'key_interrupt':
+../src/interrput/user_interrput.c:56:40: error: 'KEY' undeclared (first use in this function)
+     if (XGpioPs_IntrGetStatusPin(gpio, KEY)){
+                                        ^~~
+../src/interrput/user_interrput.c:56:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/interrput/user_interrput.c: In function 'interrupt_init':
+../src/interrput/user_interrput.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/interrput/subdir.mk:20: src/interrput/user_interrput.o] Error 1
+00:18:18 **** Auto Build of configuration Debug for project 4_gpio_interrupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/interrput/user_interrput.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I../../4_gpio_interrupt_bsp/ps7_cortexa9_0/include -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\GPIO" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\key" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\led" -I"G:\a_max\max_xilinx\opendv\4_gpio_interrupt\4_gpio_interrupt.sdk\4_gpio_interrupt\src\interrput" -c -fmessage-length=0 -MT"src/interrput/user_interrput.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/interrput/user_interrput.d" -MT"src/interrput/user_interrput.o" -o "src/interrput/user_interrput.o" "../src/interrput/user_interrput.c"
+../src/interrput/user_interrput.c: In function 'interrupt_init':
+../src/interrput/user_interrput.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/interrput/user_interrput.c
+ 
+Building target: 4_gpio_interrupt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../4_gpio_interrupt_bsp/ps7_cortexa9_0/lib -o "4_gpio_interrupt.elf"  ./src/led/user_led.o  ./src/key/user_key.o  ./src/interrput/user_interrput.o  ./src/GPIO/user_gpio.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: 4_gpio_interrupt.elf
+ 
+Invoking: ARM v7 Print Size
 arm-none-eabi-size 4_gpio_interrupt.elf  |tee "4_gpio_interrupt.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  31076	   1928	  22600	  55604	   d934	4_gpio_interrupt.elf
-'Finished building: 4_gpio_interrupt.elf.size'
-' '
-19:55:59 **** Incremental Build of configuration Debug for project 4_gpio_interrupt ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-19:57:41 **** Incremental Build of configuration Debug for project 4_gpio_interrupt ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
+  30816	   1928	  22648	  55392	   d860	4_gpio_interrupt.elf
+Finished building: 4_gpio_interrupt.elf.size
+ 

@@ -19,5 +19,5 @@
 extern void led_init();
 extern void led_twinkle();
 extern void key_init();
-extern void key_led();
+extern void key_led(u32 key,u32 pin);
 #endif /* SRC_LED_USER_LED_H_ */

@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=F:/Vivado_2018.3/SDK/2018.3/bin;F:/Vivado_2018.3/Vivado/2018.3/ids_lite/ISE/bin/nt64;F:/Vivado_2018.3/Vivado/2018.3/ids_lite/ISE/lib/nt64:F:/Vivado_2018.3/Vivado/2018.3/bin
+  PATH=G:/vivado/SDK/2018.3/bin;G:/vivado/Vivado/2018.3/ids_lite/ISE/bin/nt64;G:/vivado/Vivado/2018.3/ids_lite/ISE/lib/nt64:G:/vivado/Vivado/2018.3/bin
 else
-  PATH=F:/Vivado_2018.3/SDK/2018.3/bin;F:/Vivado_2018.3/Vivado/2018.3/ids_lite/ISE/bin/nt64;F:/Vivado_2018.3/Vivado/2018.3/ids_lite/ISE/lib/nt64:F:/Vivado_2018.3/Vivado/2018.3/bin:$PATH
+  PATH=G:/vivado/SDK/2018.3/bin;G:/vivado/Vivado/2018.3/ids_lite/ISE/bin/nt64;G:/vivado/Vivado/2018.3/ids_lite/ISE/lib/nt64:G:/vivado/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/impl_1'
+HD_PWD='G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
 
 

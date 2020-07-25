@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sat Jul 25 22:48:01 2020
+# Process ID: 12308
+# Current directory: G:/a_max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: G:/a_max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.sdk/webtalk/webtalk.log
+# Journal file: G:/a_max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
