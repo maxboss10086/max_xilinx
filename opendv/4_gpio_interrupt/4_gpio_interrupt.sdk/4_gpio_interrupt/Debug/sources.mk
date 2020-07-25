@@ -18,6 +18,7 @@ ELFSIZE :=
 SUBDIRS := \
 src/GPIO \
 src/interrput \
+src/key \
 src/led \
 src \
 

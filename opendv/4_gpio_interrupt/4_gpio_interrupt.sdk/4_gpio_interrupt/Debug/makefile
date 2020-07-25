@@ -9,6 +9,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/led/subdir.mk
+-include src/key/subdir.mk
 -include src/interrput/subdir.mk
 -include src/GPIO/subdir.mk
 -include src/subdir.mk
@@ -28,6 +29,7 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 ELFSIZE += \
+4_gpio_interrupt.elf.size \
 4_gpio_interrupt.elf.size \
 
 

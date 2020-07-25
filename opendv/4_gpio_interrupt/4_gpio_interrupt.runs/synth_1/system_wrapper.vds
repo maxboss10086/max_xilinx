@@ -2,38 +2,36 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jul 19 19:32:00 2020
-# Process ID: 15324
-# Current directory: G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1
+# Start of session at: Sat Jul 25 18:26:15 2020
+# Process ID: 11468
+# Current directory: F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
-# Log file: G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1/system_wrapper.vds
-# Journal file: G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1\vivado.jou
+# Log file: F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1/system_wrapper.vds
+# Journal file: F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 325.996 ; gain = 69.938
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2018.3/data/ip'.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 377.742 ; gain = 51.746
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado_2018.3/Vivado/2018.3/data/ip'.
 Command: synth_design -top system_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12344 
+INFO: Helper process launched with PID 13808 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 482.387 ; gain = 97.473
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 475.375 ; gain = 98.375
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [F:/Vivado_2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
-INFO: [Synth 8-6157] synthesizing module 'system' [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/synth/system.v:13]
-INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [F:/Vivado_2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'system' [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -90,17 +88,17 @@ INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_sys
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
-INFO: [Synth 8-6157] synthesizing module 'BIBUF' [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:270]
-INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (2#1) [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:270]
-INFO: [Synth 8-6157] synthesizing module 'PS7' [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41553]
-INFO: [Synth 8-6155] done synthesizing module 'PS7' (3#1) [G:/vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41553]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:195]
-INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (5#1) [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'system' (6#1) [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/synth/system.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (7#1) [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1342]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1343]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [F:/Vivado_2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (2#1) [F:/Vivado_2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:270]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [F:/Vivado_2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41553]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (3#1) [F:/Vivado_2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41553]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (5#1) [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'system' (6#1) [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (7#1) [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
@@ -181,7 +179,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 538.305 ; gain = 153.391
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 531.305 ; gain = 154.305
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -194,10 +192,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 538.305 ; gain = 153.391
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 531.305 ; gain = 154.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 538.305 ; gain = 153.391
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 531.305 ; gain = 154.305
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -206,50 +204,50 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
-Finished Parsing XDC File [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [g:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Parsing XDC File [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 784.422 ; gain = 0.000
-Parsing XDC File [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/constrs_1/new/max.xdc]
-Finished Parsing XDC File [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/constrs_1/new/max.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.srcs/constrs_1/new/max.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 777.867 ; gain = 0.000
+Parsing XDC File [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/constrs_1/new/max.xdc]
+Finished Parsing XDC File [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/constrs_1/new/max.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.srcs/constrs_1/new/max.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Parsing XDC File [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 777.867 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 777.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.422 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 784.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 777.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 777.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 784.422 ; gain = 399.508
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 777.867 ; gain = 400.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 784.422 ; gain = 399.508
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 777.867 ; gain = 400.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for system_i/processing_system7_0/inst. (constraint file  G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1/dont_touch.xdc, line 13).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0/inst. (constraint file  F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1/dont_touch.xdc, line 13).
 Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:47 . Memory (MB): peak = 784.422 ; gain = 399.508
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 777.867 ; gain = 400.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 784.422 ; gain = 399.508
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 777.867 ; gain = 400.867
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -307,7 +305,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 784.422 ; gain = 399.508
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 777.867 ; gain = 400.867
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -319,13 +317,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:01:17 . Memory (MB): peak = 1006.395 ; gain = 621.480
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.434 ; gain = 626.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:18 . Memory (MB): peak = 1006.891 ; gain = 621.977
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.930 ; gain = 626.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -337,7 +335,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -361,7 +359,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -374,7 +372,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -386,25 +384,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -436,17 +434,17 @@ Report Instance Areas:
 |4     |      inst               |processing_system7_v5_5_processing_system7 |   180|
 +------+-------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1017.340 ; gain = 640.340
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:03 . Memory (MB): peak = 1019.414 ; gain = 388.383
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1019.414 ; gain = 634.500
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1017.340 ; gain = 393.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1017.340 ; gain = 640.340
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1031.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.766 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
@@ -454,10 +452,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 36 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:31 . Memory (MB): peak = 1031.266 ; gain = 653.523
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1031.266 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1027.910 ; gain = 658.070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.910 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'G:/a_max/max_xilinx/opendv/3_gpio_emio/3_gpio_emio.runs/synth_1/system_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'F:/a_Max/max_xilinx/opendv/4_gpio_interrupt/4_gpio_interrupt.runs/synth_1/system_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 19 19:34:10 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 25 18:27:06 2020...
