@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/ip/demo_sg_c_addsub_v12_0_i0/sim/demo_sg_c_addsub_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity demo_sg_c_addsub_v12_0_i0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/ip/demo_sg_mult_gen_v12_0_i0/sim/demo_sg_mult_gen_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity demo_sg_mult_gen_v12_0_i0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/ip/demo_sg_c_counter_binary_v12_0_i0/sim/demo_sg_c_counter_binary_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity demo_sg_c_counter_binary_v12_0_i0

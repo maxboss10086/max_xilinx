@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul 13 18:16:30 2020
+# Process ID: 6412
+# Current directory: E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v/vivado.log
+# Journal file: E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'demo_sg_c_addsub_v12_0_i0' to 'demo_sg_c_addsub_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000000000000000000000000000' to '0' has been ignored for IP 'demo_sg_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'demo_sg_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'demo_sg_c_addsub_v12_0_i0'
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'demo_sg_mult_gen_v12_0_i0' to 'demo_sg_mult_gen_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBType' from 'Signed' to 'Unsigned' has been ignored for IP 'demo_sg_mult_gen_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PortBWidth' from '18' to '16' has been ignored for IP 'demo_sg_mult_gen_v12_0_i0'
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 13 18:16:41 2020...

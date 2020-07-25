@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_0_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i3_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i2_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i4_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i0_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i1_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_counter_binary_v12_0_i0_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_counter_binary_v12_0_i0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_blk_mem_gen_i0_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_blk_mem_gen_i0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_mult_gen_v12_0_i1_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_mult_gen_v12_0_i1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_mult_gen_v12_0_i0_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_mult_gen_v12_0_i0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_mult_gen_v12_0_i3_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_mult_gen_v12_0_i3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i5_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_mult_gen_v12_0_i2_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_mult_gen_v12_0_i2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="trapezoid_filter_c_addsub_v12_0_i6_synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/trapezoid_filter_c_addsub_v12_0_i6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i3_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i2_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i4_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i1_synth_1"/>
+		<Parent Id="trapezoid_filter_c_counter_binary_v12_0_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_blk_mem_gen_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i1_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i3_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i5_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i2_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i6_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i3_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i2_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i4_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i1_synth_1"/>
+		<Parent Id="trapezoid_filter_c_counter_binary_v12_0_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_blk_mem_gen_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i1_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i0_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i3_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i5_synth_1"/>
+		<Parent Id="trapezoid_filter_mult_gen_v12_0_i2_synth_1"/>
+		<Parent Id="trapezoid_filter_c_addsub_v12_0_i6_synth_1"/>
+	</Run>
+</Runs>
+

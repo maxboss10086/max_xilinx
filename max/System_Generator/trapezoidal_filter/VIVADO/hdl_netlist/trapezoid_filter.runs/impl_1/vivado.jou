@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jul 22 09:38:57 2020
+# Process ID: 8480
+# Current directory: E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/impl_1
+# Command line: vivado.exe -log trapezoid_filter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source trapezoid_filter.tcl -notrace
+# Log file: E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/impl_1/trapezoid_filter.vdi
+# Journal file: E:/Bilibili_FPGA/N3_Project/VIVADO/hdl_netlist/trapezoid_filter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source trapezoid_filter.tcl -notrace

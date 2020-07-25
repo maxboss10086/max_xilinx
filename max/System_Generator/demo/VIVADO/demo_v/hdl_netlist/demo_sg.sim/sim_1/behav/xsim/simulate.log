@@ -1,0 +1,18 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+  
+Beginning comparisons for instance demo_sg_output.dat
+  
+** Simulation summary for instance demo_sg_output.dat
+   Samples Processed:        1025
+             Checked:        1025
+             Ignored:           0
+  Test completed with no errors.
+  
+Beginning comparisons for instance demo_sg_output.dat
+  
+** Simulation summary for instance demo_sg_output.dat
+   Samples Processed:        1025
+             Checked:        1025
+             Ignored:           0
+  Test completed with no errors.

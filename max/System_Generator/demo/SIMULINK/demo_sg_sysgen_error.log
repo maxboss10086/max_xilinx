@@ -1,0 +1,19 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2018.3                 F:/Vivado_2018.3/Vivado/2018.3
+Matlab 9.4.0.813654 (R2018a)            F:\matlab2018a
+Vivado 2018.3                           F:/Vivado_2018.3/Vivado/2018.3
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'demo_sg/Input'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'demo_sg/Input'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

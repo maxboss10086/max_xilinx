@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1595381536">
+  <File Type="PA-TCL" Name="trapezoid_filter.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="trapezoid_filter_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="trapezoid_filter_reports.tcl"/>
+  <File Type="RDS-RDS" Name="trapezoid_filter.vds"/>
+  <File Type="RDS-UTIL" Name="trapezoid_filter_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="trapezoid_filter_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="trapezoid_filter.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="trapezoid_filter_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="trapezoid_filter_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/conv_pkg.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/conv_pkg.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/synth_reg.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/synth_reg_w_init.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/synth_reg_w_init.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/convert_type.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/convert_type.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/xlclockdriver_rd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/xlclockdriver_rd.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/trapezoid_filter_entity_declarations.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/trapezoid_filter_entity_declarations.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/trapezoid_filter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/trapezoid_filter.v"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/trapezoid_filter_blk_mem_gen_i0_vivado.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="trapezoid_filter"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/sysgen/trapezoid_filter_clock.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/trapezoid_filter_clock.xdc"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/sysgen/trapezoid_filter.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/trapezoid_filter.xdc"/>
+        <Attr Name="ImportTime" Val="1595381093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_mult_gen_v12_0_i3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_counter_binary_v12_0_i0"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_mult_gen_v12_0_i1"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i3"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i2"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_blk_mem_gen_i0"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i4"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i0"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i1"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_mult_gen_v12_0_i0"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i5"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_mult_gen_v12_0_i2"/>
+  <BlockFileSet Type="BlockSrcs" Name="trapezoid_filter_c_addsub_v12_0_i6"/>
+</GenRun>

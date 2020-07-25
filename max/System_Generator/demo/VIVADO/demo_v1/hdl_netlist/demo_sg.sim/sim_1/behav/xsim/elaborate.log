@@ -1,0 +1,11 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 814a9fc164f2485aa0efd2ab1ec71bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L blk_mem_gen_v8_4_1 -L c_gate_bit_v12_0_4 -L xbip_counter_v3_0_4 -L c_counter_binary_v12_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot demo_sg_tb_behav xil_defaultlib.demo_sg_tb xil_defaultlib.glbl -log elaborate.log --timescale 1ns/10ps 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port input_x0 on this module [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sim_1/imports/sysgen/demo_sg_tb.v:342]
+ERROR: [VRFC 10-426] cannot find port output_x0 on this module [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sim_1/imports/sysgen/demo_sg_tb.v:341]
+ERROR: [VRFC 10-2063] Module <demo_sg_default_clock_driver> not found while processing module instance <demo_sg_default_clock_driver> [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:185]
+ERROR: [VRFC 10-2063] Module <demo_sg_struct> not found while processing module instance <demo_sg_struct> [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:192]
+ERROR: [VRFC 10-2063] Module <ila_0> not found while processing module instance <ila_inst> [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:198]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

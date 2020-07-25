@@ -1,0 +1,23 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2017.4                 D:/Xilinx/Vivado/2017.4
+Matlab 9.2.0.538062 (R2017a)            D:\MATLAB\R2017a
+Vivado 2017.4                           D:/Xilinx/Vivado/2017.4
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal number of bits
+     Block: 'trapezoid_filter/Trapezoid_filter/CMult1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'trapezoid_filter/Trapezoid_filter/CMult1'
+
+Details:
+The data width on the p output port of this block grew to over
+4096 bits, and consequently rate and type propagation was aborted.
+
+Check for unstable feedback through this block via the use of
+full precision arithmetic.
+--------------------------------------------------------------------------------

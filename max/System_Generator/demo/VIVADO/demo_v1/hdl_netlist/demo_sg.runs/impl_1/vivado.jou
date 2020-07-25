@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul 13 19:12:39 2020
+# Process ID: 17424
+# Current directory: E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/impl_1
+# Command line: vivado.exe -log demo_sg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source demo_sg.tcl -notrace
+# Log file: E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/impl_1/demo_sg.vdi
+# Journal file: E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source demo_sg.tcl -notrace

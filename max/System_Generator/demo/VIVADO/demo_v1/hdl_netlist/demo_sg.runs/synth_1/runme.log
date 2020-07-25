@@ -1,0 +1,770 @@
+
+*** Running vivado
+    with args -log demo_sg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source demo_sg.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source demo_sg.tcl -notrace
+Command: synth_design -top demo_sg -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6072 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 429.953 ; gain = 100.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'demo_sg' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:178]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_default_clock_driver' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:156]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
+	Parameter period bound to: 32'sb00000000000000000000000000000001 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000101 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 1'b1 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000010 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter clk_for_ce_pulse_minus1 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus2 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (1#1) [D:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (2#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (3#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:79]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (4#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:167]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_default_clock_driver' (5#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:156]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_struct' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:7]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_xladdsub' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:137]
+	Parameter core_name0 bound to: demo_sg_c_addsub_v12_0_i0 - type: string 
+	Parameter a_width bound to: 48 - type: integer 
+	Parameter a_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 48 - type: integer 
+	Parameter b_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 49 - type: integer 
+	Parameter s_bin_pt bound to: 30 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 49 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 16 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_a_type bound to: 1 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_has_sclr bound to: 0 - type: integer 
+	Parameter c_has_ce bound to: 0 - type: integer 
+	Parameter c_latency bound to: 0 - type: integer 
+	Parameter c_output_width bound to: 49 - type: integer 
+	Parameter c_enable_rlocs bound to: 1 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+	Parameter full_a_width bound to: 49 - type: integer 
+	Parameter full_b_width bound to: 49 - type: integer 
+	Parameter full_s_bin_pt bound to: 30 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'demo_sg_c_addsub_v12_0_i0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_c_addsub_v12_0_i0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_c_addsub_v12_0_i0' (6#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_c_addsub_v12_0_i0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'align_input' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:260]
+	Parameter old_width bound to: 48 - type: integer 
+	Parameter delta bound to: 32'sb00000000000000000000000000000000 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 49 - type: integer 
+	Parameter abs_delta bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-638] synthesizing module 'extend_msb' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:235]
+	Parameter old_width bound to: 48 - type: integer 
+	Parameter new_width bound to: 49 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sign_ext' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 48 - type: integer 
+	Parameter new_width bound to: 49 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext' (7#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb' (8#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'align_input' (9#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:260]
+INFO: [Synth 8-638] synthesizing module 'convert_type' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:775]
+	Parameter old_width bound to: 49 - type: integer 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 49 - type: integer 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter fp_bin_pt bound to: 30 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter q_bin_pt bound to: 30 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'trunc' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-638] synthesizing module 'extend_msb__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110011 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized0' (9#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized0' (9#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc' (10#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-638] synthesizing module 'wrap_arith' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 49 - type: integer 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cast' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter new_width bound to: 49 - type: integer 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast' (11#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'wrap_arith' (12#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:754]
+INFO: [Synth 8-638] synthesizing module 'cast__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 49 - type: integer 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized0' (12#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'convert_type' (13#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_xladdsub' (14#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:137]
+WARNING: [Synth 8-350] instance 'addsub' of module 'demo_sg_xladdsub' requires 10 connections, but only 7 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:46]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_xlcmult' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:299]
+	Parameter core_name0 bound to: demo_sg_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 16 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 4 - type: integer 
+	Parameter b_bin_pt bound to: 14 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 48 - type: integer 
+	Parameter p_bin_pt bound to: 30 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 32 - type: integer 
+	Parameter c_b_width bound to: 16 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 1 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter const_bin_pt bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 48 - type: integer 
+	Parameter zero_const bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'demo_sg_mult_gen_v12_0_i0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_mult_gen_v12_0_i0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_mult_gen_v12_0_i0' (15#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_mult_gen_v12_0_i0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'zero_ext' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:186]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'zero_ext' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:186]
+INFO: [Synth 8-638] synthesizing module 'convert_type__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:775]
+	Parameter old_width bound to: 48 - type: integer 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 48 - type: integer 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter fp_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter q_bin_pt bound to: 30 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'trunc__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-638] synthesizing module 'extend_msb__parameterized1' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized1' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110010 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized1' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized1' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized0' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-638] synthesizing module 'wrap_arith__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 48 - type: integer 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cast__parameterized1' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter new_width bound to: 48 - type: integer 
+	Parameter new_bin_pt bound to: 30 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized1' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'wrap_arith__parameterized0' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:754]
+INFO: [Synth 8-638] synthesizing module 'cast__parameterized2' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 48 - type: integer 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110010 
+	Parameter new_bin_pt bound to: 32'sb00000000000000000000000000011110 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized2' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized0' (16#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_xlcmult' (17#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:299]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_xldelay' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:39]
+	Parameter width bound to: 48 - type: integer 
+	Parameter latency bound to: 100 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:94]
+	Parameter width bound to: 48 - type: integer 
+	Parameter latency bound to: 100 - type: integer 
+	Parameter complete_num_srlc33es bound to: 3 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 4 - type: integer 
+	Parameter num_srlc33es bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:60]
+	Parameter width bound to: 48 - type: integer 
+	Parameter latency bound to: 33 - type: integer 
+	Parameter a bound to: 6'sb011111 
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [D:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50855]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (18#1) [D:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50855]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+INFO: [Synth 8-638] synthesizing module 'FDE' [D:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3865]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDE' (19#1) [D:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3865]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+WARNING: [Synth 8-350] instance 'u1' of module 'SRLC32E' requires 6 connections, but only 5 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:76]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (20#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:60]
+INFO: [Synth 8-638] synthesizing module 'srlc33e__parameterized0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:60]
+	Parameter width bound to: 48 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+INFO: [Synth 8-256] done synthesizing module 'srlc33e__parameterized0' (20#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:60]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (21#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/synth_reg.v:94]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_xldelay' (22#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:39]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_xlconvert' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:71]
+	Parameter din_width bound to: 49 - type: integer 
+	Parameter din_bin_pt bound to: 30 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 16 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'convert_type__parameterized1' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:775]
+	Parameter old_width bound to: 49 - type: integer 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 16 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter fp_bin_pt bound to: 30 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter q_bin_pt bound to: 16 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'round_towards_inf' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:295]
+	Parameter old_width bound to: 32'sb00000000000000000000000000110011 
+	Parameter old_bin_pt bound to: 30 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_bin_pt bound to: 16 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000001110 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000001110 
+	Parameter right_of_dp_2 bound to: 32'sb00000000000000000000000000001100 
+	Parameter right_of_dp_1 bound to: 32'sb00000000000000000000000000001101 
+INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized2' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000100101 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized2' (22#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'round_towards_inf' (23#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:295]
+INFO: [Synth 8-638] synthesizing module 'saturation_arith' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:582]
+	Parameter old_width bound to: 32'sb00000000000000000000000000100101 
+	Parameter old_bin_pt bound to: 16 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 16 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter abs_new_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'saturation_arith' (24#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:582]
+INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized1' (24#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_xlconvert' (25#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:71]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_xlsprom' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:460]
+	Parameter core_name0 bound to: demo_sg_blk_mem_gen_i0 - type: string 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_address_width bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'demo_sg_blk_mem_gen_i0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_blk_mem_gen_i0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_blk_mem_gen_i0' (26#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_blk_mem_gen_i0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_xlsprom' (27#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:460]
+INFO: [Synth 8-638] synthesizing module 'demo_sg_xlcounter_limit' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:401]
+	Parameter core_name0 bound to: demo_sg_c_counter_binary_v12_0_i0 - type: string 
+	Parameter op_width bound to: 10 - type: integer 
+	Parameter op_arith bound to: 1 - type: integer 
+	Parameter cnt_63_48 bound to: 0 - type: integer 
+	Parameter cnt_47_32 bound to: 0 - type: integer 
+	Parameter cnt_31_16 bound to: 0 - type: integer 
+	Parameter cnt_15_0 bound to: 1023 - type: integer 
+	Parameter count_limited bound to: 0 - type: integer 
+	Parameter cnt_to bound to: 64'b0000000000000000000000000000000000000000000000000000001111111111 
+	Parameter oneStr bound to: 80'b00110001001100010011000100110001001100010011000100110001001100010011000100110001 
+INFO: [Synth 8-638] synthesizing module 'demo_sg_c_counter_binary_v12_0_i0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_c_counter_binary_v12_0_i0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_c_counter_binary_v12_0_i0' (28#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/demo_sg_c_counter_binary_v12_0_i0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_xlcounter_limit' (29#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg_entity_declarations.v:401]
+WARNING: [Synth 8-350] instance 'counter' of module 'demo_sg_xlcounter_limit' requires 7 connections, but only 6 given [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:145]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg_struct' (30#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:198]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (31#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'demo_sg_struct'. This will prevent further optimization [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:192]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_inst'. This will prevent further optimization [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:198]
+INFO: [Synth 8-256] done synthesizing module 'demo_sg' (32#1) [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/sources_1/imports/sysgen/demo_sg.v:178]
+WARNING: [Synth 8-3331] design demo_sg_xlcounter_limit has unconnected port up
+WARNING: [Synth 8-3331] design demo_sg_xlsprom has unconnected port rst
+WARNING: [Synth 8-3331] design demo_sg_xlconvert has unconnected port clk
+WARNING: [Synth 8-3331] design demo_sg_xlconvert has unconnected port ce
+WARNING: [Synth 8-3331] design demo_sg_xlconvert has unconnected port clr
+WARNING: [Synth 8-3331] design demo_sg_xlconvert has unconnected port en[0]
+WARNING: [Synth 8-3331] design synth_reg has unconnected port clr
+WARNING: [Synth 8-3331] design demo_sg_xldelay has unconnected port rst
+WARNING: [Synth 8-3331] design cast__parameterized1 has unconnected port inp[49]
+WARNING: [Synth 8-3331] design cast__parameterized1 has unconnected port inp[48]
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port ce
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port clr
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port clk
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port core_ce
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port core_clr
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port core_clk
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port rst[0]
+WARNING: [Synth 8-3331] design demo_sg_xlcmult has unconnected port en[0]
+WARNING: [Synth 8-3331] design cast has unconnected port inp[50]
+WARNING: [Synth 8-3331] design cast has unconnected port inp[49]
+WARNING: [Synth 8-3331] design demo_sg_xladdsub has unconnected port c_in
+WARNING: [Synth 8-3331] design demo_sg_xladdsub has unconnected port ce
+WARNING: [Synth 8-3331] design demo_sg_xladdsub has unconnected port clr
+WARNING: [Synth 8-3331] design demo_sg_xladdsub has unconnected port clk
+WARNING: [Synth 8-3331] design demo_sg_xladdsub has unconnected port rst
+WARNING: [Synth 8-3331] design demo_sg_xladdsub has unconnected port en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 482.531 ; gain = 152.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 482.531 ; gain = 152.637
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp5/ila_0_in_context.xdc] for cell 'ila_inst'
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp5/ila_0_in_context.xdc] for cell 'ila_inst'
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp6/demo_sg_c_addsub_v12_0_i0_in_context.xdc] for cell 'demo_sg_struct/addsub/comp0.core_instance0'
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp6/demo_sg_c_addsub_v12_0_i0_in_context.xdc] for cell 'demo_sg_struct/addsub/comp0.core_instance0'
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp7/demo_sg_mult_gen_v12_0_i0_in_context.xdc] for cell 'demo_sg_struct/cmult/comp0.core_instance0'
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp7/demo_sg_mult_gen_v12_0_i0_in_context.xdc] for cell 'demo_sg_struct/cmult/comp0.core_instance0'
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp8/demo_sg_blk_mem_gen_i0_in_context.xdc] for cell 'demo_sg_struct/rom/comp0.core_instance0'
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp8/demo_sg_blk_mem_gen_i0_in_context.xdc] for cell 'demo_sg_struct/rom/comp0.core_instance0'
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp9/demo_sg_c_counter_binary_v12_0_i0_in_context.xdc] for cell 'demo_sg_struct/counter/comp0.core_instance0'
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/.Xil/Vivado-11060-LIN-LAPTOP/dcp9/demo_sg_c_counter_binary_v12_0_i0_in_context.xdc] for cell 'demo_sg_struct/counter/comp0.core_instance0'
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/constrs_1/imports/sysgen/demo_sg_clock.xdc]
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/constrs_1/imports/sysgen/demo_sg_clock.xdc]
+Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/constrs_1/imports/sysgen/demo_sg.xdc]
+Finished Parsing XDC File [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/constrs_1/imports/sysgen/demo_sg.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.srcs/constrs_1/imports/sysgen/demo_sg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/demo_sg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/demo_sg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  FDE => FDRE: 192 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 848.820 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'demo_sg_struct/counter/comp0.core_instance0' at clock pin 'CLK' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for demo_sg_struct/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for demo_sg_struct/cmult/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for demo_sg_struct/counter/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for demo_sg_struct/rom/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     37 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module round_towards_inf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     37 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 1     
+Module saturation_arith 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (demo_sg_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module demo_sg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 848.820 ; gain = 518.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |demo_sg_c_addsub_v12_0_i0         |         1|
+|2     |demo_sg_mult_gen_v12_0_i0         |         1|
+|3     |demo_sg_c_counter_binary_v12_0_i0 |         1|
+|4     |demo_sg_blk_mem_gen_i0            |         1|
+|5     |ila_0                             |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |demo_sg_blk_mem_gen_i0            |     1|
+|2     |demo_sg_c_addsub_v12_0_i0         |     1|
+|3     |demo_sg_c_counter_binary_v12_0_i0 |     1|
+|4     |demo_sg_mult_gen_v12_0_i0         |     1|
+|5     |ila_0                             |     1|
+|6     |BUFG                              |     1|
+|7     |CARRY4                            |     9|
+|8     |LUT1                              |     1|
+|9     |LUT3                              |     1|
+|10    |LUT4                              |     1|
+|11    |LUT6                              |    33|
+|12    |SRLC32E                           |   144|
+|13    |FDE                               |   192|
+|14    |IBUF                              |     1|
++------+----------------------------------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------+-----------------------------+------+
+|      |Instance                                                  |Module                       |Cells |
++------+----------------------------------------------------------+-----------------------------+------+
+|1     |top                                                       |                             |   522|
+|2     |  demo_sg_struct                                          |demo_sg_struct               |   520|
+|3     |    addsub                                                |demo_sg_xladdsub             |    85|
+|4     |    cmult                                                 |demo_sg_xlcmult              |    48|
+|5     |    convert                                               |demo_sg_xlconvert            |     9|
+|6     |      \std_conversion.conv_udp                            |convert_type__parameterized1 |     9|
+|7     |        \ct_u0.quant_rtf                                  |round_towards_inf            |     9|
+|8     |    counter                                               |demo_sg_xlcounter_limit      |    10|
+|9     |    delay                                                 |demo_sg_xldelay              |   336|
+|10    |      \srl_delay.reg1                                     |synth_reg                    |   336|
+|11    |        \has_1.srlc33e_array0                             |srlc33e                      |    96|
+|12    |        \more_than_1.left_complete_ones[1].srlc33e_array  |srlc33e_0                    |    96|
+|13    |        \more_than_1.left_complete_ones[2].srlc33e_array  |srlc33e_1                    |    96|
+|14    |        \remaining_ones.last_srlc33e                      |srlc33e__parameterized0      |    48|
+|15    |    rom                                                   |demo_sg_xlsprom              |    32|
++------+----------------------------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 852.289 ; gain = 156.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 852.289 ; gain = 522.395
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  FDE => FDRE: 192 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 866.375 ; gain = 538.211
+INFO: [Common 17-1381] The checkpoint 'E:/Bilibili_FPGA/N2_Project/VIVADO/demo_v1/hdl_netlist/demo_sg.runs/synth_1/demo_sg.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file demo_sg_utilization_synth.rpt -pb demo_sg_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 866.375 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 13 19:12:32 2020...

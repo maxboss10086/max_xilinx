@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../demo_sg.srcs/sources_1/ip/demo_sg_c_addsub_v12_0_i0/sim/demo_sg_c_addsub_v12_0_i0.vhd" \
+"../../../../demo_sg.srcs/sources_1/ip/demo_sg_mult_gen_v12_0_i0/sim/demo_sg_mult_gen_v12_0_i0.vhd" \
+"../../../../demo_sg.srcs/sources_1/ip/demo_sg_c_counter_binary_v12_0_i0/sim/demo_sg_c_counter_binary_v12_0_i0.vhd" \
+
+# Do not sort compile order
+nosort
