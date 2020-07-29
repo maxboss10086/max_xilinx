@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul 27 12:00:02 2020
+# Process ID: 4272
+# Current directory: E:/Bilibili_FPGA/N4_Project/VIVADO/hdl_netlist/fir_filter.runs/fir_filter_fir_compiler_v7_2_i0_synth_1
+# Command line: vivado.exe -log fir_filter_fir_compiler_v7_2_i0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter_fir_compiler_v7_2_i0.tcl
+# Log file: E:/Bilibili_FPGA/N4_Project/VIVADO/hdl_netlist/fir_filter.runs/fir_filter_fir_compiler_v7_2_i0_synth_1/fir_filter_fir_compiler_v7_2_i0.vds
+# Journal file: E:/Bilibili_FPGA/N4_Project/VIVADO/hdl_netlist/fir_filter.runs/fir_filter_fir_compiler_v7_2_i0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_filter_fir_compiler_v7_2_i0.tcl -notrace

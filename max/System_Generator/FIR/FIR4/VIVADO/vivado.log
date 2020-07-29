@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul 27 11:55:22 2020
+# Process ID: 5084
+# Current directory: E:/Bilibili_FPGA/N4_Project/VIVADO
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: E:/Bilibili_FPGA/N4_Project/VIVADO/vivado.log
+# Journal file: E:/Bilibili_FPGA/N4_Project/VIVADO\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'fir_filter_c_counter_binary_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fir_filter_c_counter_binary_v12_0_i0' to 'fir_filter_c_counter_binary_v12_0_i0' is not allowed and is ignored.
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:36 . Memory (MB): peak = 561.672 ; gain = 247.121
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fir_filter_blk_mem_gen_i0' to 'fir_filter_blk_mem_gen_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'fir_filter_fir_compiler_v7_2_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fir_filter_fir_compiler_v7_2_i0' to 'fir_filter_fir_compiler_v7_2_i0' is not allowed and is ignored.
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 27 11:56:14 2020...
