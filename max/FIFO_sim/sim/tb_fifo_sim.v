@@ -83,6 +83,7 @@ task	send_data();
 		end
 endtask
 
+//模仿终端读取FIFO的数据
 task	read_data();
 		integer	i;begin
 			for(i=0;i<259;i=i+1)begin

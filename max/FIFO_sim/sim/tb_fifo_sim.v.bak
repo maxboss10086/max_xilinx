@@ -79,7 +79,7 @@ task	send_data();
 			end
 			@(posedge sys_clk)
 			data_v=1'b0;
-			datain=0
+			datain=0;
 		end
 endtask
 
