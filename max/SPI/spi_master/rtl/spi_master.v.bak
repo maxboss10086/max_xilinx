@@ -130,7 +130,10 @@ always 	@(posedge sys_clk or negedge rst_n)begin
 					state <= STOP;
 			end
 			STOP:begin
-				state <= WAIT;
+				if(spi_mode==2'd3)begin
+					if(spi_negedge)
+						state <= WAIT;
+				end
 			end
 			WAIT:begin//帧循环间隔等待8个时钟
 				if(wait_done)
@@ -186,13 +189,15 @@ always  @(posedge sys_clk or negedge rst_n)begin
 					end
 				end	
 				STOP:begin
-					if((spi_mode==2'd3)&&(spi_negedge))
-						spi_csn <= 1; 
 					if(spi_mode==2'd1)begin
 			    		spi_clk <= 0;
+			    		if(spi_posedge)
+			    			spi_csn <= 1;
 			    	end
 					if(spi_mode==2'd3)begin
 			    		spi_clk <= 1;
+			    		if(spi_negedge)
+			    			spi_csn <= 1;
 			    	end			    				    	
 			    	spi_rdata <= shift_buf;
 				end

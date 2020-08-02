@@ -10,7 +10,8 @@
 // Creation Date:	Fri Jul 31 2020 19:50:49 GMT+0800
 //----------------------------------------------------------------------------------------//
 // Note:1计数器一定要并行的写，不能写在状态机执行的always里面
-//		2SPI下降沿发送数据，上升沿接收数据
+//		2mode3:SPI下降沿发送数据，上升沿接收数据
+//		2mode1:SPI上升沿发送数据，下降沿接收数据
 //----------------------------------------------------------------------------------------//
 //****************************************************************************************//
 
@@ -189,13 +190,15 @@ always  @(posedge sys_clk or negedge rst_n)begin
 					end
 				end	
 				STOP:begin
-					if((spi_mode==2'd3)&&(spi_negedge))
-						spi_csn <= 1; 
 					if(spi_mode==2'd1)begin
 			    		spi_clk <= 0;
+			    		if(spi_posedge)
+			    			spi_csn <= 1;
 			    	end
 					if(spi_mode==2'd3)begin
 			    		spi_clk <= 1;
+			    		if(spi_negedge)
+			    			spi_csn <= 1;
 			    	end			    				    	
 			    	spi_rdata <= shift_buf;
 				end
