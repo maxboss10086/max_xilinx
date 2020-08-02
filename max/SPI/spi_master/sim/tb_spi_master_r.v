@@ -54,8 +54,8 @@ spi_master 	spi_master_inst (
 .sys_clk		(sys_clk),//œµÕ≥ ±÷”50Mhz
 .rst_n			(sys_rst_n),
 .spi_en			(spi_en),
-.spi_mode		(2'd3),
-.spi_sdata		(16'haaaa),
+.spi_mode		(2'd1),
+.spi_sdata		(16'haaab),
 .spi_rdata		(spi_rdata),
 .spi_done		(spi_done),
 .spi_csn		(spi_csn),	
