@@ -1,0 +1,775 @@
+# Reading F:/Modelsim_SE10.2/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.2c Jul 19 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf 
+# Loading project spi_master_r
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# ** Error: ./../rtl/spi_master.v(155): (vlog-2730) Undefined variable: 'SPI_W_R_R'.
+# 
+# ** Error: F:/Modelsim_SE10.2/win64/vlog failed.
+# Error in macro ./run.do line 20
+# F:/Modelsim_SE10.2/win64/vlog failed.
+#     while executing
+# "vlog    ./../rtl/spi_master.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: ./tb_spi_master_r.v(65): (vopt-2912) Port 'spi_wr_ctrl' not found in module 'spi_master' (5th connection).
+# 
+# Optimization failed
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run.do PAUSED at line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# ** Error: ./../rtl/spi_master.v(114): (vlog-2730) Undefined variable: 'SPI_W_Rr_ctrl'.
+# 
+# ** Error: F:/Modelsim_SE10.2/win64/vlog failed.
+# Error in macro ./run.do line 20
+# F:/Modelsim_SE10.2/win64/vlog failed.
+#     while executing
+# "vlog    ./../rtl/spi_master.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# ** Error: ./../rtl/spi_master.v(146): (vlog-2730) Undefined variable: 'SPI_W_Rr_ctrl'.
+# 
+# ** Error: F:/Modelsim_SE10.2/win64/vlog failed.
+# Error in macro ./run.do line 20
+# F:/Modelsim_SE10.2/win64/vlog failed.
+#     while executing
+# "vlog    ./../rtl/spi_master.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# ** Error: ./../rtl/spi_master.v(105): (vlog-2730) Undefined variable: 'shift_r_cnt'.
+# 
+# ** Error: F:/Modelsim_SE10.2/win64/vlog failed.
+# Error in macro ./run.do line 20
+# F:/Modelsim_SE10.2/win64/vlog failed.
+#     while executing
+# "vlog    ./../rtl/spi_master.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# ** Error: ./../rtl/spi_master.v(104): (vlog-2730) Undefined variable: 'idle_done'.
+# 
+# ** Error: F:/Modelsim_SE10.2/win64/vlog failed.
+# Error in macro ./run.do line 20
+# F:/Modelsim_SE10.2/win64/vlog failed.
+#     while executing
+# "vlog    ./../rtl/spi_master.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# ** Error: ./../rtl/spi_master.v(119): (vlog-2730) Undefined variable: 'spi_w_r_done'.
+# 
+# ** Error: F:/Modelsim_SE10.2/win64/vlog failed.
+# Error in macro ./run.do line 20
+# F:/Modelsim_SE10.2/win64/vlog failed.
+#     while executing
+# "vlog    ./../rtl/spi_master.v"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do 
+# No filename specified
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying F:/a_Max/max_xilinx/max/SPI/spi_master/sim/spi_master_r.mpf
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module tb_spi_master_r
+# 
+# Top level modules:
+# 	tb_spi_master_r
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vsim -voptargs=+acc work.glbl work.tb_spi_master_r 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master(fast)".
+# 
+# Loading work.glbl(fast)
+# Loading work.tb_spi_master_r(fast)
+# Loading work.spi_master(fast)
