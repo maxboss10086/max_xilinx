@@ -35,11 +35,10 @@ module	spi_master(
 // =========== Define Parameter and Internal signals =========== 
 //========================================================================/
 
-localparam  IDLE = 5'b0_0001;
-localparam	SPI_W_R= 5'b0_0010;
-localparam	SPI_R= 5'b0_0100;
-localparam	STOP = 5'b0_1000;
-localparam	WAIT = 5'b1_0000;
+localparam  IDLE 	= 4'b0001;
+localparam	SPI_W_R	= 4'b0010;
+localparam	STOP 	= 4'b0100;
+localparam	WAIT 	= 4'b1000;
 
 
 

@@ -27,7 +27,7 @@ module	spi_master(
 	output	reg				spi_done,//一帧SPI传输结束
 	//SPI_interface
 	output	reg				spi_csn,	
-	output	reg				spi_clk,//50-60mhz
+	output	reg				spi_clk,//1M
 	output	reg				spi_mosi,
 	input	wire			spi_miso//读输入管脚不进行编程
 );
