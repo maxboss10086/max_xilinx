@@ -54,7 +54,7 @@ spi_master 	spi_master_inst (
 .sys_clk		(sys_clk),//œµÕ≥ ±÷”50Mhz
 .rst_n			(sys_rst_n),
 .spi_en			(spi_en),
-.spi_mode		(2'd1),
+.spi_mode		(2'd3),
 .spi_sdata		(16'haaab),
 .spi_rdata		(spi_rdata),
 .spi_done		(spi_done),
@@ -71,8 +71,12 @@ spi_en <=0;
 #50	
 sys_rst_n <= 1;    
 #10_000 
-spi_en <=1;    
-datain <=1;                   
+spi_en <=1;   
+datain <=1;
+#2000 
+spi_en <=1;
+#30_000 
+datain <=0;               
 //$display("Running testbench");                       
 end 
 

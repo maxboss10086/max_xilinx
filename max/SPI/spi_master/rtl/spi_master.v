@@ -11,7 +11,10 @@
 //----------------------------------------------------------------------------------------//
 // Note:1计数器一定要并行的写，不能写在状态机执行的always里面
 //		2mode3:SPI下降沿发送数据，上升沿接收数据
-//		2mode1:SPI上升沿发送数据，下降沿接收数据
+//		3mode1:SPI上升沿发送数据，下降沿接收数据
+//		4IDLE状态进入其他状态是通过分频时钟
+//		5stop状态通过系统时钟，这样在en信号高电平时，stop只维持一个时钟，马上进入了下一个读写状态
+//		6由于stop状态只维持一个时钟，所以帧完成也是一个时钟
 //----------------------------------------------------------------------------------------//
 //****************************************************************************************//
 
@@ -38,7 +41,6 @@ module	spi_master(
 localparam  IDLE 	= 4'b0001;
 localparam	SPI_W_R	= 4'b0010;
 localparam	STOP 	= 4'b0100;
-localparam	WAIT 	= 4'b1000;
 
 
 
@@ -48,7 +50,6 @@ reg				clk_p=1'b0;
 wire			clk_n;
 reg				spi_negedge;
 reg				spi_posedge;
-reg		[3:0]	wait_cnt;
 reg		[4:0]	shift_cnt;
 reg		[15:0]	shift_buf;
 reg				idle_done;
@@ -97,20 +98,29 @@ always 	@(posedge sys_clk or negedge rst_n)
 
 
 //*****************************各状态完成信号*******************************************
-//计数器计数到8时生成完成信号
-assign  wait_done 	= (wait_cnt[3] == 1'b1)				? 1'b1 : 1'b0;	
+
 //状态机从空闲进入工作一定要在分频时钟的驱动下
 always  @(posedge sys_clk or negedge rst_n)begin
         if(!rst_n)begin
         	idle_done<='d0;	            
         end
 		else if(spi_mode==2'd1)begin
-			if((spi_en == 1'b1)&&(spi_negedge))
-			idle_done<=1'b1;
+			if(spi_negedge)begin//模式1的时候用下降沿采样en信号
+				if(spi_en == 1'b1)//如果是高电平就拉高
+					idle_done<=1'b1;
+				else begin//是低电平就拉低
+				    idle_done<=1'b0;
+				end
+			end			
 		end
 		else if(spi_mode==2'd3)begin
-			if((spi_en == 1'b1)&&(spi_posedge))
-			idle_done<=1'b1;
+			if(spi_posedge)begin
+				if(spi_en == 1'b1)
+					idle_done<=1'b1;
+				else begin
+		   			idle_done<=1'b0;  
+				end
+			end
 		end
 
 end
@@ -149,17 +159,19 @@ always 	@(posedge sys_clk or negedge rst_n)begin
 			end
 			STOP:begin
 				if(spi_mode==2'd1)begin
-					if(spi_posedge)
-						state <= WAIT;
+					if(!spi_en)
+						state <= IDLE;
+					else begin
+					    state <= SPI_W_R;
+					end
 				end				
 				if(spi_mode==2'd3)begin
-					if(spi_negedge)
-						state <= WAIT;
+					if(!spi_en)
+						state <= IDLE;
+					else begin
+					    state <= SPI_W_R;
+					end
 				end
-			end
-			WAIT:begin//帧循环间隔等待8个时钟
-				if(wait_done)
-					state <= IDLE;
 			end
 			default:state <= IDLE;		
 		endcase		
@@ -210,21 +222,8 @@ always  @(posedge sys_clk or negedge rst_n)begin
 						end
 					end
 				end	
-				STOP:begin
-					if(spi_mode==2'd1)begin
-			    		spi_clk <= 0;
-			    		if(spi_posedge)
-			    			spi_csn <= 1;
-			    	end
-					if(spi_mode==2'd3)begin
-			    		spi_clk <= 1;
-			    		if(spi_negedge)
-			    			spi_csn <= 1;
-			    	end			    				    	
+				STOP:begin		    				    	
 			    	spi_rdata <= shift_buf;
-				end
-				WAIT:begin
-					
 				end
 		    endcase
 		end	
@@ -244,22 +243,12 @@ always 	@(posedge sys_clk or negedge rst_n)
 		else 
 			shift_cnt <= 4'd0;
 
-
-always @(posedge sys_clk or negedge rst_n)begin
-		if(rst_n == 1'b0)
-			wait_cnt <= 'd0;
-		else if(state == WAIT && spi_negedge == 1'b1)
-			wait_cnt <= wait_cnt + 1'b1;
-		else if(state != WAIT)
-			wait_cnt <= 4'd0;		
-end
-
 //写状态机末，标志着一帧SPI的结束
 always  @(posedge sys_clk or negedge rst_n)begin
         if(!rst_n)begin
             spi_done <= 1'b0;        
         end
-		else if(wait_done)begin
+		else if(state == STOP)begin
 			spi_done <= 1'b1;
 		end
 		else begin

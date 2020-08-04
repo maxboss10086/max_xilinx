@@ -19,7 +19,6 @@ Z4 OL;O;10.2c;57
 Z5 dF:/Modelsim_SE10.2/win64
 !s110 1596301231
 T_opt1
-!s110 1596353488
 VG[4cJR1ORGH67djb8KfeW2
 R1
 R2
@@ -27,21 +26,22 @@ R2
 R3
 n@_opt1
 R4
+R5
+!s110 1596353488
 T_opt2
-VIb1IAbP2keUO?mJ:a:2>]0
+!s110 1596547972
+V7SbOd^;ekfLN@^6aV5;F?0
 R1
 R2
-=1-305a3a520024-5f26243d-178-20b0
+=1-305a3a520024-5f296383-32b-2a50
 R3
 n@_opt2
 R4
-R5
-!s110 1596335166
 vglbl
 I5mmBa<f<N[E:K;]7N0VMj0
 Z6 V`JN@9S9cnhjKRR_L]QIcM3
-Z7 dF:/a_Max/max_xilinx/max/SPI/spi_master/sim
-w1596351289
+Z7 dG:/a_max/max_xilinx/max/SPI/spi_master/sim
+w1596334870
 8./xilinx_lib/glbl.v
 F./xilinx_lib/glbl.v
 L0 5
@@ -49,20 +49,20 @@ Z8 OL;L;10.2c;57
 r1
 31
 Z9 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z10 !s110 1596353486
+Z10 !s110 1596547971
 !s100 V<`KW`8LXe32mQ2Gdj1MB2
 !s90 -reportprogress|300|./xilinx_lib/glbl.v|
-!s108 1596353486.369000
+!s108 1596547971.200000
 !s107 ./xilinx_lib/glbl.v|
 !i10b 1
 !s85 0
 !i111 0
 vspi_master
 R10
-IgkU[LgEPAGU_8NHSKNgz61
+I::IF[=i8U5KG;[R4gi[7g2
 R6
 R7
-w1596353466
+w1596547964
 8./../rtl/spi_master.v
 F./../rtl/spi_master.v
 L0 18
@@ -72,17 +72,17 @@ r1
 R9
 !s90 -reportprogress|300|./../rtl/spi_master.v|
 !i10b 1
-!s100 CmkN1RK4mXBl_KY:NZVSg1
+!s100 L;dLo03GBiTJKPVU0ATQD2
 !s85 0
-!s108 1596353486.769000
+!s108 1596547971.386000
 !s107 ./../rtl/spi_master.v|
 !i111 0
 vtb_spi_master_r
 R10
-IDOdEGLzZgSX]^hc`jKF4k2
+I38WO4Za8K;J?I=8D3=44m1
 R6
 R7
-w1596352912
+w1596547767
 8./tb_spi_master_r.v
 F./tb_spi_master_r.v
 L0 30
@@ -90,9 +90,9 @@ R8
 r1
 31
 R9
-!s100 PaTXFVB6@LW6g72K?2ej01
+!s100 Ym::ngJcRel^??AjdBZ^=2
 !s90 -reportprogress|300|./tb_spi_master_r.v|
-!s108 1596353486.579000
+!s108 1596547971.281000
 !s107 ./tb_spi_master_r.v|
 !i10b 1
 !s85 0
