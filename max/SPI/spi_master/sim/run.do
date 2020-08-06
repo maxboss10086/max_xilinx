@@ -16,21 +16,23 @@ vlog	   ./xilinx_lib/*.v
 
 
 #编译设计文件
-vlog    ./tb_spi_master_r.v   
+vlog    ./tb_spi_top.v 
+vlog    ./../rtl/spi_top.v  
 vlog    ./../rtl/spi_master.v
-
+vlog    ./../rtl/spi_config.v
 
 
 #开始仿真,两个work必须在同一行，另起一行就会报错
 #vsim  	-novopt             work.tb_uart_rec
-vsim 	-voptargs=+acc     	work.glbl work.tb_spi_master_r
+vsim 	-voptargs=+acc     	work.glbl work.tb_spi_top
 
 
 #添加查看的波形
 #        测试模块下的/顶层模块
 add wave 	-divider {spi_master_inst}
-add wave 	tb_spi_master_r/spi_master_inst/*
-
+add wave 	tb_spi_top/spi_top_inst/spi_master_inst/*
+add wave 	-divider {spi_config_inst}
+add wave 	tb_spi_top/spi_top_inst/spi_config_inst/*
 
 
 run 200us

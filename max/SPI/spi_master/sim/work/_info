@@ -9,34 +9,34 @@ Z0 dF:/Modelsim_SE10.2/win64
 !i10e 25
 !i10f 100
 T_opt
-VPNAdCaRUde<e_ZM`>[FM_2
+!s110 1596721538
+VQLUSX<S^I=gK7U_LcHW>e3
 Z1 04 4 4 work glbl fast 0
-Z2 04 15 4 work tb_spi_master_r fast 0
-=1-b025aa2269d8-5f259faf-33c-13e0
-Z3 o-quiet -auto_acc_if_foreign -work work +acc
+04 10 4 work tb_spi_top fast 0
+=1-305a3a520024-5f2c0981-39c-3370
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
-Z4 OL;O;10.2c;57
-Z5 dF:/Modelsim_SE10.2/win64
-!s110 1596301231
+Z3 OL;O;10.2c;57
 T_opt1
 VG[4cJR1ORGH67djb8KfeW2
 R1
-R2
+Z4 04 15 4 work tb_spi_master_r fast 0
 =1-b025aa2269d8-5f266bd0-e1-1484
-R3
+R2
 n@_opt1
-R4
-R5
+R3
+Z5 dF:/Modelsim_SE10.2/win64
 !s110 1596353488
 T_opt2
-!s110 1596547972
-V7SbOd^;ekfLN@^6aV5;F?0
+V7cR4UT3iSF3;OdocGo51;3
 R1
-R2
-=1-305a3a520024-5f296383-32b-2a50
-R3
-n@_opt2
 R4
+=1-305a3a520024-5f2bf857-f3-3534
+R2
+n@_opt2
+R3
+R5
+!s110 1596717143
 vglbl
 I5mmBa<f<N[E:K;]7N0VMj0
 Z6 V`JN@9S9cnhjKRR_L]QIcM3
@@ -49,40 +49,79 @@ Z8 OL;L;10.2c;57
 r1
 31
 Z9 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z10 !s110 1596547971
+Z10 !s110 1596721537
 !s100 V<`KW`8LXe32mQ2Gdj1MB2
 !s90 -reportprogress|300|./xilinx_lib/glbl.v|
-!s108 1596547971.200000
+!s108 1596721537.184000
 !s107 ./xilinx_lib/glbl.v|
 !i10b 1
 !s85 0
 !i111 0
-vspi_master
+vspi_config
 R10
-I::IF[=i8U5KG;[R4gi[7g2
+I0cn_2iFM9G5C1Q0ODg5fD1
 R6
 R7
-w1596547964
+w1596720896
+8./../rtl/spi_config.v
+F./../rtl/spi_config.v
+L0 17
+R8
+r1
+31
+R9
+!s100 E84cXHcBE<KQh9_@bAiE[3
+!s90 -reportprogress|300|./../rtl/spi_config.v|
+!i10b 1
+!s85 0
+!s108 1596721537.534000
+!s107 ./../rtl/spi_config.v|
+!i111 0
+vspi_master
+R10
+I4oRJ0Q9]z^07An?da1miT0
+R6
+R7
+w1596721506
 8./../rtl/spi_master.v
 F./../rtl/spi_master.v
-L0 18
+L0 21
 R8
 r1
 31
 R9
 !s90 -reportprogress|300|./../rtl/spi_master.v|
-!i10b 1
-!s100 L;dLo03GBiTJKPVU0ATQD2
-!s85 0
-!s108 1596547971.386000
+!s100 `WiT7hIYH9Vb]XWlW82_m2
+!s108 1596721537.451000
 !s107 ./../rtl/spi_master.v|
+!i10b 1
+!s85 0
 !i111 0
-vtb_spi_master_r
+vspi_top
 R10
-I38WO4Za8K;J?I=8D3=44m1
+Ihk7PjZo_6]?Zo?bgZei5o0
 R6
 R7
-w1596547767
+w1596719324
+8./../rtl/spi_top.v
+F./../rtl/spi_top.v
+L0 17
+R8
+r1
+31
+R9
+!s100 BYE[ZkRR8DJd=LNcol>iE1
+!s90 -reportprogress|300|./../rtl/spi_top.v|
+!s108 1596721537.362000
+!s107 ./../rtl/spi_top.v|
+!i10b 1
+!s85 0
+!i111 0
+vtb_spi_master_r
+I6^jR[bEKH<@]dXPe3Df<`0
+R6
+R7
+w1596717130
 8./tb_spi_master_r.v
 F./tb_spi_master_r.v
 L0 30
@@ -90,10 +129,31 @@ R8
 r1
 31
 R9
-!s100 Ym::ngJcRel^??AjdBZ^=2
+!s110 1596717142
 !s90 -reportprogress|300|./tb_spi_master_r.v|
-!s108 1596547971.281000
+!s100 Wgll7>?iPNOo>XS[2b3ch1
+!s108 1596717142.504000
 !s107 ./tb_spi_master_r.v|
+!i10b 1
+!s85 0
+!i111 0
+vtb_spi_top
+R10
+IK4^LLX[5h@Lfo9I1T=jGh1
+R6
+R7
+w1596719450
+8./tb_spi_top.v
+F./tb_spi_top.v
+L0 30
+R8
+r1
+31
+R9
+!s100 n1nV`mcZCn@iLMcm9LdBA0
+!s90 -reportprogress|300|./tb_spi_top.v|
+!s108 1596721537.272000
+!s107 ./tb_spi_top.v|
 !i10b 1
 !s85 0
 !i111 0

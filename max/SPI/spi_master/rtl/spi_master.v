@@ -106,7 +106,7 @@ always  @(posedge sys_clk or negedge rst_n)begin
         end
 		else if(spi_mode==2'd1)begin
 			if(spi_negedge)begin//模式1的时候用下降沿采样en信号
-				if(spi_en == 1'b1)//如果是高电平就拉高
+				if((spi_en == 1'b1)&&(state==IDLE))//IDLE状态如果en是高电平就拉高
 					idle_done<=1'b1;
 				else begin//是低电平就拉低
 				    idle_done<=1'b0;
@@ -115,7 +115,7 @@ always  @(posedge sys_clk or negedge rst_n)begin
 		end
 		else if(spi_mode==2'd3)begin
 			if(spi_posedge)begin
-				if(spi_en == 1'b1)
+				if((spi_en == 1'b1)&&(state==IDLE))
 					idle_done<=1'b1;
 				else begin
 		   			idle_done<=1'b0;  
@@ -149,15 +149,19 @@ always 	@(posedge sys_clk or negedge rst_n)begin
 		if(!rst_n)
 			state <= IDLE;
 		else case (state)
-			IDLE :begin				
+			IDLE :begin		
+				spi_done<=1'b0;		
 				if(idle_done)
 					state <= SPI_W_R;
 			end
 			SPI_W_R:begin
-				if(spi_w_r_done)
+				if(spi_w_r_done)begin
 					state <= STOP;
+					spi_done<=1'b1;
+				end
 			end
 			STOP:begin
+				spi_done<=1'b0;
 				if(spi_mode==2'd1)begin
 					if(!spi_en)
 						state <= IDLE;
@@ -223,7 +227,10 @@ always  @(posedge sys_clk or negedge rst_n)begin
 					end
 				end	
 				STOP:begin		    				    	
-			    	spi_rdata <= shift_buf;
+			    	spi_rdata <= shift_buf[15:0];
+			    	if(spi_en)begin
+			    		shift_buf[15:0] <=spi_sdata[15:0];			    	
+			    	end
 				end
 		    endcase
 		end	
@@ -243,18 +250,6 @@ always 	@(posedge sys_clk or negedge rst_n)
 		else 
 			shift_cnt <= 4'd0;
 
-//写状态机末，标志着一帧SPI的结束
-always  @(posedge sys_clk or negedge rst_n)begin
-        if(!rst_n)begin
-            spi_done <= 1'b0;        
-        end
-		else if(state == STOP)begin
-			spi_done <= 1'b1;
-		end
-		else begin
-		    spi_done <= 1'b0;  
-		end
 
-end
 
 endmodule
