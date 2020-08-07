@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : spi_top.vf
+// /___/   /\     Timestamp : 08/07/2020 22:53:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.vf -w F:/a_Max/max_xilinx/max/flash_ID_read/rtl/spi_top.sch
+//Design Name: spi_top
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module spi_top(spi_miso, 
+               sys_clk, 
+               sys_rst_n, 
+               flash_ID, 
+               ID_flag, 
+               spi_clk, 
+               spi_csn, 
+               spi_mosi);
+
+    input spi_miso;
+    input sys_clk;
+    input sys_rst_n;
+   output [7:0] flash_ID;
+   output ID_flag;
+   output spi_clk;
+   output spi_csn;
+   output spi_mosi;
+   
+   wire XLXN_1;
+   wire [15:0] XLXN_2;
+   wire [1:0] XLXN_3;
+   wire XLXN_6;
+   wire [15:0] XLXN_10;
+   
+   spi_config  XLXI_1 (.spi_done(XLXN_6), 
+                      .spi_rdata(XLXN_10[15:0]), 
+                      .sys_clk(sys_clk), 
+                      .sys_rst_n(sys_rst_n), 
+                      .flash_ID(flash_ID[7:0]), 
+                      .ID_flag(ID_flag), 
+                      .spi_en(XLXN_1), 
+                      .spi_mode(XLXN_3[1:0]), 
+                      .spi_sdata(XLXN_2[15:0]));
+   spi_master  XLXI_2 (.spi_en(XLXN_1), 
+                      .spi_miso(spi_miso), 
+                      .spi_mode(XLXN_3[1:0]), 
+                      .spi_sdata(XLXN_2[15:0]), 
+                      .sys_clk(sys_clk), 
+                      .sys_rst_n(sys_rst_n), 
+                      .spi_clk(spi_clk), 
+                      .spi_csn(spi_csn), 
+                      .spi_done(XLXN_6), 
+                      .spi_mosi(spi_mosi), 
+                      .spi_rdata(XLXN_10[15:0]));
+endmodule

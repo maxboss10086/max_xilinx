@@ -1,0 +1,2 @@
+vhdtdtfi -lib work F:/a_Max/max_xilinx/max/flash_ID_read/rtl/spi_config.v -lang verilog -prj flash_ID_read -o spi_config.spl -module spi_config -template F:/ISE14.7/14.7/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 spi_config.spl F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_config.sym 

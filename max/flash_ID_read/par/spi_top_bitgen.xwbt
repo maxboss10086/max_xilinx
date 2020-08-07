@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\a_Max\max_xilinx\max\flash_ID_read\par\spi_top.ncd
+OUTFILE=F:\a_Max\max_xilinx\max\flash_ID_read\par\spi_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=F:\a_Max\max_xilinx\max\flash_ID_read\par
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

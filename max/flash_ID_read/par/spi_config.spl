@@ -1,0 +1,15 @@
+[Inputs]
+sys_clk
+sys_rst_n
+spi_done
+=spi_rdata[15:0]=
+[Outputs]
+spi_en
+ID_flag
+=spi_mode[1:0]=
+=spi_sdata[15:0]=
+=flash_ID[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel spi_config
+

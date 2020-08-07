@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/Project/S6_V1.1/w25x16_Read_flash_ID/Project/w25x16_Read_flash_ID/W25X16.xst" -ofn "E:/Project/S6_V1.1/w25x16_Read_flash_ID/Project/w25x16_Read_flash_ID/W25X16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc w25x16_Read_flash_ID.ucf -p xc6slx16-csg324-2 W25X16.ngc W25X16.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o W25X16_map.ncd W25X16.ngd W25X16.pcf 
+par -w -intstyle ise -ol high -mt off W25X16_map.ncd W25X16.ncd W25X16.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml W25X16.twx W25X16.ncd -o W25X16.twr W25X16.pcf -ucf w25x16_Read_flash_ID.ucf 
+bitgen -intstyle ise -f W25X16.ut W25X16.ncd 

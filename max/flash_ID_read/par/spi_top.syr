@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: spi_top.prj
 
@@ -105,11 +105,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\a_max\max_xilinx\max\flash_ID_read\rtl\spi_master.v" into library work
+Analyzing Verilog file "F:\a_Max\max_xilinx\max\flash_ID_read\rtl\spi_master.v" into library work
 Parsing module <spi_master>.
-Analyzing Verilog file "C:\a_max\max_xilinx\max\flash_ID_read\rtl\spi_config.v" into library work
+Analyzing Verilog file "F:\a_Max\max_xilinx\max\flash_ID_read\rtl\spi_config.v" into library work
 Parsing module <spi_config>.
-Analyzing Verilog file "C:\a_max\max_xilinx\max\flash_ID_read\rtl\spi_top.v" into library work
+Analyzing Verilog file "F:\a_Max\max_xilinx\max\flash_ID_read\rtl\spi_top.v" into library work
 Parsing module <spi_top>.
 
 =========================================================================
@@ -127,46 +127,48 @@ Elaborating module <spi_master>.
 =========================================================================
 
 Synthesizing Unit <spi_top>.
-    Related source file is "C:\a_max\max_xilinx\max\flash_ID_read\rtl\spi_top.v".
-WARNING:Xst:653 - Signal <spi_miso> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Related source file is "F:\a_Max\max_xilinx\max\flash_ID_read\rtl\spi_top.v".
     Summary:
 	no macro.
 Unit <spi_top> synthesized.
 
 Synthesizing Unit <spi_config>.
-    Related source file is "C:\a_max\max_xilinx\max\flash_ID_read\rtl\spi_config.v".
+    Related source file is "F:\a_Max\max_xilinx\max\flash_ID_read\rtl\spi_config.v".
         mode = 2'b11
         spi_cnt = 2'b11
-WARNING:Xst:647 - Input <spi_rdata> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_rdata<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_rdata<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 19-bit register for signal <cmd_cnt>.
     Found 19-bit register for signal <spi_wait_cnt>.
     Found 19-bit register for signal <ic_wait_cnt>.
     Found 3-bit register for signal <flow_cnt>.
     Found 16-bit register for signal <spi_sdata>.
+    Found 8-bit register for signal <flash_ID>.
     Found 1-bit register for signal <spi_en>.
-    Found 19-bit adder for signal <ic_wait_cnt[18]_GND_2_o_add_2_OUT> created at line 54.
-    Found 19-bit adder for signal <cmd_cnt[18]_GND_2_o_add_6_OUT> created at line 66.
-    Found 19-bit adder for signal <spi_wait_cnt[18]_GND_2_o_add_12_OUT> created at line 84.
-    Found 3-bit adder for signal <flow_cnt[2]_GND_2_o_add_17_OUT> created at line 106.
-    Found 3-bit 4-to-1 multiplexer for signal <_n0091> created at line 102.
-    Found 19-bit comparator greater for signal <n0001> created at line 53
-    Found 19-bit comparator lessequal for signal <n0010> created at line 83
+    Found 1-bit register for signal <ID_flag>.
+    Found 19-bit adder for signal <ic_wait_cnt[18]_GND_2_o_add_2_OUT> created at line 56.
+    Found 19-bit adder for signal <cmd_cnt[18]_GND_2_o_add_6_OUT> created at line 68.
+    Found 19-bit adder for signal <spi_wait_cnt[18]_GND_2_o_add_12_OUT> created at line 86.
+    Found 3-bit adder for signal <flow_cnt[2]_GND_2_o_add_17_OUT> created at line 108.
+    Found 3-bit 4-to-1 multiplexer for signal <_n0098> created at line 104.
+    Found 19-bit comparator greater for signal <n0001> created at line 55
+    Found 19-bit comparator lessequal for signal <n0010> created at line 85
     Summary:
 	inferred   4 Adder/Subtractor(s).
-	inferred  77 D-type flip-flop(s).
+	inferred  86 D-type flip-flop(s).
 	inferred   2 Comparator(s).
 	inferred  12 Multiplexer(s).
 Unit <spi_config> synthesized.
 
 Synthesizing Unit <spi_master>.
-    Related source file is "C:\a_max\max_xilinx\max\flash_ID_read\rtl\spi_master.v".
+    Related source file is "F:\a_Max\max_xilinx\max\flash_ID_read\rtl\spi_master.v".
         H_DIV_CYC = 5'b11001
+    Found 1-bit register for signal <spi_csn>.
     Found 16-bit register for signal <shift_buf>.
     Found 16-bit register for signal <spi_rdata>.
     Found 5-bit register for signal <shift_cnt>.
     Found 5-bit register for signal <div_cnt>.
     Found 5-bit register for signal <state>.
-    Found 1-bit register for signal <spi_csn>.
     Found 1-bit register for signal <clk_p>.
     Found 1-bit register for signal <spi_negedge>.
     Found 1-bit register for signal <spi_posedge>.
@@ -205,22 +207,24 @@ Macro Statistics
  19-bit adder                                          : 3
  3-bit adder                                           : 1
  5-bit adder                                           : 2
-# Registers                                            : 19
- 1-bit register                                        : 10
+# Registers                                            : 21
+ 1-bit register                                        : 11
  16-bit register                                       : 3
  19-bit register                                       : 3
  3-bit register                                        : 1
  5-bit register                                        : 2
+ 8-bit register                                        : 1
 # Comparators                                          : 2
  19-bit comparator greater                             : 1
  19-bit comparator lessequal                           : 1
 # Multiplexers                                         : 21
  1-bit 2-to-1 multiplexer                              : 3
  16-bit 2-to-1 multiplexer                             : 7
- 19-bit 2-to-1 multiplexer                             : 4
+ 19-bit 2-to-1 multiplexer                             : 3
  3-bit 2-to-1 multiplexer                              : 4
  3-bit 4-to-1 multiplexer                              : 1
  5-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
 =========================================================================
@@ -229,8 +233,18 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:2677 - Node <spi_rdata_0> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_8> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_9> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_10> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_11> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_12> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_13> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_14> of sequential type is unconnected in block <spi_master_inst>.
+WARNING:Xst:2677 - Node <spi_rdata_15> of sequential type is unconnected in block <spi_master_inst>.
 
 Synthesizing (advanced) Unit <spi_config>.
+The following registers are absorbed into counter <cmd_cnt>: 1 register on signal <cmd_cnt>.
 The following registers are absorbed into counter <ic_wait_cnt>: 1 register on signal <ic_wait_cnt>.
 Unit <spi_config> synthesized (advanced).
 
@@ -243,23 +257,24 @@ Unit <spi_master> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
- 19-bit adder                                          : 2
+# Adders/Subtractors                                   : 2
+ 19-bit adder                                          : 1
  3-bit adder                                           : 1
-# Counters                                             : 3
- 19-bit up counter                                     : 1
+# Counters                                             : 4
+ 19-bit up counter                                     : 2
  5-bit up counter                                      : 2
-# Registers                                            : 99
- Flip-Flops                                            : 99
+# Registers                                            : 89
+ Flip-Flops                                            : 89
 # Comparators                                          : 2
  19-bit comparator greater                             : 1
  19-bit comparator lessequal                           : 1
-# Multiplexers                                         : 18
+# Multiplexers                                         : 17
  1-bit 2-to-1 multiplexer                              : 2
  16-bit 2-to-1 multiplexer                             : 7
- 19-bit 2-to-1 multiplexer                             : 4
+ 19-bit 2-to-1 multiplexer                             : 2
  3-bit 2-to-1 multiplexer                              : 4
  3-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
 =========================================================================
@@ -276,7 +291,8 @@ Optimizing FSM <spi_master_inst/FSM_0> on signal <state[1:2]> with sequential en
  00010 | 01
  00100 | 10
 -------------------
-WARNING:Xst:1710 - FF/Latch <spi_sdata_0> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <flash_ID_7> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_sdata_0> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_sdata_1> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_sdata_2> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_sdata_3> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
@@ -299,18 +315,6 @@ WARNING:Xst:1710 - FF/Latch <flow_cnt_2> (without init value) has a constant val
 WARNING:Xst:1710 - FF/Latch <flow_cnt_2> (without init value) has a constant value of 0 in block <spi_config>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <spi_master> ...
-WARNING:Xst:1710 - FF/Latch <spi_master_inst/shift_buf_11> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_10> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_9> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_8> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_7> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_6> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_5> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_4> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_3> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_2> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_1> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_master_inst/shift_buf_0> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_15> of sequential type is unconnected in block <spi_top>.
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_14> of sequential type is unconnected in block <spi_top>.
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_13> of sequential type is unconnected in block <spi_top>.
@@ -319,24 +323,8 @@ WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_11> of sequential type is unc
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_10> of sequential type is unconnected in block <spi_top>.
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_9> of sequential type is unconnected in block <spi_top>.
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_8> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_7> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_6> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_5> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_4> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_3> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_2> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_1> of sequential type is unconnected in block <spi_top>.
 WARNING:Xst:2677 - Node <spi_master_inst/spi_rdata_0> of sequential type is unconnected in block <spi_top>.
-WARNING:Xst:1710 - FF/Latch <spi_config_inst/spi_wait_cnt_11> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_10> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_18> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_17> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_16> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_15> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_14> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_13> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_12> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_11> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_config_inst/cmd_cnt_11> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_10> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_9> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_8> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
@@ -346,6 +334,15 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_4> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_3> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_2> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_18> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_17> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_16> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_15> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_14> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_13> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_12> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_11> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_10> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_wait_cnt_18> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_wait_cnt_17> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_wait_cnt_16> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
@@ -358,13 +355,13 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_wait_cnt_9> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_wait_cnt_8> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/ic_wait_cnt_7> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_18> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_17> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_16> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_15> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_14> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_13> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/spi_wait_cnt_12> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_18> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_17> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_16> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_15> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_14> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_13> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <spi_config_inst/cmd_cnt_12> (without init value) has a constant value of 0 in block <spi_top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -376,8 +373,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 48
- Flip-Flops                                            : 48
+# Registers                                            : 75
+ Flip-Flops                                            : 75
 
 =========================================================================
 
@@ -400,28 +397,29 @@ Top Level Output File Name         : spi_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 108
+# BELS                             : 139
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 16
-#      LUT2                        : 4
+#      LUT2                        : 11
 #      LUT3                        : 4
-#      LUT4                        : 11
-#      LUT5                        : 9
-#      LUT6                        : 23
+#      LUT4                        : 22
+#      LUT5                        : 10
+#      LUT6                        : 34
 #      MUXCY                       : 16
+#      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 19
-# FlipFlops/Latches                : 48
-#      FDC                         : 31
+# FlipFlops/Latches                : 75
+#      FDC                         : 56
 #      FDC_1                       : 4
-#      FDCE                        : 12
+#      FDCE                        : 14
 #      FDP                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 5
-#      IBUF                        : 1
-#      OBUF                        : 4
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
 
 Device utilization summary:
 ---------------------------
@@ -430,20 +428,20 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              48  out of  18224     0%  
- Number of Slice LUTs:                   71  out of   9112     0%  
-    Number used as Logic:                71  out of   9112     0%  
+ Number of Slice Registers:              75  out of  18224     0%  
+ Number of Slice LUTs:                  101  out of   9112     1%  
+    Number used as Logic:               101  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     72
-   Number with an unused Flip Flop:      24  out of     72    33%  
-   Number with an unused LUT:             1  out of     72     1%  
-   Number of fully used LUT-FF pairs:    47  out of     72    65%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:    103
+   Number with an unused Flip Flop:      28  out of    103    27%  
+   Number with an unused LUT:             2  out of    103     1%  
+   Number of fully used LUT-FF pairs:    73  out of    103    70%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                           6
- Number of bonded IOBs:                   6  out of    232     2%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -469,7 +467,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-sys_clk                            | BUFGP                  | 48    |
+sys_clk                            | BUFGP                  | 75    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -481,7 +479,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 6.604ns (Maximum Frequency: 151.423MHz)
-   Minimum input arrival time before clock: 4.510ns
+   Minimum input arrival time before clock: 4.737ns
    Maximum output required time after clock: 4.162ns
    Maximum combinational path delay: No path found
 
@@ -492,7 +490,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sys_clk'
   Clock period: 6.604ns (frequency: 151.423MHz)
-  Total number of paths / destination ports: 398 / 60
+  Total number of paths / destination ports: 524 / 89
 -------------------------------------------------------------------------
 Delay:               3.302ns (Levels of Logic = 2)
   Source:            spi_config_inst/spi_wait_cnt_5 (FF)
@@ -514,9 +512,9 @@ Delay:               3.302ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
-  Total number of paths / destination ports: 48 / 48
+  Total number of paths / destination ports: 76 / 76
 -------------------------------------------------------------------------
-Offset:              4.510ns (Levels of Logic = 2)
+Offset:              4.737ns (Levels of Logic = 2)
   Source:            sys_rst_n (PAD)
   Destination:       spi_config_inst/ic_wait_cnt_6 (FF)
   Destination Clock: sys_clk rising
@@ -526,15 +524,15 @@ Offset:              4.510ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.681  sys_rst_n_IBUF (sys_rst_n_IBUF)
-     INV:I->O             48   0.255   1.787  spi_config_inst/sys_rst_n_inv1_INV_0 (spi_config_inst/sys_rst_n_inv)
+     INV:I->O             75   0.255   2.014  spi_config_inst/sys_rst_n_inv1_INV_0 (spi_config_inst/sys_rst_n_inv)
      FDC:CLR                   0.459          spi_config_inst/spi_wait_cnt_0
     ----------------------------------------
-    Total                      4.510ns (2.042ns logic, 2.468ns route)
-                                       (45.3% logic, 54.7% route)
+    Total                      4.737ns (2.042ns logic, 2.695ns route)
+                                       (43.1% logic, 56.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
 Offset:              4.162ns (Levels of Logic = 1)
   Source:            spi_master_inst/spi_csn (FF)
@@ -561,20 +559,20 @@ Clock to Setup on destination clock sys_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sys_clk        |    3.850|    2.438|    3.473|         |
+sys_clk        |    3.861|    2.569|    3.456|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.31 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.51 secs
  
 --> 
 
-Total memory usage is 4495068 kilobytes
+Total memory usage is 4494468 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   84 (   0 filtered)
+Number of warnings :   75 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

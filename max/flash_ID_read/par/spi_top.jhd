@@ -1,0 +1,5 @@
+MODULE spi_top
+	SUBMODULE spi_config
+		INSTANCE XLXI_1
+	SUBMODULE spi_master
+		INSTANCE XLXI_2

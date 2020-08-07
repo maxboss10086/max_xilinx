@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-08-07T17:07:39</DateModified>
+  <DateModified>2020-08-07T22:55:28</DateModified>
   <ModuleName>spi_top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/a_max/max_xilinx/max/flash_ID_read/par/iseconfig/spi_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/a_max/max_xilinx/max/flash_ID_read/par</ImplementationReportsDirectory>
-  <DateInitialized>2020-08-07T17:07:38</DateInitialized>
+  <SummaryTimeStamp>2020-08-07T22:53:17</SummaryTimeStamp>
+  <SavedFilePath>F:/a_Max/max_xilinx/max/flash_ID_read/par/iseconfig/spi_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/a_Max/max_xilinx/max/flash_ID_read/par\</ImplementationReportsDirectory>
+  <DateInitialized>2020-08-07T22:55:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

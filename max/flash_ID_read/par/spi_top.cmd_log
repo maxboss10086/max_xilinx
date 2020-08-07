@@ -8,3 +8,60 @@ xst -intstyle ise -ifn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -
 xst -intstyle ise -ifn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
 xst -intstyle ise -ifn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
 xst -intstyle ise -ifn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "C:/a_max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+xst -intstyle ise -ifn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.xst" -ofn "F:/a_Max/max_xilinx/max/flash_ID_read/par/spi_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_top.ucf -p xc6slx16-csg324-2 spi_top_cs.ngc spi_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_top_map.ncd spi_top.ngd spi_top.pcf 
+par -w -intstyle ise -ol high -mt off spi_top_map.ncd spi_top.ncd spi_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_top.twx spi_top.ncd -o spi_top.twr spi_top.pcf -ucf spi_top.ucf 
+bitgen -intstyle ise -f spi_top.ut spi_top.ncd 

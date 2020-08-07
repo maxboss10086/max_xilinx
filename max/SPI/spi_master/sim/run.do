@@ -35,7 +35,7 @@ add wave 	-divider {spi_config_inst}
 add wave 	tb_spi_top/spi_top_inst/spi_config_inst/*
 
 
-run 200us
+run 250us
 
 
 

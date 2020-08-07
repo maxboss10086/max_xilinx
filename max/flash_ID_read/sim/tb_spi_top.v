@@ -41,7 +41,7 @@ wire			spi_done;
 wire			spi_csn	;
 wire			spi_clk;	
 wire			spi_mosi;	
-wire			spi_miso;	
+reg				spi_miso;	
 
 reg       		data_flag;
 reg				datain;
@@ -63,10 +63,10 @@ spi_top 	spi_top_inst (
 initial   begin   
 sys_clk= 1;                       
 sys_rst_n <= 0;
-
+spi_miso<=0;
 #50	
 sys_rst_n <= 1;    
-            
+spi_miso <= 1;               
 //$display("Running testbench");                       
 end 
 

@@ -23,8 +23,7 @@ module  spi_top(
 		output						spi_csn,
 		output						spi_clk,
 		output						spi_mosi,
-		output						spi_miso
-
+		input						spi_miso
 
 );
 
@@ -49,14 +48,15 @@ spi_config	spi_config_inst(
 .spi_rdata		(spi_rdata),  
 .spi_en			(spi_en),      
 .spi_sdata		(spi_sdata), 
-.spi_mode		(spi_mode) 
-
+.spi_mode		(spi_mode), 
+.ID_flag		(ID_flag),
+.flash_ID		(flash_ID)
 );
 
 
 spi_master	spi_master_inst(
 .sys_clk		(sys_clk),
-.rst_n			(sys_rst_n),    
+.sys_rst_n		(sys_rst_n),    
 
 .spi_en			(spi_en),   
 .spi_mode		(spi_mode), 
@@ -68,7 +68,6 @@ spi_master	spi_master_inst(
 .spi_clk		(spi_clk),
 .spi_mosi		(spi_mosi), 
 .spi_miso		(spi_miso)
-
 );
 
 endmodule

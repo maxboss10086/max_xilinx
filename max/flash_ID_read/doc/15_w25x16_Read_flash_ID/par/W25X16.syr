@@ -1,0 +1,540 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: W25X16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "W25X16.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "W25X16"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : W25X16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"E:\Project\S6_V1.1\w25x16_Read_flash_ID\Project\RTL\W25X16.v\" into library work
+Parsing module <W25X16>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <W25X16>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <W25X16>.
+    Related source file is "e:/project/s6_v1.1/w25x16_read_flash_id/project/rtl/w25x16.v".
+    Found 6-bit register for signal <counter>.
+    Found 6-bit register for signal <clk_cnt>.
+    Found 16-bit register for signal <shift_buf>.
+    Found 8-bit register for signal <LED>.
+    Found 1-bit register for signal <W25X16_DIO>.
+    Found 6-bit adder for signal <clk_cnt[5]_GND_1_o_add_1_OUT> created at line 55.
+    Found 6-bit adder for signal <counter[5]_GND_1_o_add_4_OUT> created at line 66.
+    Found 6-bit comparator lessequal for signal <n0006> created at line 71
+    Found 6-bit comparator lessequal for signal <n0008> created at line 71
+    Found 6-bit comparator lessequal for signal <n0012> created at line 79
+    Found 6-bit comparator lessequal for signal <n0014> created at line 79
+    Found 6-bit comparator lessequal for signal <n0024> created at line 134
+    Found 6-bit comparator lessequal for signal <n0026> created at line 134
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <W25X16> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 2
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 16-bit register                                       : 1
+ 6-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 6
+ 6-bit comparator lessequal                            : 6
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <shift_buf_15> of sequential type is unconnected in block <W25X16>.
+
+Synthesizing (advanced) Unit <W25X16>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <W25X16> synthesized (advanced).
+WARNING:Xst:2677 - Node <shift_buf_15> of sequential type is unconnected in block <W25X16>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 6-bit up counter                                      : 2
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 6
+ 6-bit comparator lessequal                            : 6
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <shift_buf_8> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2677 - Node <shift_buf_9> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2677 - Node <shift_buf_10> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2677 - Node <shift_buf_11> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2677 - Node <shift_buf_12> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2677 - Node <shift_buf_13> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2677 - Node <shift_buf_14> of sequential type is unconnected in block <W25X16>.
+WARNING:Xst:2016 - Found a loop when searching source clock on port 'Mmux_W25X16_CLK1:O'
+Last warning will be issued only once.
+
+Optimizing unit <W25X16> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block W25X16, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : W25X16.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 28
+#      INV                         : 3
+#      LUT2                        : 11
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      LUT5                        : 2
+#      LUT6                        : 8
+# FlipFlops/Latches                : 29
+#      FDC                         : 12
+#      FDC_1                       : 1
+#      FDCE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              29  out of  18224     0%  
+ Number of Slice LUTs:                   28  out of   9112     0%  
+    Number used as Logic:                28  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     35
+   Number with an unused Flip Flop:       6  out of     35    17%  
+   Number with an unused LUT:             7  out of     35    20%  
+   Number of fully used LUT-FF pairs:    22  out of     35    62%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_cnt_5                          | NONE(W25X16_DIO)       | 15    |
+W25X16_CLK_OBUF(Mmux_W25X16_CLK1:O)| NONE(*)(shift_buf_0)   | 8     |
+sys_clk                            | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.454ns (Maximum Frequency: 224.517MHz)
+   Minimum input arrival time before clock: 4.192ns
+   Maximum output required time after clock: 6.879ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_cnt_5'
+  Clock period: 4.454ns (frequency: 224.517MHz)
+  Total number of paths / destination ports: 75 / 15
+-------------------------------------------------------------------------
+Delay:               2.227ns (Levels of Logic = 1)
+  Source:            counter_4 (FF)
+  Destination:       W25X16_DIO (FF)
+  Source Clock:      clk_cnt_5 rising
+  Destination Clock: clk_cnt_5 falling
+
+  Data Path: counter_4 to W25X16_DIO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.525   1.374  counter_4 (counter_4)
+     LUT6:I1->O            1   0.254   0.000  counter[5]_counter[5]_OR_37_o1 (counter[5]_counter[5]_OR_37_o)
+     FDC_1:D                   0.074          W25X16_DIO
+    ----------------------------------------
+    Total                      2.227ns (0.853ns logic, 1.374ns route)
+                                       (38.3% logic, 61.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'W25X16_CLK_OBUF'
+  Clock period: 1.579ns (frequency: 633.312MHz)
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Delay:               1.579ns (Levels of Logic = 1)
+  Source:            shift_buf_0 (FF)
+  Destination:       shift_buf_1 (FF)
+  Source Clock:      W25X16_CLK_OBUF rising
+  Destination Clock: W25X16_CLK_OBUF rising
+
+  Data Path: shift_buf_0 to shift_buf_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   0.726  shift_buf_0 (shift_buf_0)
+     LUT2:I1->O            1   0.254   0.000  Mmux_shift_buf[15]_GND_1_o_mux_50_OUT71 (shift_buf[15]_GND_1_o_mux_50_OUT<1>)
+     FDCE:D                    0.074          shift_buf_1
+    ----------------------------------------
+    Total                      1.579ns (0.853ns logic, 0.726ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 2.517ns (frequency: 397.298MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               2.517ns (Levels of Logic = 1)
+  Source:            clk_cnt_5 (FF)
+  Destination:       clk_cnt_5 (FF)
+  Source Clock:      sys_clk rising
+  Destination Clock: sys_clk rising
+
+  Data Path: clk_cnt_5 to clk_cnt_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.525   1.664  clk_cnt_5 (clk_cnt_5)
+     LUT6:I0->O            1   0.254   0.000  Mcount_clk_cnt_xor<5>11 (Result<5>)
+     FDC:D                     0.074          clk_cnt_5
+    ----------------------------------------
+    Total                      2.517ns (0.853ns logic, 1.664ns route)
+                                       (33.9% logic, 66.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_cnt_5'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              4.192ns (Levels of Logic = 2)
+  Source:            sys_rst_n (PAD)
+  Destination:       W25X16_DIO (FF)
+  Destination Clock: clk_cnt_5 falling
+
+  Data Path: sys_rst_n to W25X16_DIO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  sys_rst_n_IBUF (sys_rst_n_IBUF)
+     INV:I->O             29   0.255   1.469  sys_rst_n_inv1_INV_0 (sys_rst_n_inv)
+     FDC_1:CLR                 0.459          W25X16_DIO
+    ----------------------------------------
+    Total                      4.192ns (2.042ns logic, 2.150ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'W25X16_CLK_OBUF'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.192ns (Levels of Logic = 2)
+  Source:            sys_rst_n (PAD)
+  Destination:       shift_buf_0 (FF)
+  Destination Clock: W25X16_CLK_OBUF rising
+
+  Data Path: sys_rst_n to shift_buf_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  sys_rst_n_IBUF (sys_rst_n_IBUF)
+     INV:I->O             29   0.255   1.469  sys_rst_n_inv1_INV_0 (sys_rst_n_inv)
+     FDCE:CLR                  0.459          shift_buf_0
+    ----------------------------------------
+    Total                      4.192ns (2.042ns logic, 2.150ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.192ns (Levels of Logic = 2)
+  Source:            sys_rst_n (PAD)
+  Destination:       clk_cnt_0 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: sys_rst_n to clk_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  sys_rst_n_IBUF (sys_rst_n_IBUF)
+     INV:I->O             29   0.255   1.469  sys_rst_n_inv1_INV_0 (sys_rst_n_inv)
+     FDC:CLR                   0.459          clk_cnt_0
+    ----------------------------------------
+    Total                      4.192ns (2.042ns logic, 2.150ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_cnt_5'
+  Total number of paths / destination ports: 21 / 11
+-------------------------------------------------------------------------
+Offset:              6.879ns (Levels of Logic = 3)
+  Source:            counter_0 (FF)
+  Destination:       W25X16_CLK (PAD)
+  Source Clock:      clk_cnt_5 rising
+
+  Data Path: counter_0 to W25X16_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.525   1.177  counter_0 (counter_0)
+     LUT2:I0->O            1   0.250   0.790  Mmux_W25X16_CLK1_SW0 (N4)
+     LUT6:I4->O            9   0.250   0.975  Mmux_W25X16_CLK1 (W25X16_CLK_OBUF)
+     OBUF:I->O                 2.912          W25X16_CLK_OBUF (W25X16_CLK)
+    ----------------------------------------
+    Total                      6.879ns (3.937ns logic, 2.942ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.330ns (Levels of Logic = 2)
+  Source:            clk_cnt_5 (FF)
+  Destination:       W25X16_CLK (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: clk_cnt_5 to W25X16_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.525   1.664  clk_cnt_5 (clk_cnt_5)
+     LUT6:I0->O            9   0.254   0.975  Mmux_W25X16_CLK1 (W25X16_CLK_OBUF)
+     OBUF:I->O                 2.912          W25X16_CLK_OBUF (W25X16_CLK)
+    ----------------------------------------
+    Total                      6.330ns (3.691ns logic, 2.639ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock W25X16_CLK_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+W25X16_CLK_OBUF|    1.579|         |         |         |
+clk_cnt_5      |    3.529|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_cnt_5
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+W25X16_CLK_OBUF|    1.324|         |         |         |
+clk_cnt_5      |    3.548|         |    2.227|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |    2.517|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.52 secs
+ 
+--> 
+
+Total memory usage is 243016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

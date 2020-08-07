@@ -23,7 +23,9 @@ module	spi_config(
 		input        	[15:0]  	spi_rdata,    // spi写入的数据	
 		output			[1:0]		spi_mode,		    
 		output	reg       			spi_en,
-		output  reg		[15:0]  	spi_sdata    // spi读出的数据	
+		output  reg		[15:0]  	spi_sdata,    // spi读出的数据	
+		output	reg 				ID_flag,		
+		output	reg     [7:0]		flash_ID
 
 );
 //========================================================================\
@@ -69,7 +71,7 @@ always	@(posedge sys_clk or negedge sys_rst_n)begin
         	end
         end
         else begin
-            cmd_cnt<=1'b0; 
+            cmd_cnt<=cmd_cnt; 
         end
 end
 
@@ -96,7 +98,7 @@ always	@(negedge sys_clk or negedge sys_rst_n)begin
         if(!sys_rst_n)begin
         	spi_en<='d0; 
         	flow_cnt<='d0;  
-        	spi_sdata<=16'h00_00;          
+        	spi_sdata<=16'h00_00;        
         end
         else begin
         	case(flow_cnt)
@@ -131,7 +133,23 @@ always	@(negedge sys_clk or negedge sys_rst_n)begin
         end
 end
 
-//
+//数据输出
+always  @(posedge sys_clk or negedge sys_rst_n)begin
+        if(!sys_rst_n)begin
+            flash_ID<='d0;
+            ID_flag<='d0;
+        end
+		else if(spi_done&&cmd_cnt==2'd2)begin
+			flash_ID<=(spi_rdata[7:0]>>1);
+			ID_flag<='d1;
+		end
+		else begin
+            flash_ID<='d0;
+            ID_flag<='d0;		     
+		end
+
+
+end
 
 
 

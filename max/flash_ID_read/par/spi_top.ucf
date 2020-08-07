@@ -1,0 +1,9 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "spi_csn" LOC = V14;
+NET "spi_miso" LOC = P12;
+NET "spi_mosi" LOC = V13;
+NET "sys_clk" LOC = U10;
+NET "spi_clk" LOC = U13;
+NET "sys_rst_n" LOC = N5;

@@ -24,7 +24,6 @@ module	spi_config(
 		output			[1:0]		spi_mode,		    
 		output	reg       			spi_en,
 		output  reg		[15:0]  	spi_sdata    // spi读出的数据	
-
 );
 //========================================================================\
 // =========== Define Parameter and Internal signals =========== 

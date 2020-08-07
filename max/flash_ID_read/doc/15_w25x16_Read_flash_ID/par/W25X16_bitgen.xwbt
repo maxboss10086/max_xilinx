@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Project\S6_V1.1\w25x16_Read_flash_ID\Project\w25x16_Read_flash_ID\W25X16.ncd
+OUTFILE=E:\Project\S6_V1.1\w25x16_Read_flash_ID\Project\w25x16_Read_flash_ID\W25X16.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=E:\Project\S6_V1.1\w25x16_Read_flash_ID\Project\w25x16_Read_flash_ID
+LICENSE=ISE
+USER_INFO=No user information available.
