@@ -15,13 +15,14 @@
 //		4IDLE状态进入其他状态是通过分频时钟
 //		5stop状态通过系统时钟，这样在en信号高电平时，stop只维持一个时钟，马上进入了下一个读写状态
 //		6由于stop状态只维持一个时钟，所以帧完成也是一个时钟
+//		7spi_done即是spi一帧数据的完成信号，也是spi读数据的标志信号
 //----------------------------------------------------------------------------------------//
 //****************************************************************************************//
 
 module	spi_master(
 	//sys_interface
 	input	wire			sys_clk,//系统时钟50Mhz
-	input	wire			rst_n,
+	input	wire			sys_rst_n,
 	//user_interface
 	input	wire			spi_en,
 	input	wire	[1:0]	spi_mode,
@@ -62,32 +63,32 @@ reg				spi_w_r_done;
 //*****************分频计数器********************************
 //周期50下，T=50*20=1000ns=1us=1M
 parameter	H_DIV_CYC	=	5'd25;//分频计数器值
-always 	@(posedge sys_clk or negedge rst_n)
-		if(rst_n == 1'b0)
+always 	@(posedge sys_clk or negedge sys_rst_n)
+		if(sys_rst_n == 1'b0)
 			div_cnt <= 5'd0;
 		else if( div_cnt == H_DIV_CYC-1'b1 )
 			div_cnt <= 'd0;
 		else 
 			div_cnt <= div_cnt + 1'b1;
 //分频时钟不允许做寄存器的触发时钟，也就是不能写在always块的触发列表中
-always 	@(posedge sys_clk or negedge rst_n)
-		if(rst_n == 1'b0)
+always 	@(posedge sys_clk or negedge sys_rst_n)
+		if(sys_rst_n == 1'b0)
 			clk_p <= 1'b0;
 		else if(div_cnt == H_DIV_CYC-1'b1)
 			clk_p <= ~clk_p;
 //SPI时钟下降沿信号,在下降沿将数据发送出去
 //在时钟低电平的末尾判定，在高电平的开头生成
 assign	clk_n = ~clk_p;
-always 	@(posedge sys_clk or negedge rst_n)
-		if(rst_n == 1'b0)
+always 	@(posedge sys_clk or negedge sys_rst_n)
+		if(sys_rst_n == 1'b0)
 			spi_negedge <= 1'b0;
 		else if(clk_n == 1'b1 && div_cnt == H_DIV_CYC-1'b1)
 			spi_negedge <= 1'b1;
 		else	
 			spi_negedge <= 1'b0;
 //SPI时钟上升沿信号,用于读取数据			
-always 	@(posedge sys_clk or negedge rst_n)
-		if(rst_n == 1'b0)
+always 	@(posedge sys_clk or negedge sys_rst_n)
+		if(sys_rst_n == 1'b0)
 			spi_posedge <= 1'b0;
 		else if(clk_n == 1'b0 && div_cnt == H_DIV_CYC-1'b1)
 			spi_posedge <= 1'b1;
@@ -100,8 +101,8 @@ always 	@(posedge sys_clk or negedge rst_n)
 //*****************************各状态完成信号*******************************************
 
 //状态机从空闲进入工作一定要在分频时钟的驱动下
-always  @(posedge sys_clk or negedge rst_n)begin
-        if(!rst_n)begin
+always  @(posedge sys_clk or negedge sys_rst_n)begin
+        if(!sys_rst_n)begin
         	idle_done<='d0;	            
         end
 		else if(spi_mode==2'd1)begin
@@ -125,8 +126,8 @@ always  @(posedge sys_clk or negedge rst_n)begin
 
 end
 //写状态机完成
-always  @(posedge sys_clk or negedge rst_n)begin
-        if(!rst_n)begin
+always  @(posedge sys_clk or negedge sys_rst_n)begin
+        if(!sys_rst_n)begin
         	spi_w_r_done<='d0;    
         end
 		else if(spi_mode==2'd1)begin
@@ -145,23 +146,20 @@ always  @(posedge sys_clk or negedge rst_n)begin
 end
 //**************************************************************************************		
 //状态机状态转换			
-always 	@(posedge sys_clk or negedge rst_n)begin
-		if(!rst_n)
+always 	@(posedge sys_clk or negedge sys_rst_n)begin
+		if(!sys_rst_n)
 			state <= IDLE;
 		else case (state)
-			IDLE :begin		
-				spi_done<=1'b0;		
+			IDLE :begin			
 				if(idle_done)
 					state <= SPI_W_R;
 			end
 			SPI_W_R:begin
 				if(spi_w_r_done)begin
 					state <= STOP;
-					spi_done<=1'b1;
 				end
 			end
 			STOP:begin
-				spi_done<=1'b0;
 				if(spi_mode==2'd1)begin
 					if(!spi_en)
 						state <= IDLE;
@@ -182,8 +180,8 @@ always 	@(posedge sys_clk or negedge rst_n)begin
 end	
 						
 //状态机状态执行
-always  @(posedge sys_clk or negedge rst_n)begin
-        if(!rst_n)begin
+always  @(posedge sys_clk or negedge sys_rst_n)begin
+        if(!sys_rst_n)begin
         		spi_csn <= 1'b1; 
 			    spi_clk <= 'd0;  
 			    spi_done<= 'd0;   
@@ -227,7 +225,6 @@ always  @(posedge sys_clk or negedge rst_n)begin
 					end
 				end	
 				STOP:begin		    				    	
-			    	spi_rdata <= shift_buf[15:0];
 			    	if(spi_en)begin
 			    		shift_buf[15:0] <=spi_sdata[15:0];			    	
 			    	end
@@ -238,8 +235,8 @@ end
 
 
 //buff移位计数器
-always 	@(posedge sys_clk or negedge rst_n)
-		if(!rst_n)
+always 	@(posedge sys_clk or negedge sys_rst_n)
+		if(!sys_rst_n)
 			shift_cnt <= 'd0;
 		else if(state == SPI_W_R)
 			if(spi_negedge == 1'b1)
@@ -250,6 +247,21 @@ always 	@(posedge sys_clk or negedge rst_n)
 		else 
 			shift_cnt <= 4'd0;
 
-
-
+//数据输出,附带数据标记信号
+always  @(posedge sys_clk or negedge sys_rst_n)begin
+        if (!sys_rst_n)begin
+        	spi_done<=1'b0; 
+        	spi_rdata<='d0;   
+        end
+		else if(spi_w_r_done)begin
+			//spi_done即是spi一帧数据的完成信号，也是spi读数据的标志信号
+			spi_done<=1'b1;
+			//在读状态机末，进行判定输出，则数据将在stop状态机输出
+			spi_rdata <= shift_buf[15:0];
+		end
+		else begin
+		    spi_done<=1'b0;   
+		    spi_rdata<='d0;
+		end
+end
 endmodule

@@ -56,7 +56,7 @@ spi_config	spi_config_inst(
 
 spi_master	spi_master_inst(
 .sys_clk		(sys_clk),
-.rst_n			(sys_rst_n),    
+.sys_rst_n		(sys_rst_n),    
 
 .spi_en			(spi_en),   
 .spi_mode		(spi_mode), 
