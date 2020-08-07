@@ -1,0 +1,74 @@
+//****************************************Copyright (c)***********************************//
+// 网站博客: NC 
+// 版权所有, 盗版必究 
+// Copyright (c) 2020
+// ALL right reserved
+//----------------------------------------------------------------------------------------//
+// File name: 		xxx.v
+// Descriptions: 	
+// Author: 		Max
+// Creation Date:	Thu Aug 06 2020 20:48:39 GMT+0800
+//----------------------------------------------------------------------------------------//
+// Note:
+//
+//----------------------------------------------------------------------------------------//
+//****************************************************************************************//
+
+module  spi_top(
+        	//system signals
+        input						sys_clk,//clock signal, 50M
+        input                       sys_rst_n,//reset, active low 
+        	//user
+
+		output						spi_csn,
+		output						spi_clk,
+		output						spi_mosi,
+		output						spi_miso
+
+
+);
+
+//========================================================================\
+// =========== Define Parameter and Internal signals =========== 
+//========================================================================/
+
+wire			spi_en;
+wire			spi_done;
+wire	[1:0]	spi_mode;
+wire	[15:0]	spi_sdata;
+wire	[15:0]	spi_rdata;
+//=============================================================================
+//**************    Main Code   **************
+//=============================================================================
+spi_config	spi_config_inst(
+
+.sys_clk     	(sys_clk), 
+.sys_rst_n  	(sys_rst_n),  
+
+.spi_done		(spi_done),    
+.spi_rdata		(spi_rdata),  
+.spi_en			(spi_en),      
+.spi_sdata		(spi_sdata), 
+.spi_mode		(spi_mode) 
+
+);
+
+
+spi_master	spi_master_inst(
+.sys_clk		(sys_clk),
+.rst_n			(sys_rst_n),    
+
+.spi_en			(spi_en),   
+.spi_mode		(spi_mode), 
+.spi_sdata		(spi_sdata),
+.spi_rdata		(spi_rdata),
+.spi_done		(spi_done),
+
+.spi_csn		(spi_csn),	
+.spi_clk		(spi_clk),
+.spi_mosi		(spi_mosi), 
+.spi_miso		(spi_miso)
+
+);
+
+endmodule

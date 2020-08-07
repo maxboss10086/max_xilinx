@@ -29,10 +29,14 @@ module	spi_config(
 //========================================================================\
 // =========== Define Parameter and Internal signals =========== 
 //========================================================================/
-parameter      	mode = 2'd3;
-reg		[18:0]  wait_cnt;               // 计数等待
+parameter      	mode 		= 2'd3;
+parameter      	spi_cnt 	= 2'd3;//spi帧数，每一帧16位
+localparam      spi_wait	= 19'd1000;   
+reg		[18:0]  ic_wait_cnt; 
+reg		[18:0]  spi_wait_cnt; 
 reg		[2:0]	flow_cnt;	
 reg		[18:0]  cmd_cnt	;
+wire       		init_done;
 //=============================================================================
 //**************    Main Code   **************
 //=============================================================================
@@ -41,26 +45,48 @@ reg		[18:0]  cmd_cnt	;
 //
 assign  spi_mode =  mode;
 
-//等待计数器
+//上电等待计数器
 always	@(posedge sys_clk or negedge sys_rst_n)begin
         if(!sys_rst_n)begin
-        	wait_cnt<='d0;            
+        	ic_wait_cnt<='d0;            
         end
-        else if(wait_cnt<=18'd99)begin
-        	wait_cnt<=wait_cnt+1'b1;
+        else if(ic_wait_cnt<=18'd99)begin
+        	ic_wait_cnt<=ic_wait_cnt+1'b1;
         end
 end
 
 //命令计数器
+//
+assign  init_done = (cmd_cnt==spi_cnt-1'b1)&&(spi_done) ? 1'b1 : 1'b0;
 always	@(posedge sys_clk or negedge sys_rst_n)begin
         if(!sys_rst_n)begin
         	cmd_cnt<='d0;            
         end
-        else if(spi_done)begin
+        else if(spi_done)begin//spi_done包含了init_done
         	cmd_cnt<=cmd_cnt+1'b1;
+			if(init_done)begin
+        		cmd_cnt<=1'b0;
+        	end
         end
 end
 
+
+//帧循环计数器
+always	@(posedge sys_clk or negedge sys_rst_n)begin
+        if(!sys_rst_n)begin
+        	spi_wait_cnt<='d0;            
+        end
+        else if(flow_cnt == 2'd2)begin
+			if(spi_wait_cnt <= spi_wait-1'b1)
+        		spi_wait_cnt<=spi_wait_cnt+1'b1;
+			else begin
+            	spi_wait_cnt<='d0; 
+        	end
+        end
+		else begin
+			spi_wait_cnt<='d0; 
+		end
+end
 
 //注意是时钟下降沿
 always	@(negedge sys_clk or negedge sys_rst_n)begin
@@ -71,31 +97,37 @@ always	@(negedge sys_clk or negedge sys_rst_n)begin
         else begin
         	case(flow_cnt)
         		0:begin
-        			if(wait_cnt == 19'd100)begin
+        			if(ic_wait_cnt == 19'd100)begin
         				spi_en <= 1'b1;
         				flow_cnt <= flow_cnt+1'b1;
         			end
         			
         		end
         		1:begin
-        			if(spi_done&&cmd_cnt==4'd2)begin
-        				spi_en <=1'b0;
+        			if(cmd_cnt==1'd0)begin
+       					spi_sdata<=16'h90_00;        			
         			end
+ 					if(spi_done&&cmd_cnt==1'd0)begin
+        				spi_sdata<=16'h0;
+        			end
+					if(spi_done&&cmd_cnt==2'd1)begin
+						spi_sdata<=16'h0;
+        			end    
+        			if(spi_done&&cmd_cnt==2'd2)begin
+ 						spi_en <=1'b0;
+ 						flow_cnt <=flow_cnt+1'b1; 
+        			end   				
+        		end
+        		2:begin
+        			if(spi_wait_cnt==spi_wait-1'b1)
+        				flow_cnt <=2'd0;  
         		end
         	endcase
         end
 end
 
 //
-//
-always  @(posedge sys_clk or negedge sys_rst_n)begin
-        if(!sys_rst_n)begin
-        	spi_sdata<='d0;            
-        end
-        else begin
-             spi_sdata<=16'haaab;
-        end
-end
+
 
 
 endmodule

@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/a_max/max_altera/max/uart/sim
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1596795066
+VN_=beBe]3<jRELdR60jj=1
+04 4 4 work glbl fast 0
+04 10 4 work tb_spi_top fast 0
+=1-dc8b2889f215-5f2d28b9-2f3-1150
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+vglbl
+I5mmBa<f<N[E:K;]7N0VMj0
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+Z1 dC:/a_max/max_xilinx/max/flash_ID_read/sim
+w1596780806
+8./xilinx_lib/glbl.v
+F./xilinx_lib/glbl.v
+L0 5
+Z2 OL;L;10.2c;57
+r1
+31
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 V<`KW`8LXe32mQ2Gdj1MB2
+!s90 -reportprogress|300|./xilinx_lib/glbl.v|
+!s110 1596795062
+!s108 1596795062.476000
+!s107 ./xilinx_lib/glbl.v|
+!i10b 1
+!s85 0
+!i111 0
+vspi_config
+I7SD;2W16m72=:QYiHMlCZ3
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
+R1
+w1596795057
+8./../rtl/spi_config.v
+F./../rtl/spi_config.v
+L0 17
+R2
+r1
+31
+R3
+!s90 -reportprogress|300|./../rtl/spi_config.v|
+!s110 1596795064
+!i10b 1
+!s100 ]XMj5EG[@moQ>gn03PVO31
+!s85 0
+!s108 1596795064.455000
+!s107 ./../rtl/spi_config.v|
+!i111 0
+vspi_master
+Z5 !s110 1596795063
+I432`K8l8?ALUB;X`WTlVA3
+R4
+R1
+w1596782002
+8./../rtl/spi_master.v
+F./../rtl/spi_master.v
+L0 22
+R2
+r1
+31
+R3
+!s100 059[a0fXf5Dem^hDXj7U61
+!s90 -reportprogress|300|./../rtl/spi_master.v|
+!s108 1596795063.972000
+!s107 ./../rtl/spi_master.v|
+!i10b 1
+!s85 0
+!i111 0
+vspi_top
+R5
+InCeY=a_n@a]U:@]J9f45;1
+R4
+R1
+w1596781967
+8./../rtl/spi_top.v
+F./../rtl/spi_top.v
+L0 17
+R2
+r1
+31
+R3
+!s100 BE6]eEaR]DH[@7nho9?541
+!s90 -reportprogress|300|./../rtl/spi_top.v|
+!s108 1596795063.475000
+!s107 ./../rtl/spi_top.v|
+!i10b 1
+!s85 0
+!i111 0
+vtb_spi_top
+IK4^LLX[5h@Lfo9I1T=jGh1
+R4
+R1
+w1596780805
+8./tb_spi_top.v
+F./tb_spi_top.v
+L0 30
+R2
+r1
+31
+R3
+R5
+!s100 n1nV`mcZCn@iLMcm9LdBA0
+!s90 -reportprogress|300|./tb_spi_top.v|
+!s108 1596795063.024000
+!s107 ./tb_spi_top.v|
+!i10b 1
+!s85 0
+!i111 0

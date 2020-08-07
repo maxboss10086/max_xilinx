@@ -142,7 +142,6 @@ always  @(posedge sys_clk or negedge sys_rst_n)begin
 			else 
 		     	spi_w_r_done<=1'b0;
 		end
-
 end
 //**************************************************************************************		
 //×´Ì¬»ú×´Ì¬×ª»»			
@@ -183,11 +182,9 @@ end
 always  @(posedge sys_clk or negedge sys_rst_n)begin
         if(!sys_rst_n)begin
         		spi_csn <= 1'b1; 
-			    spi_clk <= 'd0;  
-			    spi_done<= 'd0;   
+			    spi_clk <= 'd0;   
 			    shift_buf <= 'd0;  
-			    spi_mosi <= 'd0;  
-			    spi_rdata<='d0;  
+			    spi_mosi <= 'd0; 
         end
 		else begin
 			case(state)
@@ -198,8 +195,7 @@ always  @(posedge sys_clk or negedge sys_rst_n)begin
 			    	end
 			    	if(spi_mode==2'd3)begin
 			    		spi_clk <= 1;
-			    	end			    	
-			    	spi_done <= 1'b0;
+			    	end			    
 			    	shift_buf <= spi_sdata;
 			    end
 				SPI_W_R:begin
